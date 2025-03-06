@@ -12,6 +12,7 @@
       margin: 0;
       padding: 20px;
       background-color: #f5f5f5;
+      color: #333;
     }
     .container {
       max-width: 1400px;
@@ -21,7 +22,7 @@
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-    h1, h2 {
+    h1, h2, h3 {
       color: #333;
       margin-top: 0;
     }
@@ -44,6 +45,7 @@
       padding: 15px;
       border-radius: 5px;
       margin-bottom: 15px;
+      background-color: #fff;
     }
     label {
       display: block;
@@ -73,6 +75,10 @@
       padding: 5px 10px;
       cursor: pointer;
       margin-bottom: 5px;
+      transition: all 0.2s ease;
+    }
+    .community-button:hover {
+      background-color: #e0e0e0;
     }
     .community-button.active {
       background-color: #3498db;
@@ -85,6 +91,7 @@
       overflow: hidden;
       background-color: white;
       height: 700px;
+      position: relative;
     }
     svg {
       display: block;
@@ -108,7 +115,6 @@
       margin-bottom: 20px;
     }
     .notes {
-      margin-top: 20px;
       font-size: 14px;
       color: #666;
     }
@@ -120,6 +126,85 @@
     .notes ul {
       padding-left: 20px;
       margin-top: 5px;
+    }
+    /* ツールチップのスタイル */
+    .tooltip {
+      position: absolute;
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      border-radius: 4px;
+      pointer-events: none;
+      font-size: 14px;
+      z-index: 10;
+      max-width: 300px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .tooltip p {
+      margin: 5px 0;
+    }
+    .tooltip-title {
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      padding-bottom: 5px;
+    }
+    /* 詳細パネルのスタイル */
+    .detail-panel {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      background-color: #fff;
+      margin-top: 15px;
+      display: none;
+    }
+    .detail-panel h3 {
+      margin-top: 0;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      color: #2c3e50;
+    }
+    .detail-item {
+      margin-bottom: 8px;
+    }
+    .detail-label {
+      font-weight: 600;
+      color: #666;
+      display: inline-block;
+      width: 140px;
+    }
+    .detail-value {
+      font-weight: normal;
+    }
+    .detail-papers {
+      margin-top: 10px;
+    }
+    .detail-papers-list {
+      max-height: 150px;
+      overflow-y: auto;
+      border: 1px solid #eee;
+      padding: 8px;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+    .node circle {
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .node:hover circle {
+      stroke: #f39c12;
+      stroke-width: 3px;
+    }
+    .node.selected circle {
+      stroke: #e74c3c;
+      stroke-width: 3px;
+    }
+    .node text {
+      pointer-events: none;
+      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
     }
     @media (max-width: 768px) {
       .main-content {
@@ -146,6 +231,44 @@
         <div class="graph-container">
           <div id="loading" class="loading">データを読み込み中...</div>
           <svg id="graph" style="display: none;"></svg>
+          <div id="tooltip" class="tooltip"></div>
+        </div>
+        
+        <!-- 詳細パネル -->
+        <div id="detail-panel" class="detail-panel">
+          <h3 id="detail-name">研究者詳細</h3>
+          <div class="detail-item">
+            <span class="detail-label">コミュニティ:</span>
+            <span id="detail-community" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">論文数:</span>
+            <span id="detail-papers-count" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">共著者数:</span>
+            <span id="detail-coauthors-count" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">PageRank:</span>
+            <span id="detail-pagerank" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">次数中心性:</span>
+            <span id="detail-degree-centrality" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">媒介中心性:</span>
+            <span id="detail-betweenness-centrality" class="detail-value"></span>
+          </div>
+          <div class="detail-item">
+            <span class="detail-label">近接中心性:</span>
+            <span id="detail-closeness-centrality" class="detail-value"></span>
+          </div>
+          <div class="detail-papers">
+            <h4>論文一覧:</h4>
+            <div id="detail-papers-list" class="detail-papers-list"></div>
+          </div>
         </div>
       </div>
       
@@ -175,11 +298,12 @@
         <div class="notes">
           <h3>注釈:</h3>
           <ul>
-            <li>ノードのサイズは選択された中心性指標に比例</li>
-            <li>ノードの色はコミュニティを表す</li>
-            <li>マウスホバーで詳細情報を表示</li>
-            <li>ノードはドラッグして移動可能</li>
-            <li>ホイールでズームイン・ズームアウト可能</li>
+            <li>ノードにカーソルを合わせると詳細情報が表示されます</li>
+            <li>ノードをクリックすると詳細パネルに情報が表示されます</li>
+            <li>ノードのサイズは選択された中心性指標に比例します</li>
+            <li>ノードの色はコミュニティを表します</li>
+            <li>ノードはドラッグして移動可能です</li>
+            <li>ホイールでズームイン・ズームアウト可能です</li>
           </ul>
         </div>
       </div>
@@ -202,9 +326,12 @@
     let linkData = [];
     let communities = [];
     let simulation;
+    let selectedNode = null;
     
     // DOM要素
     const svg = d3.select('#graph');
+    const tooltip = d3.select('#tooltip');
+    const detailPanel = document.getElementById('detail-panel');
     const loadingElement = document.getElementById('loading');
     const errorElement = document.getElementById('error-message');
     const minPaperCountInput = document.getElementById('min-paper-count');
@@ -348,12 +475,68 @@
       });
     }
     
+    // ツールチップを表示する関数
+    function showTooltip(d, event) {
+      const x = event.pageX;
+      const y = event.pageY;
+      
+      tooltip.html(`
+        <div class="tooltip-title">${d.name}</div>
+        <p>論文数: ${d.papers_count}</p>
+        <p>共著者数: ${d.coauthors_count}</p>
+        <p>PageRank: ${d.pagerank.toFixed(6)}</p>
+        <p>次数中心性: ${d.degree_centrality.toFixed(6)}</p>
+        <p>コミュニティ: ${d.community}</p>
+      `)
+      .style('left', `${x + 15}px`)
+      .style('top', `${y - 28}px`)
+      .style('opacity', 1);
+    }
+    
+    // ツールチップを隠す関数
+    function hideTooltip() {
+      tooltip.style('opacity', 0);
+    }
+    
+    // 詳細パネルを更新する関数
+    function updateDetailPanel(d) {
+      if (!d) {
+        detailPanel.style.display = 'none';
+        return;
+      }
+      
+      // 詳細パネルの各要素を更新
+      document.getElementById('detail-name').textContent = d.name;
+      document.getElementById('detail-community').textContent = d.community;
+      document.getElementById('detail-papers-count').textContent = d.papers_count;
+      document.getElementById('detail-coauthors-count').textContent = d.coauthors_count;
+      document.getElementById('detail-pagerank').textContent = d.pagerank.toFixed(6);
+      document.getElementById('detail-degree-centrality').textContent = d.degree_centrality.toFixed(6);
+      document.getElementById('detail-betweenness-centrality').textContent = d.betweenness_centrality.toFixed(6);
+      document.getElementById('detail-closeness-centrality').textContent = d.closeness_centrality.toFixed(6);
+      
+      // 論文リストを更新
+      const papersListElement = document.getElementById('detail-papers-list');
+      if (d.papers && d.papers.length > 0) {
+        papersListElement.innerHTML = d.papers.map(paper => `<div>${paper}</div>`).join('');
+      } else {
+        papersListElement.innerHTML = '<div>論文情報がありません</div>';
+      }
+      
+      // 詳細パネルを表示
+      detailPanel.style.display = 'block';
+    }
+    
     // グラフの作成
     function createNetworkGraph() {
       if (nodeData.length === 0) return;
       
       // SVGをクリア
       svg.selectAll("*").remove();
+      
+      // 詳細パネルを非表示にする
+      updateDetailPanel(null);
+      selectedNode = null;
       
       // ノードをフィルタリング
       let filteredNodes = nodeData.filter(node => node.papers_count >= settings.minPaperCount);
@@ -418,10 +601,36 @@
       
       // ノードを描画
       const node = g.append('g')
-        .selectAll('g')
+        .selectAll('.node')
         .data(filteredNodes)
         .join('g')
-        .call(drag(simulation));
+        .attr('class', 'node')
+        .call(drag(simulation))
+        .on('click', function(event, d) {
+          // 他のノードの選択状態をクリア
+          d3.selectAll('.node').classed('selected', false);
+          
+          // このノードを選択状態にする
+          d3.select(this).classed('selected', true);
+          
+          // 詳細パネルを更新
+          selectedNode = d;
+          updateDetailPanel(d);
+          
+          // イベントの伝播を止める
+          event.stopPropagation();
+        })
+        .on('mouseover', function(event, d) {
+          showTooltip(d, event);
+        })
+        .on('mousemove', function(event, d) {
+          const x = event.pageX;
+          const y = event.pageY;
+          tooltip
+            .style('left', `${x + 15}px`)
+            .style('top', `${y - 28}px`);
+        })
+        .on('mouseout', hideTooltip);
       
       // 選択された中心性指標に基づいてノードのサイズを設定
       const getSizeScale = (measure) => {
@@ -445,18 +654,7 @@
         })
         .attr('fill', d => color(d.community))
         .attr('stroke', '#fff')
-        .attr('stroke-width', 1.5)
-        .append('title')
-        .text(d => {
-          return `${d.name}
-論文数: ${d.papers_count}
-共著者数: ${d.coauthors_count}
-PageRank: ${d.pagerank.toFixed(6)}
-次数中心性: ${d.degree_centrality.toFixed(6)}
-媒介中心性: ${d.betweenness_centrality.toFixed(6)}
-近接中心性: ${d.closeness_centrality.toFixed(6)}
-コミュニティ: ${d.community}`;
-        });
+        .attr('stroke-width', 1.5);
       
       // ノードのラベルを追加
       node.append('text')
@@ -475,6 +673,13 @@ PageRank: ${d.pagerank.toFixed(6)}
           .attr('y2', d => d.target.y);
         
         node.attr('transform', d => `translate(${d.x},${d.y})`);
+      });
+      
+      // 背景をクリックしたとき、選択を解除
+      svg.on('click', () => {
+        d3.selectAll('.node').classed('selected', false);
+        selectedNode = null;
+        updateDetailPanel(null);
       });
       
       // SVGを表示
@@ -532,7 +737,7 @@ PageRank: ${d.pagerank.toFixed(6)}
     });
     
     maxNodesInput.addEventListener('change', () => {
-      settings.maxNodesToShow = parseInt(maxNodesInput.value) || 100;
+      settings.maxNodesToShow = parseInt(maxNodesInput.value) || 10000;
       createNetworkGraph();
     });
     
