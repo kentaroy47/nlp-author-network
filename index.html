@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ANLP著者ネットワーク可視化</title>
+    <title>ANLP著者ネットワーク分析・可視化</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <style>
         body {
@@ -26,9 +26,16 @@
         .controls {
             margin-bottom: 20px;
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
             gap: 15px;
+        }
+        .filter-section {
+            flex: 1;
+            min-width: 200px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
         }
         .filter-group {
             display: flex;
@@ -46,17 +53,31 @@
             border-radius: 4px;
             font-size: 14px;
         }
+        select, input {
+            width: 100%;
+            box-sizing: border-box;
+        }
         button {
             background-color: #4CAF50;
             color: white;
             border: none;
             cursor: pointer;
+            white-space: nowrap;
         }
         button:hover {
             background-color: #45a049;
         }
         .file-input {
             margin-bottom: 20px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
         }
         .visualization {
             width: 100%;
@@ -92,6 +113,7 @@
             border: 1px solid #ddd;
             font-size: 12px;
             max-width: 200px;
+            z-index: 100;
         }
         .legend-item {
             display: flex;
@@ -110,10 +132,17 @@
             background-color: #f2f2f2;
             border-radius: 4px;
         }
-        .table-container {
-            max-height: 300px;
-            overflow-y: auto;
+        .tables-container {
+            display: flex;
+            gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .table-container {
+            flex: 1;
+            min-width: 300px;
+            max-height: 400px;
+            overflow-y: auto;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
@@ -130,6 +159,11 @@
             background-color: #f2f2f2;
             position: sticky;
             top: 0;
+            z-index: 10;
+            cursor: pointer;
+        }
+        th:hover {
+            background-color: #e5e5e5;
         }
         tr:hover {
             background-color: #f5f5f5;
@@ -150,651 +184,290 @@
             font-size: 18px;
             color: #666;
         }
+        .tabs {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .tab {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px 4px 0 0;
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+        .tab.active {
+            background-color: white;
+            border-bottom: 1px solid white;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .slider-value {
+            min-width: 40px;
+            text-align: right;
+        }
+        .color-scale {
+            display: flex;
+            height: 20px;
+            width: 100%;
+            margin-top: 5px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .color-scale-item {
+            flex: 1;
+        }
+        .highlight-button {
+            padding: 2px 5px;
+            font-size: 12px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .hover-info {
+            color: #666;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>ANLP著者ネットワーク可視化</h1>
+        <h1>ANLP著者ネットワーク分析・可視化</h1>
         
         <div class="file-input">
-            <h2>JSONファイル読み込み</h2>
             <input type="file" id="json-file" accept=".json">
             <button id="load-json">読み込む</button>
-            <span id="file-status">ファイルが選択されていません</span>
+            <button id="export-json" style="background-color: #2196F3;">現在のJSONをエクスポート</button>
+            <button id="load-sample" style="background-color: #9c27b0;">サンプルデータ読み込み</button>
+            <span id="file-status">JSONファイルを選択してください</span>
         </div>
         
-        <div class="controls">
-            <div>
-                <div class="filter-group">
-                    <label for="heading-filter">行見出し:</label>
-                    <select id="heading-filter">
-                        <option value="">すべて</option>
-                    </select>
+        <div class="tabs">
+            <div class="tab active" data-tab="network-tab">ネットワーク表示</div>
+            <div class="tab" data-tab="analysis-tab">著者分析</div>
+            <div class="tab" data-tab="advanced-tab">高度な設定</div>
+        </div>
+        
+        <div class="tab-content active" id="network-tab">
+            <div class="controls">
+                <div class="filter-section">
+                    <h2>基本フィルタ</h2>
+                    <div class="filter-group">
+                        <label for="heading-filter">行見出し:</label>
+                        <select id="heading-filter">
+                            <option value="">すべて</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="index-filter">50音インデックス:</label>
+                        <select id="index-filter">
+                            <option value="">すべて</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="community-filter">コミュニティ:</label>
+                        <select id="community-filter">
+                            <option value="">すべて</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="filter-group">
-                    <label for="index-filter">50音インデックス:</label>
-                    <select id="index-filter">
-                        <option value="">すべて</option>
-                    </select>
+                
+                <div class="filter-section">
+                    <h2>論文・著者フィルタ</h2>
+                    <div class="filter-group">
+                        <label for="min-papers">最小論文数:</label>
+                        <div class="slider-container">
+                            <input type="range" id="min-papers" min="1" max="10" value="1" step="1">
+                            <span class="slider-value" id="min-papers-value">1</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="min-primary">最小主著者数:</label>
+                        <div class="slider-container">
+                            <input type="range" id="min-primary" min="0" max="10" value="0" step="1">
+                            <span class="slider-value" id="min-primary-value">0</span>
+                        </div>
+                    </div>
+                    <div class="filter-group">
+                        <label for="min-connections">最小共著者数:</label>
+                        <div class="slider-container">
+                            <input type="range" id="min-connections" min="1" max="10" value="1" step="1">
+                            <span class="slider-value" id="min-connections-value">1</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="filter-group">
-                    <label for="group-filter">グループ:</label>
-                    <select id="group-filter">
-                        <option value="">すべて</option>
-                    </select>
+                
+                <div class="filter-section">
+                    <h2>表示設定</h2>
+                    <div class="filter-group">
+                        <label for="color-by">ノード色分け:</label>
+                        <select id="color-by">
+                            <option value="community">コミュニティ</option>
+                            <option value="heading">行見出し</option>
+                            <option value="pagerank">PageRank</option>
+                            <option value="papers_count">論文数</option>
+                            <option value="primary_count">主著者数</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="size-by">ノードサイズ:</label>
+                        <select id="size-by">
+                            <option value="papers">論文数 + 主著者数</option>
+                            <option value="pagerank">PageRank</option>
+                            <option value="degree">次数中心性</option>
+                            <option value="betweenness">媒介中心性</option>
+                            <option value="closeness">近接中心性</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="author-search">著者検索:</label>
+                        <input type="text" id="author-search" placeholder="著者名で検索...">
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="filter-group">
-                    <label for="min-papers">最小論文数:</label>
-                    <input type="number" id="min-papers" min="1" value="1" style="width: 60px;">
+            
+            <div class="button-group">
+                <button id="apply-filters">フィルタ適用</button>
+                <button id="reset-filters" style="background-color: #f44336;">リセット</button>
+                <button id="search-author">著者検索</button>
+            </div>
+            
+            <div class="visualization">
+                <div id="network"></div>
+                <div class="loading" id="loading">データを読み込んでいます...</div>
+                <div class="legend" id="legend"></div>
+            </div>
+            
+            <div class="stats" id="network-stats">
+                <h2>ネットワーク統計</h2>
+                <div id="stats-content">データを読み込むと統計情報が表示されます</div>
+            </div>
+        </div>
+        
+        <div class="tab-content" id="analysis-tab">
+            <div class="controls">
+                <div class="filter-section">
+                    <h2>分析・ランキング</h2>
+                    <div class="filter-group">
+                        <label for="ranking-metric">ランキング指標:</label>
+                        <select id="ranking-metric">
+                            <option value="pagerank">PageRank</option>
+                            <option value="degree_centrality">次数中心性</option>
+                            <option value="betweenness_centrality">媒介中心性</option>
+                            <option value="closeness_centrality">近接中心性</option>
+                            <option value="papers_count">論文数</option>
+                            <option value="primary_count">主著者数</option>
+                            <option value="coauthors_count">共著者数</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="top-n">表示数:</label>
+                        <input type="number" id="top-n" min="5" max="100" value="20">
+                    </div>
+                    <div class="filter-group">
+                        <label for="filter-community">コミュニティ絞り込み:</label>
+                        <select id="filter-community">
+                            <option value="">すべて</option>
+                        </select>
+                    </div>
+                    <button id="apply-ranking">ランキング表示</button>
                 </div>
-                <div class="filter-group">
-                    <label for="min-connections">最小接続数:</label>
-                    <input type="number" id="min-connections" min="1" value="1" style="width: 60px;">
+                
+                <div class="filter-section">
+                    <h2>論文プレフィックス分析</h2>
+                    <div class="filter-group">
+                        <label for="paper-prefix">論文プレフィックス:</label>
+                        <select id="paper-prefix">
+                            <option value="">すべて</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>分析タイプ:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="prefix-analysis" value="authors" checked> 著者分析
+                            </label>
+                            <label>
+                                <input type="radio" name="prefix-analysis" value="collaboration"> 共著関係
+                            </label>
+                        </div>
+                    </div>
+                    <button id="analyze-prefix">分析実行</button>
                 </div>
-                <div class="filter-group">
-                    <button id="apply-filters">フィルタ適用</button>
-                    <button id="reset-filters" style="background-color: #f44336;">リセット</button>
+                
+                <div class="filter-section">
+                    <h2>コミュニティ分析</h2>
+                    <div class="filter-group">
+                        <label for="community-analysis">分析コミュニティ:</label>
+                        <select id="community-analysis">
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>分析項目:</label>
+                        <div class="radio-group">
+                            <label>
+                                <input type="radio" name="community-analysis-type" value="influential" checked> 影響力のある著者
+                            </label>
+                            <label>
+                                <input type="radio" name="community-analysis-type" value="papers"> 論文タイプ分布
+                            </label>
+                        </div>
+                    </div>
+                    <button id="analyze-community">分析実行</button>
+                </div>
+            </div>
+            
+            <div class="tables-container">
+                <div class="table-container" style="flex: 2;">
+                    <h2 id="analysis-title">著者ランキング</h2>
+                    <table id="analysis-table">
+                        <thead>
+                            <tr>
+                                <th>順位</th>
+                                <th>著者名</th>
+                                <th>指標値</th>
+                                <th>論文数</th>
+                                <th>主著者数</th>
+                                <th>共著者数</th>
+                                <th>コミュニティ</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- 分析テーブルの内容は動的に生成されます -->
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="table-container">
+                    <h2 id="details-title">詳細情報</h2>
+                    <div id="details-content">
+                        著者または分析項目を選択すると詳細情報が表示されます
+                    </div>
                 </div>
             </div>
         </div>
         
-        <div class="visualization">
-            <div id="network"></div>
-            <div class="loading" id="loading">JSONファイルを読み込んでください</div>
-            <div class="legend" id="legend"></div>
-        </div>
-        
-        <div class="stats" id="network-stats">
-            <h2>ネットワーク統計</h2>
-            <div id="stats-content">データを読み込むと統計情報が表示されます</div>
-        </div>
-        
-        <div class="table-container">
-            <h2>著者リスト</h2>
-            <div class="filter-group">
-                <input type="text" id="author-search" placeholder="著者名で検索..." style="width: 200px;">
-                <button id="search-author">検索</button>
-            </div>
-            <table id="authors-table">
-                <thead>
-                    <tr>
-                        <th>著者名</th>
-                        <th>グループ</th>
-                        <th>論文数</th>
-                        <th>主著者数</th>
-                        <th>共著者数</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- テーブルの内容は動的に生成されます -->
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <script>
-        // グローバル変数
-        let originalData = null;  // 元のJSONデータ
-        let filteredData = null;  // フィルタリングされたデータ
-        let simulation = null;   // D3シミュレーション
-        let svg = null;          // SVG要素
-        let link = null;         // リンク要素
-        let node = null;         // ノード要素
-        let tooltip = null;      // ツールチップ
-        let selectedNode = null; // 選択されたノード
-        
-        // 色の設定
-        const colorScheme = d3.schemeCategory10;
-        const groupColors = {};
-        
-        // 初期化
-        document.addEventListener('DOMContentLoaded', initialize);
-        
-        function initialize() {
-            // イベントリスナーの設定
-            document.getElementById('load-json').addEventListener('click', loadJSONFile);
-            document.getElementById('apply-filters').addEventListener('click', applyFilters);
-            document.getElementById('reset-filters').addEventListener('click', resetFilters);
-            document.getElementById('search-author').addEventListener('click', searchAuthor);
-            
-            // ファイル選択時の表示更新
-            document.getElementById('json-file').addEventListener('change', function(event) {
-                const fileName = event.target.files[0]?.name || 'ファイルが選択されていません';
-                document.getElementById('file-status').textContent = fileName;
-            });
-            
-            // ツールチップの初期化
-            tooltip = d3.select('body')
-                .append('div')
-                .attr('class', 'tooltip')
-                .style('opacity', 0);
-        }
-        
-        // JSONファイルを読み込む
-        function loadJSONFile() {
-            const fileInput = document.getElementById('json-file');
-            const file = fileInput.files[0];
-            
-            if (!file) {
-                alert('ファイルを選択してください');
-                return;
-            }
-            
-            document.getElementById('loading').textContent = 'JSONファイルを読み込んでいます...';
-            document.getElementById('loading').style.display = 'block';
-            
-            const reader = new FileReader();
-            
-            reader.onload = function(event) {
-                try {
-                    originalData = JSON.parse(event.target.result);
-                    
-                    // データの検証
-                    if (!originalData.nodes || !originalData.links) {
-                        throw new Error('JSONデータの形式が正しくありません。"nodes"と"links"プロパティが必要です。');
-                    }
-                    
-                    // フィルタオプションの初期化
-                    initializeFilterOptions(originalData);
-                    
-                    // データを可視化
-                    filteredData = JSON.parse(JSON.stringify(originalData)); // ディープコピー
-                    visualizeNetwork(filteredData);
-                    
-                    // 著者テーブルの更新
-                    updateAuthorsTable(filteredData.nodes);
-                    
-                    // 統計情報の更新
-                    updateStatistics(filteredData);
-                    
-                } catch (error) {
-                    console.error('JSONの解析エラー:', error);
-                    document.getElementById('loading').textContent = 'JSONファイルの解析に失敗しました: ' + error.message;
-                }
-            };
-            
-            reader.onerror = function() {
-                document.getElementById('loading').textContent = 'ファイルの読み込みに失敗しました';
-            };
-            
-            reader.readAsText(file);
-        }
-        
-        // フィルタオプションの初期化
-        function initializeFilterOptions(data) {
-            // グループの抽出
-            const groups = new Set();
-            const headings = new Set();
-            const indices = new Set();
-            
-            data.nodes.forEach(node => {
-                if (node.group) groups.add(node.group);
-                if (node.heading) headings.add(node.heading);
-                if (node.index) indices.add(node.index);
-            });
-            
-            // グループカラーの設定
-            Array.from(groups).forEach((group, i) => {
-                groupColors[group] = colorScheme[i % colorScheme.length];
-            });
-            
-            // セレクトボックスの更新
-            updateSelectOptions('group-filter', groups);
-            updateSelectOptions('heading-filter', headings);
-            updateSelectOptions('index-filter', indices);
-        }
-        
-        // セレクトボックスのオプション更新
-        function updateSelectOptions(selectId, optionsSet) {
-            const select = document.getElementById(selectId);
-            select.innerHTML = '<option value="">すべて</option>';
-            
-            Array.from(optionsSet).sort().forEach(option => {
-                const optionElement = document.createElement('option');
-                optionElement.value = option;
-                optionElement.textContent = option;
-                select.appendChild(optionElement);
-            });
-        }
-        
-        // フィルタを適用
-        function applyFilters() {
-            if (!originalData) {
-                alert('先にJSONファイルを読み込んでください');
-                return;
-            }
-            
-            const group = document.getElementById('group-filter').value;
-            const heading = document.getElementById('heading-filter').value;
-            const index = document.getElementById('index-filter').value;
-            const minPapers = parseInt(document.getElementById('min-papers').value) || 1;
-            const minConnections = parseInt(document.getElementById('min-connections').value) || 1;
-            
-            // ノードのフィルタリング
-            let filteredNodes = originalData.nodes.filter(node => {
-                // グループフィルタ
-                if (group && node.group !== group) return false;
-                
-                // 見出しフィルタ
-                if (heading && node.heading !== heading) return false;
-                
-                // インデックスフィルタ
-                if (index && node.index !== index) return false;
-                
-                // 論文数フィルタ
-                if (minPapers > 1 && node.papers_count < minPapers) return false;
-                
-                return true;
-            });
-            
-            // ノードIDのセット
-            const nodeIds = new Set(filteredNodes.map(node => node.id));
-            
-            // リンクのフィルタリング
-            let filteredLinks = originalData.links.filter(link => {
-                // ノードが存在するかチェック
-                return nodeIds.has(link.source) && nodeIds.has(link.target);
-            });
-            
-            // 接続数によるフィルタリング
-            if (minConnections > 1) {
-                // ノードごとの接続数
-                const nodeLinkCounts = {};
-                
-                filteredLinks.forEach(link => {
-                    nodeLinkCounts[link.source] = (nodeLinkCounts[link.source] || 0) + 1;
-                    nodeLinkCounts[link.target] = (nodeLinkCounts[link.target] || 0) + 1;
-                });
-                
-                // 最小接続数を満たすノード
-                const validNodeIds = new Set(
-                    Object.entries(nodeLinkCounts)
-                        .filter(([_, count]) => count >= minConnections)
-                        .map(([id, _]) => id)
-                );
-                
-                // ノードとリンクを再フィルタリング
-                filteredNodes = filteredNodes.filter(node => validNodeIds.has(node.id));
-                filteredLinks = filteredLinks.filter(link => 
-                    validNodeIds.has(link.source) && validNodeIds.has(link.target)
-                );
-            }
-            
-            // フィルタリングされたデータを設定
-            filteredData = {
-                nodes: filteredNodes,
-                links: filteredLinks
-            };
-            
-            // データを可視化
-            visualizeNetwork(filteredData);
-            
-            // 著者テーブルの更新
-            updateAuthorsTable(filteredData.nodes);
-            
-            // 統計情報の更新
-            updateStatistics(filteredData);
-        }
-        
-        // フィルタをリセット
-        function resetFilters() {
-            if (!originalData) return;
-            
-            // フィルタフォームをリセット
-            document.getElementById('group-filter').value = '';
-            document.getElementById('heading-filter').value = '';
-            document.getElementById('index-filter').value = '';
-            document.getElementById('min-papers').value = '1';
-            document.getElementById('min-connections').value = '1';
-            document.getElementById('author-search').value = '';
-            
-            // 元のデータで可視化
-            filteredData = JSON.parse(JSON.stringify(originalData));
-            visualizeNetwork(filteredData);
-            
-            // 著者テーブルの更新
-            updateAuthorsTable(filteredData.nodes);
-            
-            // 統計情報の更新
-            updateStatistics(filteredData);
-        }
-        
-        // 著者名で検索
-        function searchAuthor() {
-            if (!originalData) {
-                alert('先にJSONファイルを読み込んでください');
-                return;
-            }
-            
-            const searchTerm = document.getElementById('author-search').value.toLowerCase();
-            
-            if (!searchTerm) {
-                alert('検索語を入力してください');
-                return;
-            }
-            
-            // 検索条件に一致する著者を探す
-            const matchingNodes = originalData.nodes.filter(node => 
-                node.name.toLowerCase().includes(searchTerm)
-            );
-            
-            if (matchingNodes.length === 0) {
-                alert('該当する著者が見つかりませんでした');
-                return;
-            }
-            
-            // 一致した著者のIDセット
-            const matchingNodeIds = new Set(matchingNodes.map(node => node.id));
-            
-            // 関連するリンクをフィルタリング
-            const relatedLinks = originalData.links.filter(link => 
-                matchingNodeIds.has(link.source) || matchingNodeIds.has(link.target)
-            );
-            
-            // 関連するノードを追加
-            const relatedNodeIds = new Set(matchingNodes.map(node => node.id));
-            
-            relatedLinks.forEach(link => {
-                relatedNodeIds.add(link.source);
-                relatedNodeIds.add(link.target);
-            });
-            
-            // 関連するノードをフィルタリング
-            const relatedNodes = originalData.nodes.filter(node => 
-                relatedNodeIds.has(node.id)
-            );
-            
-            // フィルタリングされたデータを設定
-            filteredData = {
-                nodes: relatedNodes,
-                links: relatedLinks
-            };
-            
-            // データを可視化
-            visualizeNetwork(filteredData);
-            
-            // 著者テーブルの更新
-            updateAuthorsTable(filteredData.nodes);
-            
-            // 統計情報の更新
-            updateStatistics(filteredData);
-        }
-        
-        // ネットワーク可視化
-        function visualizeNetwork(data) {
-            // 既存のネットワークをクリア
-            d3.select('#network svg').remove();
-            
-            const container = document.getElementById('network');
-            const width = container.clientWidth;
-            const height = container.clientHeight;
-            
-            // SVG要素の作成
-            svg = d3.select('#network')
-                .append('svg')
-                .attr('width', '100%')
-                .attr('height', '100%')
-                .attr('viewBox', [0, 0, width, height]);
-            
-            // ズーム機能
-            const zoom = d3.zoom()
-                .scaleExtent([0.1, 8])
-                .on('zoom', (event) => {
-                    g.attr('transform', event.transform);
-                });
-            
-            svg.call(zoom);
-            
-            // メイングループ
-            const g = svg.append('g');
-            
-            // リンクとノードのためのデータ準備
-            // ソースとターゲットが文字列の場合、オブジェクトに変換
-            const links = data.links.map(d => ({
-                source: typeof d.source === 'string' ? d.source : d.source.id || d.source,
-                target: typeof d.target === 'string' ? d.target : d.target.id || d.target,
-                value: d.value || 1,
-                papers: d.papers || []
-            }));
-            
-            // シミュレーション設定
-            simulation = d3.forceSimulation(data.nodes)
-                .force('link', d3.forceLink(links).id(d => d.id).distance(100))
-                .force('charge', d3.forceManyBody().strength(-300))
-                .force('center', d3.forceCenter(width / 2, height / 2))
-                .force('collision', d3.forceCollide().radius(d => getNodeRadius(d) + 5));
-            
-            // リンク描画
-            link = g.append('g')
-                .attr('class', 'links')
-                .selectAll('line')
-                .data(links)
-                .enter().append('line')
-                .attr('stroke', '#999')
-                .attr('stroke-opacity', 0.6)
-                .attr('stroke-width', d => Math.sqrt(d.value) * 1.5)
-                .on('mouseover', showLinkTooltip)
-                .on('mouseout', hideTooltip);
-            
-            // ノード描画
-            const nodeGroup = g.append('g')
-                .attr('class', 'nodes')
-                .selectAll('g')
-                .data(data.nodes)
-                .enter().append('g')
-                .call(d3.drag()
-                    .on('start', dragstarted)
-                    .on('drag', dragged)
-                    .on('end', dragended))
-                .on('click', highlightNode);
-            
-            // ノードの円
-            nodeGroup.append('circle')
-                .attr('r', getNodeRadius)
-                .attr('fill', getNodeColor)
-                .attr('stroke', '#fff')
-                .attr('stroke-width', 1.5)
-                .on('mouseover', showNodeTooltip)
-                .on('mouseout', hideTooltip);
-            
-            // ノードのラベル
-            nodeGroup.append('text')
-                .attr('dy', 4)
-                .attr('text-anchor', 'middle')
-                .attr('font-size', '10px')
-                .attr('pointer-events', 'none')
-                .text(d => getNodeRadius(d) > 8 ? getShortName(d.name) : '');
-            
-            node = nodeGroup;
-            
-            // シミュレーション更新
-            simulation.on('tick', () => {
-                link
-                    .attr('x1', d => d.source.x)
-                    .attr('y1', d => d.source.y)
-                    .attr('x2', d => d.target.x)
-                    .attr('y2', d => d.target.y);
-                
-                node
-                    .attr('transform', d => `translate(${d.x},${d.y})`);
-            });
-            
-            // 凡例表示
-            updateLegend(data);
-            
-            // ローディング非表示
-            document.getElementById('loading').style.display = 'none';
-        }
-        
-        // ノード半径の計算
-        function getNodeRadius(d) {
-            // 論文数と主著者数に基づいて計算（指標が存在する場合）
-            const papersCount = d.papers_count || d.papersCount || 1;
-            const primaryCount = d.primary_count || d.primaryCount || 0;
-            
-            return Math.max(5, Math.min(15, 5 + Math.sqrt(papersCount + primaryCount)));
-        }
-        
-        // ノードの色を取得
-        function getNodeColor(d) {
-            if (d.group && groupColors[d.group]) {
-                return groupColors[d.group];
-            }
-            return '#1f77b4'; // デフォルト色
-        }
-        
-        // 著者名を短縮
-        function getShortName(name) {
-            const parts = name.split(' ');
-            if (parts.length >= 2) {
-                return parts[parts.length - 1]; // 姓だけを表示
-            }
-            return name;
-        }
-        
-        // 凡例の更新
-        function updateLegend(data) {
-            const legend = document.getElementById('legend');
-            legend.innerHTML = '<div style="font-weight: bold; margin-bottom: 8px;">凡例</div>';
-            
-            // 使用されているグループを抽出
-            const usedGroups = new Set();
-            data.nodes.forEach(node => {
-                if (node.group) usedGroups.add(node.group);
-            });
-            
-            // グループが多すぎる場合は表示しない
-            if (usedGroups.size > 10) {
-                legend.innerHTML += '<div>グループが多すぎるため凡例は省略されています</div>';
-                return;
-            }
-            
-            // 凡例アイテムを作成
-            Array.from(usedGroups).sort().forEach(group => {
-                const color = groupColors[group] || '#999';
-                const item = document.createElement('div');
-                item.className = 'legend-item';
-                item.innerHTML = `
-                    <div class="legend-color" style="background-color: ${color};"></div>
-                    <div>${group}</div>
-                `;
-                legend.appendChild(item);
-            });
-        }
-        
-        // 著者テーブルの更新
-        function updateAuthorsTable(nodes) {
-            const table = document.getElementById('authors-table').querySelector('tbody');
-            table.innerHTML = '';
-            
-            // ノードを名前でソート
-            const sortedNodes = [...nodes].sort((a, b) => a.name.localeCompare(b.name));
-            
-            sortedNodes.forEach(node => {
-                const row = document.createElement('tr');
-                
-                // 著者名
-                const nameCell = document.createElement('td');
-                nameCell.textContent = node.name;
-                nameCell.style.cursor = 'pointer';
-                nameCell.onclick = () => highlightNodeById(node.id);
-                row.appendChild(nameCell);
-                
-                // グループ
-                const groupCell = document.createElement('td');
-                groupCell.textContent = node.group || '-';
-                row.appendChild(groupCell);
-                
-                // 論文数
-                const papersCell = document.createElement('td');
-                papersCell.textContent = node.papers_count || node.papersCount || 0;
-                row.appendChild(papersCell);
-                
-                // 主著者数
-                const primaryCell = document.createElement('td');
-                primaryCell.textContent = node.primary_count || node.primaryCount || 0;
-                row.appendChild(primaryCell);
-                
-                // 共著者数
-                const coauthorsCell = document.createElement('td');
-                coauthorsCell.textContent = node.coauthors_count || node.coauthorsCount || 0;
-                row.appendChild(coauthorsCell);
-                
-                table.appendChild(row);
-            });
-        }
-        
-        // 統計情報の更新
-        function updateStatistics(data) {
-            const statsContent = document.getElementById('stats-content');
-            
-            // 基本統計
-            const nodeCount = data.nodes.length;
-            const linkCount = data.links.length;
-            
-            // 論文数の合計
-            const totalPapers = data.nodes.reduce((sum, node) => 
-                sum + (node.papers_count || node.papersCount || 0), 0);
-            
-            // 主著者数の合計
-            const totalPrimary = data.nodes.reduce((sum, node) => 
-                sum + (node.primary_count || node.primaryCount || 0), 0);
-            
-            // 最も接続が多い著者
-            let maxConnections = 0;
-            let mostConnectedAuthor = '';
-            
-            data.nodes.forEach(node => {
-                const connections = data.links.filter(link => 
-                    link.source === node.id || link.target === node.id
-                ).length;
-                
-                if (connections > maxConnections) {
-                    maxConnections = connections;
-                    mostConnectedAuthor = node.name;
-                }
-            });
-            
-            // グループの統計
-            const groupStats = {};
-            data.nodes.forEach(node => {
-                const group = node.group || '不明';
-                if (!groupStats[group]) {
-                    groupStats[group] = 1;
-                } else {
-                    groupStats[group]++;
-                }
-            });
-            
-            // 統計情報を表示
-            let statsHtml = `
-                <p><strong>ノード数:</strong> ${nodeCount}名の著者</p>
-                <p><strong>リンク数:</strong> ${linkCount}件の共著関係</p>
-                <p><strong>総論文数:</strong> ${totalPapers}件 (主著者: ${totalPrimary}件)</p>
-                <p><strong>最も共著者が多い著者:</strong> ${mostConnectedAuthor} (${maxConnections}件の接続)</p>
-            `;
-            
-            // グループ別著者数
-            if (Object.keys(groupStats).length > 0) {
-                statsHtml += '<p><strong>グループ別著者数:</strong></p><ul>';
-                Object.entries(groupStats)
-                    .sort((a, b) => b[1] - a[1])
-                    .forEach(([group, count]) => {
-                        statsHtml += `<li>${group}: ${count}名</li>`;
-                    });
-                statsHtml += '</ul>';
-            }
-            
-            statsContent.innerHTML = statsHtml;
-        }
-        
-        // ノードをハイライト
-        function highlightNode(event, d) {
-            if (selectedNode === d.id) {
-                // 同じノードを再クリックすると選択解除
-                selectedNode = null;
-                resetHighlight();
-            } else {
-                selectedNode = d.id;
+        <div class="tab-content" id="advanced-tab">
+            <div class="controls">
+                <div class="filter-section">
+                    <h2>ネットワー
