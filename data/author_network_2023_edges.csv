@@ -1,0 +1,534 @@
+Source,Target,Weight,Type
+C12-5,加藤祥太Q4-9○,1,Undirected
+C12-5,C12-2,1,Undirected
+C12-2,加藤祥太Q4-9○,1,Undirected
+○西村 太一,迫田 航次郎,1,Undirected
+○西村 太一,牛久 敦,1,Undirected
+○西村 太一,橋本 敦史,1,Undirected
+○西村 太一,奥田 奈津子,1,Undirected
+○西村 太一,小野 富三人,1,Undirected
+○西村 太一,亀甲 博貴,1,Undirected
+○西村 太一,森 信介,1,Undirected
+Song,HaiyueQ3-7○,1,Undirected
+B10-4,ツル鶴岡慶雅Q3-10,1,Undirected
+B10-4,Q9-1,1,Undirected
+B10-4,Q12-13,1,Undirected
+B10-4,P6-7,1,Undirected
+B10-4,P7-5,1,Undirected
+C3-3,松崎拓也C1-3,1,Undirected
+小林悟郎C3-4,C3-5○,1,Undirected
+D3-4○,上田亮D3-2○,1,Undirected
+D3-4○,A4-3,1,Undirected
+D3-4○,H10-2,1,Undirected
+D3-4○,P9-5,1,Undirected
+H2-5○,キシ岸波洋介D2-3,1,Undirected
+P9-9,西口純代P3-10○,1,Undirected
+P9-9,P7-13○,1,Undirected
+東山翔平B11-1,B12-1,1,Undirected
+東山翔平B11-1,B12-2,1,Undirected
+東山翔平B11-1,P6-1○,1,Undirected
+TianqiQ6-13○,Wang,1,Undirected
+P4-12,村上仁一D1-2,1,Undirected
+P4-12,A8-3○,1,Undirected
+P4-12,P10-10,1,Undirected
+P4-12,P10-11,1,Undirected
+P4-12,P10-12,1,Undirected
+奥田 奈津子,迫田 航次郎,1,Undirected
+奥田 奈津子,牛久 敦,1,Undirected
+奥田 奈津子,橋本 敦史,1,Undirected
+奥田 奈津子,小野 富三人,1,Undirected
+奥田 奈津子,亀甲 博貴,1,Undirected
+奥田 奈津子,森 信介,1,Undirected
+栗原健太郎Q8-5○,A12-4○,1,Undirected
+A10-1,小林亮太C3-2,1,Undirected
+A10-1,中山悠理C3-2○,1,Undirected
+A10-1,吉永直樹C2-5○,1,Undirected
+A10-1,P8-2,1,Undirected
+A10-1,P10-6,1,Undirected
+B12-1,井之上直也Q1-7,1,Undirected
+B12-1,Q2-12,1,Undirected
+B12-1,Q3-9,1,Undirected
+B12-1,C7-5,1,Undirected
+B12-1,Q8-14,1,Undirected
+B12-1,B12-2,1,Undirected
+B12-1,P6-1○,1,Undirected
+Lu,BinghanP7-3○,1,Undirected
+森村哲郎Q12-5,Q12-6,1,Undirected
+ヤナ谷中瞳D1-4,A4-3,1,Undirected
+ヤナ谷中瞳D1-4,B6-3,1,Undirected
+ヤナ谷中瞳D1-4,C9-1,1,Undirected
+ヤナ谷中瞳D1-4,A9-4,1,Undirected
+ヤナ谷中瞳D1-4,H10-2,1,Undirected
+ヤナ谷中瞳D1-4,D12-2,1,Undirected
+P2-7,クド工藤慧音A5-4,1,Undirected
+P2-7,B8-1,1,Undirected
+P2-7,Q8-13○,1,Undirected
+スポンサーイブニングH会場,展示場,1,Undirected
+P6-1○,B12-2,1,Undirected
+Luis E CA10-1,Rocha,1,Undirected
+Wu,QiyuQ9-1,1,Undirected
+D8-3,一杉裕志D8-2,1,Undirected
+D10-3,モリ森信介Q9-5,1,Undirected
+D10-3,B11-5,1,Undirected
+D10-3,Q11-9,1,Undirected
+D10-3,P2-1,1,Undirected
+D10-3,P11-7,1,Undirected
+Q4-10,石垣達也H3-1,1,Undirected
+Q4-10,H11-1,1,Undirected
+Q4-10,P12-13,3,Undirected
+Q4-10,上原由衣H3-1,1,Undirected
+Q4-10,高村大也H3-1,1,Undirected
+Q4-10,H3-4,1,Undirected
+Q4-10,P7-4,1,Undirected
+Q4-10,P11-9,1,Undirected
+Q4-10,P12-8,1,Undirected
+加納保昌P6-2○,P6-9,1,Undirected
+スガ菅原朔A12-5,P2-6,1,Undirected
+スガ菅原朔A12-5,P6-11,1,Undirected
+GoD6-1○,Kamoda,1,Undirected
+石原祥太郎Q2-2○,D11-2,1,Undirected
+H6-1,河野誠也C5-1○,1,Undirected
+H6-1,H6-4,2,Undirected
+H6-1,Q8-6,2,Undirected
+H6-1,H12-1,2,Undirected
+H6-1,Q12-3,2,Undirected
+H6-1,P8-1,2,Undirected
+H6-1,P8-3,2,Undirected
+H6-1,吉野幸一郎C5-1,1,Undirected
+Mim,Farjana SultanaQ1-7,1,Undirected
+Mim,Q2-12,1,Undirected
+峯島宏次D1-4,D2-4,1,Undirected
+峯島宏次D1-4,Q6-12,1,Undirected
+峯島宏次D1-4,D12-1,1,Undirected
+Zhu,JingyiA8-2○,1,Undirected
+橋本 敦史,迫田 航次郎,1,Undirected
+橋本 敦史,牛久 敦,1,Undirected
+橋本 敦史,小野 富三人,1,Undirected
+橋本 敦史,亀甲 博貴,1,Undirected
+橋本 敦史,森 信介,1,Undirected
+森田武史B9-3,P2-5,1,Undirected
+村脇有吾A1-5,C2-3,1,Undirected
+村脇有吾A1-5,D6-5,1,Undirected
+C8-2○,舟山弘晃C6-3,1,Undirected
+C8-2○,C8-1,1,Undirected
+C8-2○,C10-1,1,Undirected
+シナ品川政太朗H2-2,Q12-7,1,Undirected
+シナ品川政太朗H2-2,P2-10,1,Undirected
+IlkerQ9-3,Yildirim,1,Undirected
+C11-4,坂田一郎B9-5,1,Undirected
+オハ小原孝介Q2-5,Q2-6○,1,Undirected
+高村大也H3-1,H3-4,1,Undirected
+高村大也H3-1,P7-4,1,Undirected
+高村大也H3-1,P11-9,1,Undirected
+高村大也H3-1,P12-8,1,Undirected
+高村大也H3-1,P12-13,1,Undirected
+A11-4,西田京介H5-4,1,Undirected
+A11-4,B7-3○,1,Undirected
+A11-4,長谷川拓B7-3,1,Undirected
+Q3-11,後藤淳A3-1,1,Undirected
+Q3-11,P1-11,1,Undirected
+Choudhary,RitvikH6-3○,1,Undirected
+川上孝介H4-3,P11-3,1,Undirected
+赤間 怜奈,○佐藤 志貴,1,Undirected
+赤間 怜奈,大内 啓樹,1,Undirected
+赤間 怜奈,鈴木 潤,1,Undirected
+赤間 怜奈,乾 健太郎,1,Undirected
+P7-8,加藤大貴Q10-6,1,Undirected
+P7-8,駒水孝裕Q10-6,1,Undirected
+P7-8,平山高嗣Q10-6,1,Undirected
+P7-8,松平茅隼Q10-6,1,Undirected
+B7-3○,西田京介H5-4,1,Undirected
+ZikaiP7-5○,Chen,1,Undirected
+アリ有木康雄P8-4,P8-11,1,Undirected
+ShanshanQ2-11○,Liu,1,Undirected
+ShanshanQ2-11○,P12-9,1,Undirected
+ShanshanQ2-11○,P12-13○,1,Undirected
+Ng,YouyangH3-3,1,Undirected
+イソ磯暁B5-2,H10-4,1,Undirected
+中山功太B6-2,P9-7,1,Undirected
+SukminB7-4,Seo,1,Undirected
+IkukoP7-12,Hardaway,1,Undirected
+ニイ新国佳祐Q10-5,Q10-11,1,Undirected
+H3-4,P7-4,1,Undirected
+H3-4,P11-9,1,Undirected
+H3-4,P12-8,1,Undirected
+H3-4,P12-13,1,Undirected
+Feng,XincanC4-2○,1,Undirected
+久野雅樹Q10-3,P7-1,1,Undirected
+久野雅樹Q10-3,P9-2,1,Undirected
+P3-12○,山崎誠P3-11,1,Undirected
+P3-12○,P3-13,1,Undirected
+P3-12○,P9-11○,1,Undirected
+Q3-1,船越孝太郎Q1-1,1,Undirected
+Q3-1,H2-3,1,Undirected
+Q3-1,H7-2,1,Undirected
+Q3-1,P11-11,1,Undirected
+Yin JouH1-3,Huang,1,Undirected
+Yin JouH1-3,H7-4○,1,Undirected
+Yin JouH1-3,H8-2,1,Undirected
+C9-1,A4-3,1,Undirected
+C9-1,B6-3,1,Undirected
+C9-1,A9-4,1,Undirected
+C9-1,H10-2,1,Undirected
+C9-1,D12-2,1,Undirected
+D6-5,C2-3,1,Undirected
+YoungminB7-4,Baek,1,Undirected
+P4-6,荒瀬由紀Q1-4,1,Undirected
+吉永直樹C2-5○,P8-2,1,Undirected
+吉永直樹C2-5○,P10-6,1,Undirected
+Wang,AnB3-3,1,Undirected
+Wang,XiaotianA8-2,1,Undirected
+井之上直也Q1-7,Q2-12,1,Undirected
+井之上直也Q1-7,Q3-9,1,Undirected
+井之上直也Q1-7,C7-5,1,Undirected
+井之上直也Q1-7,Q8-14,1,Undirected
+小林尚輝Q3-1,Q6-11,1,Undirected
+D10-1,オト乙武北斗B3-4,1,Undirected
+D10-1,Q7-10,1,Undirected
+D10-1,コバ小林暁雄B3-4,1,Undirected
+Kāle,MaijaB10-1,1,Undirected
+シン新里顕大H1-4,B2-5,1,Undirected
+シン新里顕大H1-4,H8-4,1,Undirected
+シン新里顕大H1-4,B9-1,1,Undirected
+アオ青木洋一A5-4○,Q8-13,1,Undirected
+P2-1,モリ森信介Q9-5,1,Undirected
+P2-1,B11-5,1,Undirected
+P2-1,Q11-9,1,Undirected
+P2-1,P11-7,1,Undirected
+Coyne,StevenC6-4,1,Undirected
+Coyne,Q10-2○,1,Undirected
+オギ荻野正樹Q11-7,Q12-4,1,Undirected
+イナ稲田和明Q7-11,Q7-12,1,Undirected
+長谷部陽一郎A7-4,Q12-9○,1,Undirected
+ツル鶴岡慶雅Q3-10,Q9-1,1,Undirected
+ツル鶴岡慶雅Q3-10,Q12-13,1,Undirected
+ツル鶴岡慶雅Q3-10,P6-7,1,Undirected
+ツル鶴岡慶雅Q3-10,P7-5,1,Undirected
+A8-2,永田昌明Q4-7,1,Undirected
+A8-2,A8-5,1,Undirected
+A8-2,P12-4,1,Undirected
+YifeiA8-4○,Zhou,1,Undirected
+Saito,KazumasaQ6-13,1,Undirected
+柴田千尋Q8-8,Q8-11,1,Undirected
+柴田千尋Q8-8,P8-8,1,Undirected
+乾 健太郎,○佐藤 志貴,1,Undirected
+乾 健太郎,大内 啓樹,1,Undirected
+乾 健太郎,鈴木 潤,1,Undirected
+P12-13,石垣達也H3-1,1,Undirected
+P12-13,H11-1,1,Undirected
+P12-13,上原由衣H3-1,1,Undirected
+P12-13,P7-4,1,Undirected
+P12-13,P11-9,1,Undirected
+P12-13,P12-8,1,Undirected
+B2-5,H8-4,1,Undirected
+B2-5,B9-1,1,Undirected
+Li,ShengA5-2,1,Undirected
+Li,YunmengA9-5○,1,Undirected
+Shimomoto,Erica KidoP7-4○,1,Undirected
+Q12-7,P2-10,1,Undirected
+田口亮C6-1,Q10-7,1,Undirected
+Brian KenjiC10-2,Iwana,1,Undirected
+大野誠寛H8-3,Q12-12,1,Undirected
+大野誠寛H8-3,P12-10,1,Undirected
+D10-5○,土井惟成A9-4,1,Undirected
+B9-2,Pereira,1,Undirected
+B9-2,Lis KanashiroC4-3,1,Undirected
+TerumasaQ10-13○,Ehara,1,Undirected
+P9-2,P7-1,1,Undirected
+オカ岡照晃Q2-8,Q4-13,1,Undirected
+オカ岡照晃Q2-8,P2-11,1,Undirected
+オカ岡照晃Q2-8,P6-10,1,Undirected
+オカ岡照晃Q2-8,P10-3,1,Undirected
+P12-9,Liu,1,Undirected
+P12-9,P12-13○,1,Undirected
+B5-5,後藤啓介C2-4,1,Undirected
+Q6-6,佐藤理史A2-4,1,Undirected
+Q6-6,C5-2,1,Undirected
+Q6-6,C9-5,1,Undirected
+C11-5,森辰則Q4-6,1,Undirected
+C11-5,P4-1,1,Undirected
+金子正弘H4-5○,A7-3,1,Undirected
+金子正弘H4-5○,A9-1,1,Undirected
+Dong,NaP7-9○,1,Undirected
+西口純代P3-10○,P7-13○,1,Undirected
+P6-7,Q9-1,1,Undirected
+P6-7,Q12-13,1,Undirected
+P6-7,P7-5,1,Undirected
+B12-2○,大友寛之B11-1,1,Undirected
+C5-2,佐藤理史A2-4,1,Undirected
+C5-2,C9-5,1,Undirected
+H8-4,B9-1,1,Undirected
+C8-5,ウト宇都雅輝Q1-5,1,Undirected
+C8-5,C8-3,1,Undirected
+マエ前川在Q3-1○,Q6-11○,1,Undirected
+Naradowsky,JasonH3-4,1,Undirected
+B11-5,モリ森信介Q9-5,1,Undirected
+B11-5,Q11-9,1,Undirected
+B11-5,P11-7,1,Undirected
+P2-9,田中英輝A2-3,1,Undirected
+P9-5,上田亮D3-2○,1,Undirected
+P9-5,A4-3,1,Undirected
+P9-5,H10-2,1,Undirected
+シブ渋木英潔B3-4,Q4-2○,1,Undirected
+シブ渋木英潔B3-4,B6-2,1,Undirected
+Q6-12,D2-4,1,Undirected
+Q6-12,D12-1,1,Undirected
+タキ滝口哲也P8-4,P8-11,1,Undirected
+Tang,YingtianQ9-3,1,Undirected
+P11-7,モリ森信介Q9-5,1,Undirected
+P11-7,Q11-9,1,Undirected
+H8-5,アマ天沼博H5-5,1,Undirected
+鈴木良弥P7-11,P11-13,1,Undirected
+Q4-13,P2-11,1,Undirected
+Q4-13,P6-10,1,Undirected
+Q4-13,P10-3,1,Undirected
+山田寛章A3-1,Q3-2,1,Undirected
+山田寛章A3-1,A7-2,1,Undirected
+山田寛章A3-1,P4-2,1,Undirected
+P8-8,Q8-11,1,Undirected
+○佐藤 志貴,大内 啓樹,1,Undirected
+○佐藤 志貴,鈴木 潤,1,Undirected
+ウト宇都雅輝Q1-5,C8-3,1,Undirected
+笹野 遼平,○山田 康輔,1,Undirected
+笹野 遼平,武田 浩一,1,Undirected
+P11-9,P7-4,1,Undirected
+P11-9,P12-8,1,Undirected
+D12-2,A4-3,1,Undirected
+D12-2,B6-3,1,Undirected
+D12-2,A9-4,1,Undirected
+D12-2,H10-2,1,Undirected
+D11-2○,大村和正C2-3,1,Undirected
+P10-10,村上仁一D1-2,1,Undirected
+P10-10,A8-3○,1,Undirected
+P10-10,P10-11,1,Undirected
+P10-10,P10-12,1,Undirected
+井手竜也H1-4○,B2-5○,1,Undirected
+井手竜也H1-4○,H7-1,1,Undirected
+井手竜也H1-4○,B9-1,1,Undirected
+Q4-2○,B6-2,1,Undirected
+H8-2,Huang,1,Undirected
+H8-2,H7-4○,1,Undirected
+C11-1,ミナ南泰浩H1-2,1,Undirected
+C11-1,Q10-9,1,Undirected
+C11-1,P8-7,1,Undirected
+荒瀬 由紀,○高山 隼矢,1,Undirected
+荒瀬 由紀,梶原 智之,1,Undirected
+P4-2,Q3-2,1,Undirected
+P4-2,A7-2,1,Undirected
+張信鵬Q7-11,Q7-12,1,Undirected
+P1-8,マス桝井文人A12-3,1,Undirected
+榮田亮真H1-4,H7-1○,1,Undirected
+榮田亮真H1-4,B9-1,1,Undirected
+石井太河D3-2,Q6-3○,1,Undirected
+仲田明良A10-2,P4-4,1,Undirected
+Q12-3,河野誠也C5-1○,1,Undirected
+Q12-3,H6-4,2,Undirected
+Q12-3,Q8-6,2,Undirected
+Q12-3,H12-1,2,Undirected
+Q12-3,P8-1,2,Undirected
+Q12-3,P8-3,2,Undirected
+Q12-3,吉野幸一郎C5-1,1,Undirected
+C8-1,舟山弘晃C6-3,1,Undirected
+C8-1,C10-1,1,Undirected
+H2-3,船越孝太郎Q1-1,1,Undirected
+H2-3,H7-2,1,Undirected
+H2-3,P11-11,1,Undirected
+伊藤滉一朗Q1-8,Q12-12○,1,Undirected
+P4-1,森辰則Q4-6,1,Undirected
+P8-2,P10-6,1,Undirected
+平子潤Q6-4○,P7-10○,1,Undirected
+P3-8○,宮川創P3-6,1,Undirected
+A9-4,A4-3,1,Undirected
+A9-4,B6-3,1,Undirected
+A9-4,H10-2,1,Undirected
+佐藤理史A2-4,C9-5,1,Undirected
+Q2-12,Q3-9,1,Undirected
+Q2-12,C7-5,3,Undirected
+Q2-12,Q8-14,1,Undirected
+Q2-12,Guerraoui,1,Undirected
+Q2-12,CaméliaQ1-7○,1,Undirected
+Q2-12,Farjana SultanaQ1-7,1,Undirected
+Q2-12,Reisert,1,Undirected
+Q2-12,PaulQ1-7,1,Undirected
+増山繁Q8-12,P11-10,1,Undirected
+Ptaszynski,M.P1-8,1,Undirected
+石垣達也H3-1,H11-1,1,Undirected
+○山田 康輔,武田 浩一,1,Undirected
+村上仁一D1-2,A8-3○,1,Undirected
+村上仁一D1-2,P10-11,1,Undirected
+村上仁一D1-2,P10-12,1,Undirected
+C2-4○,神田峻介C2-1,1,Undirected
+迫田 航次郎,牛久 敦,1,Undirected
+迫田 航次郎,小野 富三人,1,Undirected
+迫田 航次郎,亀甲 博貴,1,Undirected
+迫田 航次郎,森 信介,1,Undirected
+Kim,GeewookB7-4,1,Undirected
+StevenC6-4,Q10-2○,1,Undirected
+竹内孔一Q2-5,Q2-6,1,Undirected
+竹内孔一Q2-5,C10-4,1,Undirected
+A7-3,A9-1,1,Undirected
+Oh,Jong-HoonQ8-9,1,Undirected
+P12-3○,ワン王昊H9-5,1,Undirected
+P10-3,P2-11,1,Undirected
+P10-3,P6-10,1,Undirected
+P2-11,P6-10,1,Undirected
+Q12-12,P12-10,1,Undirected
+Jonathan R.Q10-10,Brennan,1,Undirected
+Q2-14,吉田一星B1-5,1,Undirected
+Q2-14,B4-1,1,Undirected
+Q10-2,Galvan-Sosa,1,Undirected
+Q10-2,DianaC6-4○,1,Undirected
+山﨑康之介H6-1,Q12-3○,1,Undirected
+P2-6,P6-11,1,Undirected
+P2-6,武田浩一C4-4,1,Undirected
+P2-6,C10-5,1,Undirected
+P2-6,A12-2,1,Undirected
+P2-6,P4-8,1,Undirected
+P2-6,P7-10,1,Undirected
+Q9-1,Q12-13,1,Undirected
+Q9-1,P7-5,1,Undirected
+中村誠Q7-9,P1-10,1,Undirected
+C5-4,西田昌史Q1-2,1,Undirected
+C10-5,武田浩一C4-4,1,Undirected
+C10-5,A12-2,1,Undirected
+C10-5,P4-8,1,Undirected
+C10-5,P7-10,1,Undirected
+梶原 智之,○高山 隼矢,1,Undirected
+CaméliaQ1-7○,Guerraoui,1,Undirected
+CaméliaQ1-7○,C7-5,1,Undirected
+P10-9○,宮﨑太郎Q3-11,1,Undirected
+舟山弘晃C6-3,C10-1,1,Undirected
+P12-13○,Liu,1,Undirected
+B2-5○,H7-1,1,Undirected
+B2-5○,B9-1,1,Undirected
+A4-3,上田亮D3-2○,1,Undirected
+A4-3,H10-2,2,Undirected
+A4-3,B6-3,1,Undirected
+C2-3○,コダ児玉貴志H1-3○,1,Undirected
+Muangkammuen,PanitanP7-11○,1,Undirected
+D1-4,ベッ戸次大介C1-2,1,Undirected
+D1-4,B6-3,1,Undirected
+D1-4,C9-3,1,Undirected
+D1-4,D12-2○,1,Undirected
+D1-4,D12-4,1,Undirected
+H2-1,赤間怜奈H1-1○,1,Undirected
+H2-1,H2-5,1,Undirected
+H2-1,B8-1,1,Undirected
+ベッ戸次大介C1-2,B6-3,1,Undirected
+ベッ戸次大介C1-2,C9-3,1,Undirected
+ベッ戸次大介C1-2,D12-2○,1,Undirected
+ベッ戸次大介C1-2,D12-4,1,Undirected
+山崎誠P3-11,P3-13,1,Undirected
+山崎誠P3-11,P9-11○,1,Undirected
+B6-3,C9-3,1,Undirected
+B6-3,D12-2○,1,Undirected
+B6-3,D12-4,1,Undirected
+B6-3,H10-2,1,Undirected
+XuchenH3-5,Yang,1,Undirected
+P11-11,船越孝太郎Q1-1,1,Undirected
+P11-11,H7-2,1,Undirected
+D12-2○,C9-3,1,Undirected
+D12-2○,D12-4,1,Undirected
+Guerraoui,C7-5,1,Undirected
+P7-5,Q12-13,1,Undirected
+Chen,JunjieA9-4,1,Undirected
+P12-12,ユア湯浅亮也P2-13○,1,Undirected
+P3-8,タグ田口智大P3-6○,1,Undirected
+船越孝太郎Q1-1,H7-2,1,Undirected
+カラ唐井希B7-5○,P2-8,1,Undirected
+P3-13,トウ東条佳奈P3-11,1,Undirected
+P3-13,P9-11○,1,Undirected
+H12-1,河野誠也C5-1○,1,Undirected
+H12-1,H6-4,2,Undirected
+H12-1,Q8-6,2,Undirected
+H12-1,P8-1,2,Undirected
+H12-1,P8-3,2,Undirected
+H12-1,吉野幸一郎C5-1,1,Undirected
+P8-1,河野誠也C5-1○,1,Undirected
+P8-1,H6-4,2,Undirected
+P8-1,Q8-6,2,Undirected
+P8-1,P8-3,2,Undirected
+P8-1,吉野幸一郎C5-1,1,Undirected
+IglikaP6-8○,Nikolova-Stoupak,1,Undirected
+Q7-10,オト乙武北斗B3-4,1,Undirected
+Q8-7○,二宮大空Q8-5,1,Undirected
+P10-12,A8-3○,1,Undirected
+P10-12,P10-11,1,Undirected
+吉田一星B1-5,B4-1,1,Undirected
+Q8-13○,クド工藤慧音A5-4,1,Undirected
+Q8-13○,B8-1,1,Undirected
+EdisonD2-5,Marrese-Taylor,1,Undirected
+EdisonD2-5,Q3-4,1,Undirected
+EdisonD2-5,P7-4,1,Undirected
+P1-11,後藤淳A3-1,1,Undirected
+WeihaoH3-5○,Mao,1,Undirected
+小川浩平Q6-6,C9-5,1,Undirected
+チカ近添淳一B5-2,H10-4,1,Undirected
+YutaroQ9-3○,Yamada,1,Undirected
+Torisawa,KentaroQ8-9,1,Undirected
+Bui TuanA2-5○,Thanh,1,Undirected
+D2-4,D12-1,1,Undirected
+C10-4,Q2-6,1,Undirected
+P8-3,桂井麻里衣Q11-4,1,Undirected
+P8-3,河野誠也C5-1○,1,Undirected
+P8-3,H6-4,2,Undirected
+P8-3,Q8-6,2,Undirected
+P8-3,吉野幸一郎C5-1,1,Undirected
+DianaC6-4○,Galvan-Sosa,1,Undirected
+H2-5,赤間怜奈H1-1○,1,Undirected
+H2-5,B8-1,1,Undirected
+C9-3,D12-4,1,Undirected
+H10-2,上田亮D3-2○,1,Undirected
+Q8-14,Q3-9,1,Undirected
+Q8-14,C7-5,1,Undirected
+Q3-4,Marrese-Taylor,1,Undirected
+Q3-4,P7-4,1,Undirected
+B9-1,H7-1,1,Undirected
+B9-1,H7-1○,1,Undirected
+Marrese-Taylor,P7-4,1,Undirected
+多村新平Q2-5,Q2-6,1,Undirected
+P12-8,P7-4,1,Undirected
+吉川将司C4-5,A5-4,1,Undirected
+吉川将司C4-5,Q8-13,1,Undirected
+今村賢治P6-1,P6-13○,1,Undirected
+今村賢治P6-1,P10-1○,1,Undirected
+河野誠也C5-1○,H6-4,1,Undirected
+河野誠也C5-1○,Q8-6,1,Undirected
+クド工藤慧音A5-4,B8-1,1,Undirected
+ナラ楢木悠士H11-5,P12-2○,1,Undirected
+A8-3○,P10-11,1,Undirected
+Q8-6,H6-4,2,Undirected
+Q8-6,吉野幸一郎C5-1,1,Undirected
+P4-8,武田浩一C4-4,1,Undirected
+P4-8,A12-2,1,Undirected
+P4-8,P7-10,1,Undirected
+岩倉友哉Q6-5,P3-5,1,Undirected
+P7-10,武田浩一C4-4,1,Undirected
+P7-10,A12-2,1,Undirected
+C7-5,Q3-9,1,Undirected
+C7-5,Reisert,1,Undirected
+C7-5,PaulQ1-7,1,Undirected
+モリ森信介Q9-5,Q11-9,1,Undirected
+森 信介,牛久 敦,1,Undirected
+森 信介,小野 富三人,1,Undirected
+森 信介,亀甲 博貴,1,Undirected
+Huang,H7-4○,1,Undirected
+A7-2,Q3-2,1,Undirected
+Q8-13,A5-4,1,Undirected
+Q10-9,ミナ南泰浩H1-2,1,Undirected
+Q10-9,P8-7,1,Undirected
+Lis KanashiroC4-3,Pereira,1,Undirected
+伊藤拓海(東北大)B1-1,A9-3○,1,Undirected
+P12-4,永田昌明Q4-7,1,Undirected
+P12-4,A8-5,1,Undirected
+H6-4,吉野幸一郎C5-1,1,Undirected
+A12-2,武田浩一C4-4,1,Undirected
+鈴木 潤,大内 啓樹,1,Undirected
+P6-13○,P10-1○,1,Undirected
+PaulQ1-7,Reisert,1,Undirected
+牛久 敦,小野 富三人,1,Undirected
+牛久 敦,亀甲 博貴,1,Undirected
+P8-7,ミナ南泰浩H1-2,1,Undirected
+小野 富三人,亀甲 博貴,1,Undirected
+A8-5,永田昌明Q4-7,1,Undirected
+赤間怜奈H1-1○,B8-1,1,Undirected

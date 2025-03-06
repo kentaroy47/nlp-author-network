@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ボタンテスト</title>
+    <style>
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .active {
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>ボタンクリックテスト</h1>
+    
+    <div id="buttons"></div>
+    <div id="result" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc;"></div>
+    
+    <script>
+        // ボタン生成関数
+        function createButtons() {
+            const container = document.getElementById('buttons');
+            const years = ["all", 2021, 2022, 2023, 2024, 2025];
+            
+            years.forEach(year => {
+                const btn = document.createElement('button');
+                btn.textContent = year === "all" ? "全期間" : year + "年";
+                
+                // クリックイベント
+                btn.addEventListener('click', function() {
+                    // 全ボタンからアクティブクラスを削除
+                    document.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                    // このボタンにアクティブクラスを追加
+                    this.classList.add('active');
+                    // 結果表示
+                    document.getElementById('result').textContent = year + " が選択されました";
+                    
+                    console.log(year + " ボタンがクリックされました");
+                    alert(year + " ボタンがクリックされました"); // 確認用アラート
+                });
+                
+                container.appendChild(btn);
+            });
+        }
+        
+        // 初期化
+        createButtons();
+    </script>
+</body>
+</html>

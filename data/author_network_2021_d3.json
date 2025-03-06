@@ -1,0 +1,8166 @@
+{
+  "nodes": [
+    {
+      "id": "",
+      "name": "",
+      "papers": 2,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 0
+    },
+    {
+      "id": "P2-20",
+      "name": "P2-20",
+      "papers": 2,
+      "degree": 0.007473841554559044,
+      "betweenness": 0.0,
+      "eigenvector": 4.97035207550745e-16,
+      "pagerank": 0.0035013526954981405,
+      "community": 1
+    },
+    {
+      "id": "土屋雅稔P2-14○",
+      "name": "土屋雅稔P2-14○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 2
+    },
+    {
+      "id": "A8-4",
+      "name": "A8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 3
+    },
+    {
+      "id": "藤田早苗E4-4",
+      "name": "藤田早苗E4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 4
+    },
+    {
+      "id": "イケ池美礼P6-6",
+      "name": "イケ池美礼P6-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 5
+    },
+    {
+      "id": "Song",
+      "name": "Song",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 6
+    },
+    {
+      "id": "橘健太郎D2-3",
+      "name": "橘健太郎D2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 7
+    },
+    {
+      "id": "Zhao",
+      "name": "Zhao",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 8
+    },
+    {
+      "id": "C3-3",
+      "name": "C3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 9
+    },
+    {
+      "id": "D8-4",
+      "name": "D8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 10
+    },
+    {
+      "id": "オカ岡佑依P7-7○",
+      "name": "オカ岡佑依P7-7○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 11
+    },
+    {
+      "id": "P7-18",
+      "name": "P7-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 12
+    },
+    {
+      "id": "A3:機械翻訳(3)Zoom",
+      "name": "A3:機械翻訳(3)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 13
+    },
+    {
+      "id": "シイ椎名広光P8-6",
+      "name": "シイ椎名広光P8-6",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 14
+    },
+    {
+      "id": "西口純代P1-14○",
+      "name": "西口純代P1-14○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 15
+    },
+    {
+      "id": "P3-17○",
+      "name": "P3-17○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 16
+    },
+    {
+      "id": "ホリ堀内靖雄P4-15",
+      "name": "ホリ堀内靖雄P4-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 17
+    },
+    {
+      "id": "D3-4",
+      "name": "D3-4",
+      "papers": 3,
+      "degree": 0.01195814648729447,
+      "betweenness": 8.950708448573705e-05,
+      "eigenvector": 1.2610308927743912e-09,
+      "pagerank": 0.005275733652878561,
+      "community": 255
+    },
+    {
+      "id": "古山翔太P5-18○",
+      "name": "古山翔太P5-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 19
+    },
+    {
+      "id": "Prakhar",
+      "name": "Prakhar",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 20
+    },
+    {
+      "id": "P9-9",
+      "name": "P9-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 21
+    },
+    {
+      "id": "佐藤俊P6-18○",
+      "name": "佐藤俊P6-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 22
+    },
+    {
+      "id": "中林明子A9-1○",
+      "name": "中林明子A9-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 23
+    },
+    {
+      "id": "Ma",
+      "name": "Ma",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 24
+    },
+    {
+      "id": "P9-8",
+      "name": "P9-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 25
+    },
+    {
+      "id": "YvesB8-4",
+      "name": "YvesB8-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 26
+    },
+    {
+      "id": "加藤恒昭A9-1",
+      "name": "加藤恒昭A9-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 27
+    },
+    {
+      "id": "P6-12",
+      "name": "P6-12",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 28
+    },
+    {
+      "id": "村脇有吾C3-3",
+      "name": "村脇有吾C3-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 29
+    },
+    {
+      "id": "E5-3",
+      "name": "E5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 30
+    },
+    {
+      "id": "略歴：",
+      "name": "略歴：",
+      "papers": 2,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 31
+    },
+    {
+      "id": "ウシ牛久祥孝P5-13",
+      "name": "ウシ牛久祥孝P5-13",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 32
+    },
+    {
+      "id": "P4-12",
+      "name": "P4-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 33
+    },
+    {
+      "id": "Martin",
+      "name": "Martin",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 34
+    },
+    {
+      "id": "高塚雅人P1-16○",
+      "name": "高塚雅人P1-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 35
+    },
+    {
+      "id": "P2-7",
+      "name": "P2-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 36
+    },
+    {
+      "id": "荒瀬由紀C1-2",
+      "name": "荒瀬由紀C1-2",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 8.185361686784561e-29,
+      "pagerank": 0.002420750625346439,
+      "community": 37
+    },
+    {
+      "id": "E7-1",
+      "name": "E7-1",
+      "papers": 1,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.0,
+      "eigenvector": 1.1935618854887326e-09,
+      "pagerank": 0.0037463757531993455,
+      "community": 255
+    },
+    {
+      "id": "Qiao",
+      "name": "Qiao",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 38
+    },
+    {
+      "id": "Wu",
+      "name": "Wu",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 39
+    },
+    {
+      "id": "マト的場成紀P9-4○",
+      "name": "マト的場成紀P9-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 40
+    },
+    {
+      "id": "Goh",
+      "name": "Goh",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 41
+    },
+    {
+      "id": "D8-3",
+      "name": "D8-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 42
+    },
+    {
+      "id": "杉本海人P4-19○",
+      "name": "杉本海人P4-19○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 43
+    },
+    {
+      "id": "ツチ土屋彩夏P6-13",
+      "name": "ツチ土屋彩夏P6-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 44
+    },
+    {
+      "id": "野村ホールディングス株式会社",
+      "name": "野村ホールディングス株式会社",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 45
+    },
+    {
+      "id": "安本玄樹A8-2○",
+      "name": "安本玄樹A8-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 46
+    },
+    {
+      "id": "C9-1○",
+      "name": "C9-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 47
+    },
+    {
+      "id": "P1-15",
+      "name": "P1-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 48
+    },
+    {
+      "id": "P7-2",
+      "name": "P7-2",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 49
+    },
+    {
+      "id": "岩本蘭A1-4○",
+      "name": "岩本蘭A1-4○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 50
+    },
+    {
+      "id": "A5-2",
+      "name": "A5-2",
+      "papers": 2,
+      "degree": 0.007473841554559044,
+      "betweenness": 0.0,
+      "eigenvector": 4.97035207550745e-16,
+      "pagerank": 0.0035013526954981405,
+      "community": 1
+    },
+    {
+      "id": "E8-3",
+      "name": "E8-3",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 29
+    },
+    {
+      "id": "P2-4",
+      "name": "P2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 51
+    },
+    {
+      "id": "D9-2",
+      "name": "D9-2",
+      "papers": 3,
+      "degree": 0.007473841554559044,
+      "betweenness": 2.6852125345721114e-05,
+      "eigenvector": 1.851366944143427e-28,
+      "pagerank": 0.005281241683565263,
+      "community": 37
+    },
+    {
+      "id": "E4:語彙資源・辞書(2)Zoom",
+      "name": "E4:語彙資源・辞書(2)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 53
+    },
+    {
+      "id": "P5-19",
+      "name": "P5-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 54
+    },
+    {
+      "id": "宮地航太P9-16○",
+      "name": "宮地航太P9-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 55
+    },
+    {
+      "id": "井手竜也B4-2○",
+      "name": "井手竜也B4-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 56
+    },
+    {
+      "id": "E6-2",
+      "name": "E6-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 57
+    },
+    {
+      "id": "オリ折口希実P8-18○",
+      "name": "オリ折口希実P8-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 58
+    },
+    {
+      "id": "太田博三D9-4○",
+      "name": "太田博三D9-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 59
+    },
+    {
+      "id": "イジ石橋陽典P3-17",
+      "name": "イジ石橋陽典P3-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 60
+    },
+    {
+      "id": "A3-2",
+      "name": "A3-2",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 8.185361686784562e-29,
+      "pagerank": 0.0024207506253464393,
+      "community": 37
+    },
+    {
+      "id": "笹野遼平P3-9",
+      "name": "笹野遼平P3-9",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 4.5328597564276865e-28,
+      "pagerank": 0.002794148325145206,
+      "community": 61
+    },
+    {
+      "id": "【タ行】",
+      "name": "【タ行】",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 62
+    },
+    {
+      "id": "P5-16",
+      "name": "P5-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 63
+    },
+    {
+      "id": "P8-18",
+      "name": "P8-18",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 64
+    },
+    {
+      "id": "P8-17",
+      "name": "P8-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 65
+    },
+    {
+      "id": "P3-11",
+      "name": "P3-11",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 66
+    },
+    {
+      "id": "徳永理子P6-5",
+      "name": "徳永理子P6-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 67
+    },
+    {
+      "id": "C8:知識獲得・情報抽出(5)Zoom",
+      "name": "C8:知識獲得・情報抽出(5)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 68
+    },
+    {
+      "id": "P4-19",
+      "name": "P4-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 69
+    },
+    {
+      "id": "Tellols",
+      "name": "Tellols",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 70
+    },
+    {
+      "id": "P7-8",
+      "name": "P7-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 71
+    },
+    {
+      "id": "イワ岩倉友哉C5-4",
+      "name": "イワ岩倉友哉C5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 72
+    },
+    {
+      "id": "杉山雅和P8-1",
+      "name": "杉山雅和P8-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 73
+    },
+    {
+      "id": "浅原正幸C2-3",
+      "name": "浅原正幸C2-3",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 2.4774857078314337e-26,
+      "pagerank": 0.0031729967321722265,
+      "community": 74
+    },
+    {
+      "id": "E7-2",
+      "name": "E7-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 75
+    },
+    {
+      "id": "P5-17",
+      "name": "P5-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 76
+    },
+    {
+      "id": "嶋村昌義P2-2",
+      "name": "嶋村昌義P2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 77
+    },
+    {
+      "id": "森純一郎B6-3",
+      "name": "森純一郎B6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 78
+    },
+    {
+      "id": "MatissP7-10",
+      "name": "MatissP7-10",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 79
+    },
+    {
+      "id": "P3-21",
+      "name": "P3-21",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 80
+    },
+    {
+      "id": "P3-17",
+      "name": "P3-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 81
+    },
+    {
+      "id": "P2-2",
+      "name": "P2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 82
+    },
+    {
+      "id": "長谷川拓C1-4○",
+      "name": "長谷川拓C1-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 83
+    },
+    {
+      "id": "大湖卓也D3-3",
+      "name": "大湖卓也D3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 84
+    },
+    {
+      "id": "C9-1",
+      "name": "C9-1",
+      "papers": 1,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.0035456237268344207,
+      "community": 377
+    },
+    {
+      "id": "カキ垣渕太成A1-2○",
+      "name": "カキ垣渕太成A1-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 86
+    },
+    {
+      "id": "C4-1",
+      "name": "C4-1",
+      "papers": 3,
+      "degree": 0.016442451420029897,
+      "betweenness": 0.00012978527250431872,
+      "eigenvector": 0.0010082616119287328,
+      "pagerank": 0.006748044023844946,
+      "community": 87
+    },
+    {
+      "id": "セツ薛強P8-9○",
+      "name": "セツ薛強P8-9○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 88
+    },
+    {
+      "id": "P4-6",
+      "name": "P4-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 89
+    },
+    {
+      "id": "E1-2",
+      "name": "E1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 90
+    },
+    {
+      "id": "ヤダ矢田竣太郎P5-12",
+      "name": "ヤダ矢田竣太郎P5-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 91
+    },
+    {
+      "id": "B7-4",
+      "name": "B7-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 92
+    },
+    {
+      "id": "Shimizu",
+      "name": "Shimizu",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 93
+    },
+    {
+      "id": "D4-3",
+      "name": "D4-3",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 94
+    },
+    {
+      "id": "高橋諒A7-3",
+      "name": "高橋諒A7-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 2.1938250937483668e-10,
+      "pagerank": 0.0010636923607450807,
+      "community": 255
+    },
+    {
+      "id": "Wang",
+      "name": "Wang",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 95
+    },
+    {
+      "id": "サガ佐賀健志P1-18○",
+      "name": "サガ佐賀健志P1-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 96
+    },
+    {
+      "id": "D4-4",
+      "name": "D4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 97
+    },
+    {
+      "id": "フ 符家俊P9-2○",
+      "name": "フ 符家俊P9-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 98
+    },
+    {
+      "id": "P3-2",
+      "name": "P3-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 99
+    },
+    {
+      "id": "D8-1",
+      "name": "D8-1",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 32
+    },
+    {
+      "id": "平林照雄P6-8○",
+      "name": "平林照雄P6-8○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 100
+    },
+    {
+      "id": "P1-5",
+      "name": "P1-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 101
+    },
+    {
+      "id": "クマ熊谷賢P3-16",
+      "name": "クマ熊谷賢P3-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 102
+    },
+    {
+      "id": "大武美保子P3-12",
+      "name": "大武美保子P3-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 103
+    },
+    {
+      "id": "P2-1",
+      "name": "P2-1",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 8.950708448573705e-06,
+      "eigenvector": 3.6294627822740304e-39,
+      "pagerank": 0.004829875091105076,
+      "community": 104
+    },
+    {
+      "id": "A8:機械翻訳(6)Zoom",
+      "name": "A8:機械翻訳(6)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 105
+    },
+    {
+      "id": "P2-18",
+      "name": "P2-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 106
+    },
+    {
+      "id": "P7-15",
+      "name": "P7-15",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 107
+    },
+    {
+      "id": "P4-5",
+      "name": "P4-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 108
+    },
+    {
+      "id": "クボ久保圭D5-1",
+      "name": "クボ久保圭D5-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 109
+    },
+    {
+      "id": "P1-9",
+      "name": "P1-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 110
+    },
+    {
+      "id": "カノ狩野芳伸P4-14",
+      "name": "カノ狩野芳伸P4-14",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 111
+    },
+    {
+      "id": "中川慧P3-20",
+      "name": "中川慧P3-20",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 112
+    },
+    {
+      "id": "A8-2",
+      "name": "A8-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 113
+    },
+    {
+      "id": "JUNFU",
+      "name": "JUNFU",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 114
+    },
+    {
+      "id": "P2-14",
+      "name": "P2-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 115
+    },
+    {
+      "id": "P1-20",
+      "name": "P1-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 116
+    },
+    {
+      "id": "小川哲司A1-3",
+      "name": "小川哲司A1-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 117
+    },
+    {
+      "id": "D7-2",
+      "name": "D7-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 118
+    },
+    {
+      "id": "P4-13",
+      "name": "P4-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 119
+    },
+    {
+      "id": "トリ鳥澤健太郎P7-19",
+      "name": "トリ鳥澤健太郎P7-19",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 3.967402327233858e-49,
+      "pagerank": 0.0025578802503668555,
+      "community": 120
+    },
+    {
+      "id": "E4-3",
+      "name": "E4-3",
+      "papers": 3,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.00011635920983145816,
+      "eigenvector": 0.07308304389113897,
+      "pagerank": 0.004341364401344157,
+      "community": 377
+    },
+    {
+      "id": "D5-3",
+      "name": "D5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 122
+    },
+    {
+      "id": "フク福島健司P5-10○",
+      "name": "フク福島健司P5-10○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 123
+    },
+    {
+      "id": "C2-2",
+      "name": "C2-2",
+      "papers": 2,
+      "degree": 0.007473841554559044,
+      "betweenness": 0.0,
+      "eigenvector": 4.97035207550745e-16,
+      "pagerank": 0.0035013526954981405,
+      "community": 1
+    },
+    {
+      "id": "A3-3",
+      "name": "A3-3",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 124
+    },
+    {
+      "id": "Benjamin",
+      "name": "Benjamin",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 125
+    },
+    {
+      "id": "P3-4",
+      "name": "P3-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 126
+    },
+    {
+      "id": "P8-20",
+      "name": "P8-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 127
+    },
+    {
+      "id": "A6-4",
+      "name": "A6-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 128
+    },
+    {
+      "id": "IkukoP2-12",
+      "name": "IkukoP2-12",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 129
+    },
+    {
+      "id": "Li",
+      "name": "Li",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 4.475354224286852e-06,
+      "eigenvector": 5.610754178564702e-49,
+      "pagerank": 0.004762881680641859,
+      "community": 130
+    },
+    {
+      "id": "山元航平P9-9○",
+      "name": "山元航平P9-9○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 131
+    },
+    {
+      "id": "E2-2",
+      "name": "E2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 132
+    },
+    {
+      "id": "ウダ宇田川拓真P8-11○",
+      "name": "ウダ宇田川拓真P8-11○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 133
+    },
+    {
+      "id": "D6-4",
+      "name": "D6-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 134
+    },
+    {
+      "id": "松本悠太B8-3○",
+      "name": "松本悠太B8-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 135
+    },
+    {
+      "id": "P5-8",
+      "name": "P5-8",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.101875650867189e-39,
+      "pagerank": 0.003239350659141706,
+      "community": 104
+    },
+    {
+      "id": "イシ石井愛P9-11○",
+      "name": "イシ石井愛P9-11○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 136
+    },
+    {
+      "id": "P1-4",
+      "name": "P1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 137
+    },
+    {
+      "id": "P6-5",
+      "name": "P6-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 138
+    },
+    {
+      "id": "E1-3",
+      "name": "E1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 139
+    },
+    {
+      "id": "YoumiC7-3○",
+      "name": "YoumiC7-3○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 24
+    },
+    {
+      "id": "ゴ 呉剣明P8-8",
+      "name": "ゴ 呉剣明P8-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 140
+    },
+    {
+      "id": "大西恒彰E8-2",
+      "name": "大西恒彰E8-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 141
+    },
+    {
+      "id": "大西孝宗P8-6○",
+      "name": "大西孝宗P8-6○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 142
+    },
+    {
+      "id": "E1-4",
+      "name": "E1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 143
+    },
+    {
+      "id": "山田悠右B7-3",
+      "name": "山田悠右B7-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 144
+    },
+    {
+      "id": "P3-10",
+      "name": "P3-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 145
+    },
+    {
+      "id": "P8-10",
+      "name": "P8-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 146
+    },
+    {
+      "id": "A5:質問応答(1)Zoom",
+      "name": "A5:質問応答(1)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 147
+    },
+    {
+      "id": "B9-2",
+      "name": "B9-2",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 148
+    },
+    {
+      "id": "吉川将司B1-3○",
+      "name": "吉川将司B1-3○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 2.4272796761250917e-10,
+      "pagerank": 0.0018342512600710652,
+      "community": 255
+    },
+    {
+      "id": "P4-6○",
+      "name": "P4-6○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 150
+    },
+    {
+      "id": "D1-3",
+      "name": "D1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 151
+    },
+    {
+      "id": "P4-20",
+      "name": "P4-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 152
+    },
+    {
+      "id": "仲村祐希A7-3○",
+      "name": "仲村祐希A7-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 153
+    },
+    {
+      "id": "WeiP1-20○",
+      "name": "WeiP1-20○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 154
+    },
+    {
+      "id": "P7-7",
+      "name": "P7-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 155
+    },
+    {
+      "id": "B4-3",
+      "name": "B4-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 156
+    },
+    {
+      "id": "横野光E2-2",
+      "name": "横野光E2-2",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 157
+    },
+    {
+      "id": "P1-16",
+      "name": "P1-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 158
+    },
+    {
+      "id": "加納保昌P1-9○",
+      "name": "加納保昌P1-9○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 159
+    },
+    {
+      "id": "田森秀明B6-4",
+      "name": "田森秀明B6-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 160
+    },
+    {
+      "id": "野本忠司B3-2○",
+      "name": "野本忠司B3-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 161
+    },
+    {
+      "id": "P9-2",
+      "name": "P9-2",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 162
+    },
+    {
+      "id": "P5-14",
+      "name": "P5-14",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 163
+    },
+    {
+      "id": "TengyangA5-3",
+      "name": "TengyangA5-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 164
+    },
+    {
+      "id": "E7-4",
+      "name": "E7-4",
+      "papers": 4,
+      "degree": 0.014947683109118088,
+      "betweenness": 0.00015663739785003983,
+      "eigenvector": 1.3591280622963585e-09,
+      "pagerank": 0.006699991674917057,
+      "community": 255
+    },
+    {
+      "id": "原田慎太朗A8-3○",
+      "name": "原田慎太朗A8-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 165
+    },
+    {
+      "id": "加藤秀佳E1-4○",
+      "name": "加藤秀佳E1-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 166
+    },
+    {
+      "id": "A2:機械翻訳(2)Zoom",
+      "name": "A2:機械翻訳(2)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 167
+    },
+    {
+      "id": "B9-3",
+      "name": "B9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 168
+    },
+    {
+      "id": "P4-14",
+      "name": "P4-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 169
+    },
+    {
+      "id": "福野将人P8-12○",
+      "name": "福野将人P8-12○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 170
+    },
+    {
+      "id": "P6-7",
+      "name": "P6-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 171
+    },
+    {
+      "id": "C5-2",
+      "name": "C5-2",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 172
+    },
+    {
+      "id": "P7-1",
+      "name": "P7-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 173
+    },
+    {
+      "id": "舟山弘晃D4-2",
+      "name": "舟山弘晃D4-2",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 94
+    },
+    {
+      "id": "カジ梶原智之C1-2",
+      "name": "カジ梶原智之C1-2",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 1.4672401726167368e-28,
+      "pagerank": 0.003211513809497665,
+      "community": 37
+    },
+    {
+      "id": "P7-20",
+      "name": "P7-20",
+      "papers": 3,
+      "degree": 0.0029895366218236174,
+      "betweenness": 4.475354224286852e-06,
+      "eigenvector": 5.610754178564702e-49,
+      "pagerank": 0.004762881680641859,
+      "community": 120
+    },
+    {
+      "id": "B7-3",
+      "name": "B7-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 174
+    },
+    {
+      "id": "P1-14",
+      "name": "P1-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 175
+    },
+    {
+      "id": "YongminD8-2○",
+      "name": "YongminD8-2○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 176
+    },
+    {
+      "id": "P4-10",
+      "name": "P4-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 177
+    },
+    {
+      "id": "進藤裕之P2-17",
+      "name": "進藤裕之P2-17",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 172
+    },
+    {
+      "id": "吉野幸一郎P2-9",
+      "name": "吉野幸一郎P2-9",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 178
+    },
+    {
+      "id": "P3-19",
+      "name": "P3-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 179
+    },
+    {
+      "id": "C8-2",
+      "name": "C8-2",
+      "papers": 2,
+      "degree": 0.01046337817638266,
+      "betweenness": 0.0,
+      "eigenvector": 0.0008612418394201835,
+      "pagerank": 0.003488620490918696,
+      "community": 87
+    },
+    {
+      "id": "P9-13",
+      "name": "P9-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 180
+    },
+    {
+      "id": "P6-6",
+      "name": "P6-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 181
+    },
+    {
+      "id": "P3-3○",
+      "name": "P3-3○",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 1.4672401726167368e-28,
+      "pagerank": 0.003211513809497665,
+      "community": 37
+    },
+    {
+      "id": "P7-16",
+      "name": "P7-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 182
+    },
+    {
+      "id": "P5-13○",
+      "name": "P5-13○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 163
+    },
+    {
+      "id": "E3-2",
+      "name": "E3-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 183
+    },
+    {
+      "id": "谷口友紀P2-15",
+      "name": "谷口友紀P2-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 184
+    },
+    {
+      "id": "松本忠博P1-11",
+      "name": "松本忠博P1-11",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 16
+    },
+    {
+      "id": "B4-4",
+      "name": "B4-4",
+      "papers": 3,
+      "degree": 0.007473841554559044,
+      "betweenness": 5.817960491572908e-05,
+      "eigenvector": 0.0004704508378892104,
+      "pagerank": 0.0031685938791769334,
+      "community": 87
+    },
+    {
+      "id": "小林尚輝P5-9○",
+      "name": "小林尚輝P5-9○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 185
+    },
+    {
+      "id": "ミワ三輪誠P2-16",
+      "name": "ミワ三輪誠P2-16",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 1.6724968357906227e-39,
+      "pagerank": 0.0018629464991122679,
+      "community": 186
+    },
+    {
+      "id": "P2-9",
+      "name": "P2-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 187
+    },
+    {
+      "id": "P9-5",
+      "name": "P9-5",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 188
+    },
+    {
+      "id": "D4-2",
+      "name": "D4-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 189
+    },
+    {
+      "id": "P8-15",
+      "name": "P8-15",
+      "papers": 3,
+      "degree": 0.004484304932735426,
+      "betweenness": 8.950708448573705e-06,
+      "eigenvector": 3.6294627822740304e-39,
+      "pagerank": 0.004829875091105076,
+      "community": 190
+    },
+    {
+      "id": "D2-2",
+      "name": "D2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 191
+    },
+    {
+      "id": "安藤翼P5-16○",
+      "name": "安藤翼P5-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 192
+    },
+    {
+      "id": "A5-3",
+      "name": "A5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 193
+    },
+    {
+      "id": "ハヤ早川純平P9-3",
+      "name": "ハヤ早川純平P9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 194
+    },
+    {
+      "id": "アサ浅井学P5-7",
+      "name": "アサ浅井学P5-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 195
+    },
+    {
+      "id": "B5-1",
+      "name": "B5-1",
+      "papers": 1,
+      "degree": 0.005979073243647235,
+      "betweenness": 0.0,
+      "eigenvector": 0.0708188077124493,
+      "pagerank": 0.002728826862720359,
+      "community": 377
+    },
+    {
+      "id": "A2-4",
+      "name": "A2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 196
+    },
+    {
+      "id": "キヤ木山幸子P4-2",
+      "name": "キヤ木山幸子P4-2",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 197
+    },
+    {
+      "id": "SakrianiA4-1",
+      "name": "SakrianiA4-1",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 198
+    },
+    {
+      "id": "P2-13",
+      "name": "P2-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 199
+    },
+    {
+      "id": "田邉豊P9-4",
+      "name": "田邉豊P9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 200
+    },
+    {
+      "id": "A9-3",
+      "name": "A9-3",
+      "papers": 2,
+      "degree": 0.01046337817638266,
+      "betweenness": 0.0,
+      "eigenvector": 0.0008612418394201835,
+      "pagerank": 0.0034886204909186963,
+      "community": 87
+    },
+    {
+      "id": "P7-11",
+      "name": "P7-11",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 49
+    },
+    {
+      "id": "鈴木優P8-8",
+      "name": "鈴木優P8-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 201
+    },
+    {
+      "id": "P8-8",
+      "name": "P8-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 202
+    },
+    {
+      "id": "C6-3",
+      "name": "C6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 203
+    },
+    {
+      "id": "P7-14",
+      "name": "P7-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 204
+    },
+    {
+      "id": "コ 胡尤佳A4-2○",
+      "name": "コ 胡尤佳A4-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 205
+    },
+    {
+      "id": "P3-3",
+      "name": "P3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 206
+    },
+    {
+      "id": "株式会社アドバンスト・メディア",
+      "name": "株式会社アドバンスト・メディア",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 207
+    },
+    {
+      "id": "山崎智弘C7-1",
+      "name": "山崎智弘C7-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 208
+    },
+    {
+      "id": "コバ小林一郎P6-16",
+      "name": "コバ小林一郎P6-16",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 64
+    },
+    {
+      "id": "P8-12",
+      "name": "P8-12",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 111
+    },
+    {
+      "id": "ナガ長井隆行P6-17",
+      "name": "ナガ長井隆行P6-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 209
+    },
+    {
+      "id": "シモ下平英寿A6-3",
+      "name": "シモ下平英寿A6-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 210
+    },
+    {
+      "id": "吉田遼C2-3",
+      "name": "吉田遼C2-3",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 1.499815195374627e-26,
+      "pagerank": 0.0023918101099034087,
+      "community": 74
+    },
+    {
+      "id": "D7-4",
+      "name": "D7-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 212
+    },
+    {
+      "id": "P9-15",
+      "name": "P9-15",
+      "papers": 2,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.0,
+      "eigenvector": 1.1935618854887326e-09,
+      "pagerank": 0.0037463757531993455,
+      "community": 255
+    },
+    {
+      "id": "古谷克司P2-16",
+      "name": "古谷克司P2-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 213
+    },
+    {
+      "id": "D6-2",
+      "name": "D6-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 214
+    },
+    {
+      "id": "P9-12",
+      "name": "P9-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 215
+    },
+    {
+      "id": "P6-9",
+      "name": "P6-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 216
+    },
+    {
+      "id": "B9-4",
+      "name": "B9-4",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 217
+    },
+    {
+      "id": "富士通株式会社",
+      "name": "富士通株式会社",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 218
+    },
+    {
+      "id": "D8-2",
+      "name": "D8-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 219
+    },
+    {
+      "id": "P4-2",
+      "name": "P4-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 220
+    },
+    {
+      "id": "横尾拓未P9-3○",
+      "name": "横尾拓未P9-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 221
+    },
+    {
+      "id": "タキ滝口哲也P8-9",
+      "name": "タキ滝口哲也P8-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 222
+    },
+    {
+      "id": "P1-8",
+      "name": "P1-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 223
+    },
+    {
+      "id": "P1-6",
+      "name": "P1-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 224
+    },
+    {
+      "id": "トモ友松祐太P8-1",
+      "name": "トモ友松祐太P8-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 225
+    },
+    {
+      "id": "永田亮D4-1○",
+      "name": "永田亮D4-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 226
+    },
+    {
+      "id": "P6-18",
+      "name": "P6-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 227
+    },
+    {
+      "id": "木村麻友子P6-16○",
+      "name": "木村麻友子P6-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 228
+    },
+    {
+      "id": "カケ掛谷英紀P4-20",
+      "name": "カケ掛谷英紀P4-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 229
+    },
+    {
+      "id": "ツル鶴岡慶雅B2-1",
+      "name": "ツル鶴岡慶雅B2-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 49
+    },
+    {
+      "id": "乾孝司D1-1",
+      "name": "乾孝司D1-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 230
+    },
+    {
+      "id": "サッ颯々野学C3-3",
+      "name": "サッ颯々野学C3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 231
+    },
+    {
+      "id": "A7-1",
+      "name": "A7-1",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 210
+    },
+    {
+      "id": "D9-3",
+      "name": "D9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 232
+    },
+    {
+      "id": "A7-4",
+      "name": "A7-4",
+      "papers": 2,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.0035456237268344207,
+      "community": 377
+    },
+    {
+      "id": "B3-3",
+      "name": "B3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 233
+    },
+    {
+      "id": "P4-4",
+      "name": "P4-4",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 157
+    },
+    {
+      "id": "村上仁一P3-7",
+      "name": "村上仁一P3-7",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 173
+    },
+    {
+      "id": "ハラ原尚幸C8-1",
+      "name": "ハラ原尚幸C8-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 234
+    },
+    {
+      "id": "C6-2",
+      "name": "C6-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 235
+    },
+    {
+      "id": "イナ稲熊陸P2-16○",
+      "name": "イナ稲熊陸P2-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 236
+    },
+    {
+      "id": "P4-1",
+      "name": "P4-1",
+      "papers": 3,
+      "degree": 0.01046337817638266,
+      "betweenness": 7.160566758858964e-05,
+      "eigenvector": 3.800636987190724e-26,
+      "pagerank": 0.007256815180871195,
+      "community": 74
+    },
+    {
+      "id": "本田裕P1-13",
+      "name": "本田裕P1-13",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 1.6724968357906227e-39,
+      "pagerank": 0.0018629464991122679,
+      "community": 104
+    },
+    {
+      "id": "P8-2",
+      "name": "P8-2",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 237
+    },
+    {
+      "id": "川原田将之P1-15○",
+      "name": "川原田将之P1-15○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 238
+    },
+    {
+      "id": "P9-6",
+      "name": "P9-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 239
+    },
+    {
+      "id": "P9-11",
+      "name": "P9-11",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 240
+    },
+    {
+      "id": "P3-20",
+      "name": "P3-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 241
+    },
+    {
+      "id": "C6-4",
+      "name": "C6-4",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 217
+    },
+    {
+      "id": "C4-2",
+      "name": "C4-2",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 4.5328597564276865e-28,
+      "pagerank": 0.002794148325145206,
+      "community": 61
+    },
+    {
+      "id": "D6-3",
+      "name": "D6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 242
+    },
+    {
+      "id": "A9-4",
+      "name": "A9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 243
+    },
+    {
+      "id": "P5-7",
+      "name": "P5-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 244
+    },
+    {
+      "id": "クロージングZoom",
+      "name": "クロージングZoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 245
+    },
+    {
+      "id": "B2-2",
+      "name": "B2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 246
+    },
+    {
+      "id": "藤澤兼太A3-1○",
+      "name": "藤澤兼太A3-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 247
+    },
+    {
+      "id": "サク作田航平P9-3",
+      "name": "サク作田航平P9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 248
+    },
+    {
+      "id": "P5-2",
+      "name": "P5-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 249
+    },
+    {
+      "id": "黒田航P4-4○",
+      "name": "黒田航P4-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 250
+    },
+    {
+      "id": "P9-18",
+      "name": "P9-18",
+      "papers": 3,
+      "degree": 0.007473841554559044,
+      "betweenness": 6.265495914001593e-05,
+      "eigenvector": 0.0717935910749646,
+      "pagerank": 0.0036380967030249832,
+      "community": 377
+    },
+    {
+      "id": "B5-2",
+      "name": "B5-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 251
+    },
+    {
+      "id": "ニイ新妻巧朗B2-3○",
+      "name": "ニイ新妻巧朗B2-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 252
+    },
+    {
+      "id": "P4-17",
+      "name": "P4-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 253
+    },
+    {
+      "id": "E4-2",
+      "name": "E4-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 254
+    },
+    {
+      "id": "井之上直也E1-3",
+      "name": "井之上直也E1-3",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 3.239688153050117e-10,
+      "pagerank": 0.002455883492649302,
+      "community": 255
+    },
+    {
+      "id": "ハッ服部祥大P9-12○",
+      "name": "ハッ服部祥大P9-12○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 256
+    },
+    {
+      "id": "YunmengA3-4○",
+      "name": "YunmengA3-4○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 3.967402327233858e-49,
+      "pagerank": 0.0025578802503668555,
+      "community": 130
+    },
+    {
+      "id": "宮城信P4-6",
+      "name": "宮城信P4-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 257
+    },
+    {
+      "id": "宮脇峻平P7-15",
+      "name": "宮脇峻平P7-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 258
+    },
+    {
+      "id": "LiyanB8-4",
+      "name": "LiyanB8-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 259
+    },
+    {
+      "id": "P5-15",
+      "name": "P5-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 260
+    },
+    {
+      "id": "オンライン懇親会Zoom",
+      "name": "オンライン懇親会Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 261
+    },
+    {
+      "id": "Guo",
+      "name": "Guo",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 262
+    },
+    {
+      "id": "株式会社キーウォーカー",
+      "name": "株式会社キーウォーカー",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 263
+    },
+    {
+      "id": "中山英樹P8-21",
+      "name": "中山英樹P8-21",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 0.008867173824372122,
+      "pagerank": 0.0011137173812684757,
+      "community": 377
+    },
+    {
+      "id": "P4-7",
+      "name": "P4-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 264
+    },
+    {
+      "id": "P6-20",
+      "name": "P6-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 265
+    },
+    {
+      "id": "C5:知識獲得・情報抽出(3)Zoom",
+      "name": "C5:知識獲得・情報抽出(3)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 266
+    },
+    {
+      "id": "ヤノ矢野憲A2-2○",
+      "name": "ヤノ矢野憲A2-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 267
+    },
+    {
+      "id": "米㟢俊太P6-7",
+      "name": "米㟢俊太P6-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 268
+    },
+    {
+      "id": "P7-12",
+      "name": "P7-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 269
+    },
+    {
+      "id": "C2-4○",
+      "name": "C2-4○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 1.499815195374627e-26,
+      "pagerank": 0.0023918101099034087,
+      "community": 74
+    },
+    {
+      "id": "山本雄太P9-8",
+      "name": "山本雄太P9-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 270
+    },
+    {
+      "id": "GuptaA6-4",
+      "name": "GuptaA6-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 20
+    },
+    {
+      "id": "岡部格明E1-4",
+      "name": "岡部格明E1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 271
+    },
+    {
+      "id": "E2-3",
+      "name": "E2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 272
+    },
+    {
+      "id": "Kim",
+      "name": "Kim",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 176
+    },
+    {
+      "id": "岡野伸哉E8-1",
+      "name": "岡野伸哉E8-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 273
+    },
+    {
+      "id": "C7-2",
+      "name": "C7-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 274
+    },
+    {
+      "id": "山田康輔B6-4○",
+      "name": "山田康輔B6-4○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 275
+    },
+    {
+      "id": "GangD8-3",
+      "name": "GangD8-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 38
+    },
+    {
+      "id": "P7-9",
+      "name": "P7-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 276
+    },
+    {
+      "id": "内藤雅博A6-3○",
+      "name": "内藤雅博A6-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 277
+    },
+    {
+      "id": "P2-10",
+      "name": "P2-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 278
+    },
+    {
+      "id": "近江崇宏P2-7○",
+      "name": "近江崇宏P2-7○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 279
+    },
+    {
+      "id": "B8-3",
+      "name": "B8-3",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 4.4583541243422364e-30,
+      "pagerank": 0.0034332112671381677,
+      "community": 280
+    },
+    {
+      "id": "河野誠也P7-17",
+      "name": "河野誠也P7-17",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 188
+    },
+    {
+      "id": "小林悟郎A7-2○",
+      "name": "小林悟郎A7-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 281
+    },
+    {
+      "id": "P3-15",
+      "name": "P3-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 282
+    },
+    {
+      "id": "A7-3",
+      "name": "A7-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 283
+    },
+    {
+      "id": "株式会社東芝",
+      "name": "株式会社東芝",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 284
+    },
+    {
+      "id": "山口文菜P6-5",
+      "name": "山口文菜P6-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 285
+    },
+    {
+      "id": "C2-3",
+      "name": "C2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 286
+    },
+    {
+      "id": "E5-3○",
+      "name": "E5-3○",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 173
+    },
+    {
+      "id": "HaiyueA4-3",
+      "name": "HaiyueA4-3",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 6
+    },
+    {
+      "id": "ケヤ欅惇志D3-2",
+      "name": "ケヤ欅惇志D3-2",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 237
+    },
+    {
+      "id": "佐々木拓馬P1-6○",
+      "name": "佐々木拓馬P1-6○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 287
+    },
+    {
+      "id": "BrassardE1-3",
+      "name": "BrassardE1-3",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 288
+    },
+    {
+      "id": "B1-3",
+      "name": "B1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 289
+    },
+    {
+      "id": "P2-11",
+      "name": "P2-11",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 3.239688153050117e-10,
+      "pagerank": 0.0024558834926493023,
+      "community": 255
+    },
+    {
+      "id": "ベッ戸次大介E9-4",
+      "name": "ベッ戸次大介E9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 290
+    },
+    {
+      "id": "安藤涼太P1-13",
+      "name": "安藤涼太P1-13",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.101875650867189e-39,
+      "pagerank": 0.0032393506591417063,
+      "community": 104
+    },
+    {
+      "id": "Jong-Hoon OhP7-19",
+      "name": "Jong-Hoon OhP7-19",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 3.967402327233858e-49,
+      "pagerank": 0.0025578802503668555,
+      "community": 120
+    },
+    {
+      "id": "JianminD8-3",
+      "name": "JianminD8-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 39
+    },
+    {
+      "id": "P8-21",
+      "name": "P8-21",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.101875650867189e-39,
+      "pagerank": 0.003239350659141706,
+      "community": 190
+    },
+    {
+      "id": "D2-3",
+      "name": "D2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 291
+    },
+    {
+      "id": "P2-6",
+      "name": "P2-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 292
+    },
+    {
+      "id": "概要：",
+      "name": "概要：",
+      "papers": 4,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 293
+    },
+    {
+      "id": "P9-10",
+      "name": "P9-10",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1018756508671885e-39,
+      "pagerank": 0.003239350659141706,
+      "community": 186
+    },
+    {
+      "id": "林直人P5-12",
+      "name": "林直人P5-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 294
+    },
+    {
+      "id": "C5-4",
+      "name": "C5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 295
+    },
+    {
+      "id": "P3-14",
+      "name": "P3-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 296
+    },
+    {
+      "id": "P5-10",
+      "name": "P5-10",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 297
+    },
+    {
+      "id": "西田典起E7-3○",
+      "name": "西田典起E7-3○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.101875650867189e-39,
+      "pagerank": 0.0032393506591417063,
+      "community": 190
+    },
+    {
+      "id": "C5-3",
+      "name": "C5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 298
+    },
+    {
+      "id": "P3-6",
+      "name": "P3-6",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 117
+    },
+    {
+      "id": "C7-4",
+      "name": "C7-4",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 112
+    },
+    {
+      "id": "P6-3",
+      "name": "P6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 299
+    },
+    {
+      "id": "A4-4○",
+      "name": "A4-4○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 6
+    },
+    {
+      "id": "D3-2",
+      "name": "D3-2",
+      "papers": 2,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.0035456237268344207,
+      "community": 377
+    },
+    {
+      "id": "P6-14",
+      "name": "P6-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 300
+    },
+    {
+      "id": "キク菊田尚樹P3-18○",
+      "name": "キク菊田尚樹P3-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 301
+    },
+    {
+      "id": "カト加藤圭造D8-2",
+      "name": "カト加藤圭造D8-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 302
+    },
+    {
+      "id": "吉本啓E3-2○",
+      "name": "吉本啓E3-2○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 303
+    },
+    {
+      "id": "マブ間淵洋子P6-11○",
+      "name": "マブ間淵洋子P6-11○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 304
+    },
+    {
+      "id": "藤原吏生E7-1○",
+      "name": "藤原吏生E7-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 305
+    },
+    {
+      "id": "小板橋佳晃C8-4○",
+      "name": "小板橋佳晃C8-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 306
+    },
+    {
+      "id": "P9-16",
+      "name": "P9-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 307
+    },
+    {
+      "id": "B6-2",
+      "name": "B6-2",
+      "papers": 3,
+      "degree": 0.013452914798206279,
+      "betweenness": 2.237677112143426e-05,
+      "eigenvector": 0.0009714581990652732,
+      "pagerank": 0.005410967601821983,
+      "community": 87
+    },
+    {
+      "id": "A1-2",
+      "name": "A1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 308
+    },
+    {
+      "id": "C3-4",
+      "name": "C3-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 309
+    },
+    {
+      "id": "A4-3",
+      "name": "A4-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 310
+    },
+    {
+      "id": "B8-4",
+      "name": "B8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 311
+    },
+    {
+      "id": "中野騰久P2-15",
+      "name": "中野騰久P2-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 312
+    },
+    {
+      "id": "ナス那須川哲哉P3-15○",
+      "name": "ナス那須川哲哉P3-15○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 313
+    },
+    {
+      "id": "A9:機械翻訳(7)Zoom",
+      "name": "A9:機械翻訳(7)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 314
+    },
+    {
+      "id": "岩田晟E7-2○",
+      "name": "岩田晟E7-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 315
+    },
+    {
+      "id": "株式会社Legalscape",
+      "name": "株式会社Legalscape",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 316
+    },
+    {
+      "id": "B2-4",
+      "name": "B2-4",
+      "papers": 2,
+      "degree": 0.007473841554559044,
+      "betweenness": 0.0,
+      "eigenvector": 4.97035207550745e-16,
+      "pagerank": 0.0035013526954981405,
+      "community": 1
+    },
+    {
+      "id": "大橋空C1-2○",
+      "name": "大橋空C1-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 317
+    },
+    {
+      "id": "シブ渋木英潔P2-10",
+      "name": "シブ渋木英潔P2-10",
+      "papers": 1,
+      "degree": 0.005979073243647235,
+      "betweenness": 0.0,
+      "eigenvector": 0.0004630141888884075,
+      "pagerank": 0.002333302582446112,
+      "community": 87
+    },
+    {
+      "id": "橋本力C3-3",
+      "name": "橋本力C3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 318
+    },
+    {
+      "id": "星野翔A2-1○",
+      "name": "星野翔A2-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 319
+    },
+    {
+      "id": "D1-4",
+      "name": "D1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 320
+    },
+    {
+      "id": "Zhan",
+      "name": "Zhan",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 321
+    },
+    {
+      "id": "E9:計算・形式言語学Zoom",
+      "name": "E9:計算・形式言語学Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 322
+    },
+    {
+      "id": "土井惟成E8-2○",
+      "name": "土井惟成E8-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 323
+    },
+    {
+      "id": "カナ金丸敏幸P4-4",
+      "name": "カナ金丸敏幸P4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 324
+    },
+    {
+      "id": "E7:談話理解Zoom",
+      "name": "E7:談話理解Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 325
+    },
+    {
+      "id": "C4-4",
+      "name": "C4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 326
+    },
+    {
+      "id": "B6-3",
+      "name": "B6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 327
+    },
+    {
+      "id": "P7-19",
+      "name": "P7-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 328
+    },
+    {
+      "id": "C9-2",
+      "name": "C9-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 329
+    },
+    {
+      "id": "C9-4",
+      "name": "C9-4",
+      "papers": 3,
+      "degree": 0.005979073243647235,
+      "betweenness": 1.3426062672860557e-05,
+      "eigenvector": 4.842353046272186e-30,
+      "pagerank": 0.004676804086217795,
+      "community": 280
+    },
+    {
+      "id": "P5-12",
+      "name": "P5-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 330
+    },
+    {
+      "id": "C1-3",
+      "name": "C1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 331
+    },
+    {
+      "id": "P3-12",
+      "name": "P3-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 332
+    },
+    {
+      "id": "アラ新井紀子C2-2",
+      "name": "アラ新井紀子C2-2",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 1.0209593309681118e-16,
+      "pagerank": 0.0011207094785364961,
+      "community": 1
+    },
+    {
+      "id": "P9-7",
+      "name": "P9-7",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 333
+    },
+    {
+      "id": "アキ秋葉友良P1-21",
+      "name": "アキ秋葉友良P1-21",
+      "papers": 1,
+      "degree": 0.01046337817638266,
+      "betweenness": 0.0,
+      "eigenvector": 0.0008612418394201834,
+      "pagerank": 0.0034886204909186963,
+      "community": 87
+    },
+    {
+      "id": "伊藤雅弘C7-1○",
+      "name": "伊藤雅弘C7-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 334
+    },
+    {
+      "id": "P7-5",
+      "name": "P7-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 335
+    },
+    {
+      "id": "ノザ野崎樹文B7-2○",
+      "name": "ノザ野崎樹文B7-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 336
+    },
+    {
+      "id": "Chen",
+      "name": "Chen",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 164
+    },
+    {
+      "id": "緒方学人P6-20○",
+      "name": "緒方学人P6-20○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 337
+    },
+    {
+      "id": "P4-21",
+      "name": "P4-21",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 338
+    },
+    {
+      "id": "P3-8",
+      "name": "P3-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 339
+    },
+    {
+      "id": "A6-3",
+      "name": "A6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 340
+    },
+    {
+      "id": "P6-1",
+      "name": "P6-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 2.4774857078314337e-26,
+      "pagerank": 0.0031729967321722265,
+      "community": 74
+    },
+    {
+      "id": "A4-4",
+      "name": "A4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 341
+    },
+    {
+      "id": "P9-15○",
+      "name": "P9-15○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 1.4998151953746274e-26,
+      "pagerank": 0.0023918101099034087,
+      "community": 74
+    },
+    {
+      "id": "ヒガ東中竜一郎C6-2",
+      "name": "ヒガ東中竜一郎C6-2",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 217
+    },
+    {
+      "id": "P6-19",
+      "name": "P6-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 343
+    },
+    {
+      "id": "P3-16",
+      "name": "P3-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 344
+    },
+    {
+      "id": "P1-10",
+      "name": "P1-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 345
+    },
+    {
+      "id": "P1-12",
+      "name": "P1-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 346
+    },
+    {
+      "id": "A3-1",
+      "name": "A3-1",
+      "papers": 1,
+      "degree": 0.01046337817638266,
+      "betweenness": 0.0,
+      "eigenvector": 0.0008612418394201834,
+      "pagerank": 0.0034886204909186963,
+      "community": 87
+    },
+    {
+      "id": "P3-13",
+      "name": "P3-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 347
+    },
+    {
+      "id": "TerumasaP3-14○",
+      "name": "TerumasaP3-14○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 348
+    },
+    {
+      "id": "阿部慶賀P4-4",
+      "name": "阿部慶賀P4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 349
+    },
+    {
+      "id": "キシ岸波洋介B9-2○",
+      "name": "キシ岸波洋介B9-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 350
+    },
+    {
+      "id": "P2-19",
+      "name": "P2-19",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 2.4272796761250917e-10,
+      "pagerank": 0.0018342512600710652,
+      "community": 255
+    },
+    {
+      "id": "関洋平C3-4",
+      "name": "関洋平C3-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 351
+    },
+    {
+      "id": "WANG",
+      "name": "WANG",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 259
+    },
+    {
+      "id": "C3:Web・SNS応用Zoom",
+      "name": "C3:Web・SNS応用Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 352
+    },
+    {
+      "id": "P6-10",
+      "name": "P6-10",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 351
+    },
+    {
+      "id": "P1-18",
+      "name": "P1-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 353
+    },
+    {
+      "id": "森谷一至P3-1○",
+      "name": "森谷一至P3-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 354
+    },
+    {
+      "id": "C6:検索・文書分類(2)Zoom",
+      "name": "C6:検索・文書分類(2)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 355
+    },
+    {
+      "id": "B5-3",
+      "name": "B5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 356
+    },
+    {
+      "id": "マチ町田秀輔P3-4○",
+      "name": "マチ町田秀輔P3-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 357
+    },
+    {
+      "id": "HaosenA6-1○",
+      "name": "HaosenA6-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 321
+    },
+    {
+      "id": "石川香E4-4",
+      "name": "石川香E4-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 358
+    },
+    {
+      "id": "C3-2",
+      "name": "C3-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 359
+    },
+    {
+      "id": "P8-6",
+      "name": "P8-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 360
+    },
+    {
+      "id": "ノボ昇夏海B3-3○",
+      "name": "ノボ昇夏海B3-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 361
+    },
+    {
+      "id": "ミノ美野秀弥P1-3○",
+      "name": "ミノ美野秀弥P1-3○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 362
+    },
+    {
+      "id": "A2-3",
+      "name": "A2-3",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 362
+    },
+    {
+      "id": "YingxuanP4-8",
+      "name": "YingxuanP4-8",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 95
+    },
+    {
+      "id": "招待論文Zoom",
+      "name": "招待論文Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 363
+    },
+    {
+      "id": "P4-15",
+      "name": "P4-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 364
+    },
+    {
+      "id": "カネ金上和毅D2-1",
+      "name": "カネ金上和毅D2-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 365
+    },
+    {
+      "id": "後藤真孝D2-4",
+      "name": "後藤真孝D2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 366
+    },
+    {
+      "id": "谷本恒野P1-17",
+      "name": "谷本恒野P1-17",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 333
+    },
+    {
+      "id": "松田義郎D1-3",
+      "name": "松田義郎D1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 367
+    },
+    {
+      "id": "JaggiA6-4",
+      "name": "JaggiA6-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 34
+    },
+    {
+      "id": "竹下智章B5-1○",
+      "name": "竹下智章B5-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 368
+    },
+    {
+      "id": "E7-3",
+      "name": "E7-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 369
+    },
+    {
+      "id": "田中弥生P3-12○",
+      "name": "田中弥生P3-12○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 150
+    },
+    {
+      "id": "野村航C5-2",
+      "name": "野村航C5-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 370
+    },
+    {
+      "id": "小松広弥P3-16",
+      "name": "小松広弥P3-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 371
+    },
+    {
+      "id": "LEPAGE",
+      "name": "LEPAGE",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 26
+    },
+    {
+      "id": "キタ北田俊輔P6-14○",
+      "name": "キタ北田俊輔P6-14○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 372
+    },
+    {
+      "id": "P1-11",
+      "name": "P1-11",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 373
+    },
+    {
+      "id": "Sumita",
+      "name": "Sumita",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 374
+    },
+    {
+      "id": "Ehara",
+      "name": "Ehara",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 348
+    },
+    {
+      "id": "A1-3",
+      "name": "A1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 375
+    },
+    {
+      "id": "松林優一郎D4-3",
+      "name": "松林優一郎D4-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 1.56906959076359e-30,
+      "pagerank": 0.001487965747993647,
+      "community": 280
+    },
+    {
+      "id": "澤田悠冶D1-2○",
+      "name": "澤田悠冶D1-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 376
+    },
+    {
+      "id": "P6-11",
+      "name": "P6-11",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.010298378361765783,
+      "pagerank": 0.0019345037110740089,
+      "community": 377
+    },
+    {
+      "id": "前原義明C1-3○",
+      "name": "前原義明C1-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 378
+    },
+    {
+      "id": "キネ杵渕哲也B9-4",
+      "name": "キネ杵渕哲也B9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 379
+    },
+    {
+      "id": "ShengA8-4",
+      "name": "ShengA8-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 3.967402327233858e-49,
+      "pagerank": 0.0025578802503668555,
+      "community": 130
+    },
+    {
+      "id": "D2-4",
+      "name": "D2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 380
+    },
+    {
+      "id": "P8-3",
+      "name": "P8-3",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 157
+    },
+    {
+      "id": "HaihanB2-1○",
+      "name": "HaihanB2-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 381
+    },
+    {
+      "id": "E2-4",
+      "name": "E2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 382
+    },
+    {
+      "id": "ヒラ平尾努P5-9",
+      "name": "ヒラ平尾努P5-9",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 297
+    },
+    {
+      "id": "C9-3",
+      "name": "C9-3",
+      "papers": 3,
+      "degree": 0.005979073243647235,
+      "betweenness": 4.475354224286852e-06,
+      "eigenvector": 5.265832870492198e-28,
+      "pagerank": 0.004436780947536308,
+      "community": 61
+    },
+    {
+      "id": "E5-4",
+      "name": "E5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 383
+    },
+    {
+      "id": "B7-2",
+      "name": "B7-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 384
+    },
+    {
+      "id": "D5-4",
+      "name": "D5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 385
+    },
+    {
+      "id": "岩間純輝P5-4○",
+      "name": "岩間純輝P5-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 386
+    },
+    {
+      "id": "E9-3",
+      "name": "E9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 387
+    },
+    {
+      "id": "Yang",
+      "name": "Yang",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 154
+    },
+    {
+      "id": "B3-4",
+      "name": "B3-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 388
+    },
+    {
+      "id": "C4:知識獲得・情報抽出(2)Zoom",
+      "name": "C4:知識獲得・情報抽出(2)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 389
+    },
+    {
+      "id": "P5-13",
+      "name": "P5-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 390
+    },
+    {
+      "id": "P7-21",
+      "name": "P7-21",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 391
+    },
+    {
+      "id": "相原理子E4-4○",
+      "name": "相原理子E4-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 392
+    },
+    {
+      "id": "高村大也P1-15",
+      "name": "高村大也P1-15",
+      "papers": 1,
+      "degree": 0.005979073243647235,
+      "betweenness": 0.0,
+      "eigenvector": 0.07081880771244932,
+      "pagerank": 0.002728826862720359,
+      "community": 377
+    },
+    {
+      "id": "P9-3",
+      "name": "P9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 393
+    },
+    {
+      "id": "P8-9",
+      "name": "P8-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 394
+    },
+    {
+      "id": "Chooi-LingP4-10○",
+      "name": "Chooi-LingP4-10○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 41
+    },
+    {
+      "id": "武田浩一C4-2",
+      "name": "武田浩一C4-2",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1689390956029315e-28,
+      "pagerank": 0.0020025450902629214,
+      "community": 61
+    },
+    {
+      "id": "P4-11",
+      "name": "P4-11",
+      "papers": 3,
+      "degree": 0.005979073243647235,
+      "betweenness": 4.475354224286852e-06,
+      "eigenvector": 5.265832870492198e-28,
+      "pagerank": 0.004436780947536308,
+      "community": 61
+    },
+    {
+      "id": "森田知熙A9-3○",
+      "name": "森田知熙A9-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 395
+    },
+    {
+      "id": "P1-7",
+      "name": "P1-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 396
+    },
+    {
+      "id": "C1-2",
+      "name": "C1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 397
+    },
+    {
+      "id": "B1-4",
+      "name": "B1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 398
+    },
+    {
+      "id": "中村優太P5-12○",
+      "name": "中村優太P5-12○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 399
+    },
+    {
+      "id": "P6-15",
+      "name": "P6-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 400
+    },
+    {
+      "id": "瓦祐希A3-2○",
+      "name": "瓦祐希A3-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 401
+    },
+    {
+      "id": "B1-2",
+      "name": "B1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 402
+    },
+    {
+      "id": "P1-21",
+      "name": "P1-21",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 403
+    },
+    {
+      "id": "松崎拓也P1-2",
+      "name": "松崎拓也P1-2",
+      "papers": 1,
+      "degree": 0.007473841554559044,
+      "betweenness": 0.0,
+      "eigenvector": 4.97035207550745e-16,
+      "pagerank": 0.00350135269549814,
+      "community": 1
+    },
+    {
+      "id": "B2-3",
+      "name": "B2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 404
+    },
+    {
+      "id": "E4-2○",
+      "name": "E4-2○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 50
+    },
+    {
+      "id": "長原一P3-3",
+      "name": "長原一P3-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 405
+    },
+    {
+      "id": "コヤ小山碧海P5-19○",
+      "name": "コヤ小山碧海P5-19○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 406
+    },
+    {
+      "id": "DENGP4-20○",
+      "name": "DENGP4-20○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 114
+    },
+    {
+      "id": "C8-3",
+      "name": "C8-3",
+      "papers": 3,
+      "degree": 0.004484304932735426,
+      "betweenness": 8.950708448573705e-06,
+      "eigenvector": 3.6294627822740304e-39,
+      "pagerank": 0.004829875091105077,
+      "community": 186
+    },
+    {
+      "id": "P5-6",
+      "name": "P5-6",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 407
+    },
+    {
+      "id": "P2-3",
+      "name": "P2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 408
+    },
+    {
+      "id": "P5-5",
+      "name": "P5-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 409
+    },
+    {
+      "id": "Hardaway",
+      "name": "Hardaway",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 129
+    },
+    {
+      "id": "D5-2",
+      "name": "D5-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 410
+    },
+    {
+      "id": "青野雅樹C6-3",
+      "name": "青野雅樹C6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 411
+    },
+    {
+      "id": "P9-19",
+      "name": "P9-19",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 14
+    },
+    {
+      "id": "YutingA8-1○",
+      "name": "YutingA8-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 8
+    },
+    {
+      "id": "C7:知識獲得・情報抽出(4)Zoom",
+      "name": "C7:知識獲得・情報抽出(4)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 412
+    },
+    {
+      "id": "矢野祐貴B6-1○",
+      "name": "矢野祐貴B6-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 413
+    },
+    {
+      "id": "P6-16",
+      "name": "P6-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 414
+    },
+    {
+      "id": "テラ寺尾康P4-2",
+      "name": "テラ寺尾康P4-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 415
+    },
+    {
+      "id": "西田京介B1-1",
+      "name": "西田京介B1-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 107
+    },
+    {
+      "id": "P2-17",
+      "name": "P2-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 416
+    },
+    {
+      "id": "P5-20",
+      "name": "P5-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 417
+    },
+    {
+      "id": "P4-8",
+      "name": "P4-8",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 15
+    },
+    {
+      "id": "伊藤拓海C2-3",
+      "name": "伊藤拓海C2-3",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 1.4998151953746274e-26,
+      "pagerank": 0.0023918101099034087,
+      "community": 74
+    },
+    {
+      "id": "P7-10",
+      "name": "P7-10",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 418
+    },
+    {
+      "id": "キヨ清野舜B1-4○",
+      "name": "キヨ清野舜B1-4○",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 4.4583541243422364e-30,
+      "pagerank": 0.0034332112671381677,
+      "community": 280
+    },
+    {
+      "id": "A2-2",
+      "name": "A2-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 419
+    },
+    {
+      "id": "藤井良介P9-6○",
+      "name": "藤井良介P9-6○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 420
+    },
+    {
+      "id": "髙橋誠史B9-3",
+      "name": "髙橋誠史B9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 421
+    },
+    {
+      "id": "Park ByeongseonD2-3",
+      "name": "Park ByeongseonD2-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 422
+    },
+    {
+      "id": "E9-2",
+      "name": "E9-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 423
+    },
+    {
+      "id": "P3-7",
+      "name": "P3-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 424
+    },
+    {
+      "id": "榮田亮真B4-3○",
+      "name": "榮田亮真B4-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 425
+    },
+    {
+      "id": "A3-4",
+      "name": "A3-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 426
+    },
+    {
+      "id": "P5-4",
+      "name": "P5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 427
+    },
+    {
+      "id": "P3-5",
+      "name": "P3-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 428
+    },
+    {
+      "id": "タカ高井公一P8-16○",
+      "name": "タカ高井公一P8-16○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 429
+    },
+    {
+      "id": "佐藤志貴B9-1○",
+      "name": "佐藤志貴B9-1○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 148
+    },
+    {
+      "id": "P8-5",
+      "name": "P8-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 430
+    },
+    {
+      "id": "佐藤汰亮B8-2○",
+      "name": "佐藤汰亮B8-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 431
+    },
+    {
+      "id": "オサ長部喜幸C1-3",
+      "name": "オサ長部喜幸C1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 432
+    },
+    {
+      "id": "D3-3",
+      "name": "D3-3",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 50
+    },
+    {
+      "id": "B6-2○",
+      "name": "B6-2○",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.00015585117710621086,
+      "pagerank": 0.0016270622766213182,
+      "community": 87
+    },
+    {
+      "id": "A9-2",
+      "name": "A9-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 434
+    },
+    {
+      "id": "小林汰一郎P2-18○",
+      "name": "小林汰一郎P2-18○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 435
+    },
+    {
+      "id": "EiichiroA4-4",
+      "name": "EiichiroA4-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 374
+    },
+    {
+      "id": "P1-3",
+      "name": "P1-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 436
+    },
+    {
+      "id": "イヅ井筒順P5-3○",
+      "name": "イヅ井筒順P5-3○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 437
+    },
+    {
+      "id": "B4-2",
+      "name": "B4-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 438
+    },
+    {
+      "id": "P2-15",
+      "name": "P2-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 439
+    },
+    {
+      "id": "鈴木咲羅P6-5○",
+      "name": "鈴木咲羅P6-5○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 440
+    },
+    {
+      "id": "P9-20",
+      "name": "P9-20",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 441
+    },
+    {
+      "id": "P8-14",
+      "name": "P8-14",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 49
+    },
+    {
+      "id": "ニワ丹羽彩奈B3-3",
+      "name": "ニワ丹羽彩奈B3-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 47
+    },
+    {
+      "id": "E5-2",
+      "name": "E5-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 442
+    },
+    {
+      "id": "岡田直樹A5-2○",
+      "name": "岡田直樹A5-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 443
+    },
+    {
+      "id": "P3-18",
+      "name": "P3-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 444
+    },
+    {
+      "id": "P4-3",
+      "name": "P4-3",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 197
+    },
+    {
+      "id": "A7-2",
+      "name": "A7-2",
+      "papers": 2,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.0,
+      "eigenvector": 1.1935618854887326e-09,
+      "pagerank": 0.0037463757531993455,
+      "community": 255
+    },
+    {
+      "id": "ダヌダヌシカボレガラB6-3",
+      "name": "ダヌダヌシカボレガラB6-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 445
+    },
+    {
+      "id": "A6:埋め込み表現(3)Zoom",
+      "name": "A6:埋め込み表現(3)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 446
+    },
+    {
+      "id": "Rikters",
+      "name": "Rikters",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 79
+    },
+    {
+      "id": "株式会社サイバーエージェント",
+      "name": "株式会社サイバーエージェント",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 447
+    },
+    {
+      "id": "Liu",
+      "name": "Liu",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 448
+    },
+    {
+      "id": "P1-19",
+      "name": "P1-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 449
+    },
+    {
+      "id": "B3-2",
+      "name": "B3-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 450
+    },
+    {
+      "id": "ヒト人見雄太B6-4",
+      "name": "ヒト人見雄太B6-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 451
+    },
+    {
+      "id": "P5-18",
+      "name": "P5-18",
+      "papers": 3,
+      "degree": 0.017937219730941704,
+      "betweenness": 0.00025061983656006373,
+      "eigenvector": 0.3576931726826838,
+      "pagerank": 0.005901262186101302,
+      "community": 377
+    },
+    {
+      "id": "田口拓明B7-3",
+      "name": "田口拓明B7-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 452
+    },
+    {
+      "id": "【ラ行】",
+      "name": "【ラ行】",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 453
+    },
+    {
+      "id": "スガ菅原晃平P3-16",
+      "name": "スガ菅原晃平P3-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 454
+    },
+    {
+      "id": "大杉了斗C8-2○",
+      "name": "大杉了斗C8-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 455
+    },
+    {
+      "id": "ナラ楢木悠士B7-4○",
+      "name": "ナラ楢木悠士B7-4○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 456
+    },
+    {
+      "id": "エチ越前功P8-14",
+      "name": "エチ越前功P8-14",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 457
+    },
+    {
+      "id": "P9-4",
+      "name": "P9-4",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 64
+    },
+    {
+      "id": "A4-2",
+      "name": "A4-2",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 198
+    },
+    {
+      "id": "E8-2",
+      "name": "E8-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 458
+    },
+    {
+      "id": "P2-5",
+      "name": "P2-5",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 459
+    },
+    {
+      "id": "D7-3",
+      "name": "D7-3",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 226
+    },
+    {
+      "id": "P6-8",
+      "name": "P6-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 460
+    },
+    {
+      "id": "新保仁C5-3",
+      "name": "新保仁C5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 461
+    },
+    {
+      "id": "P1-17",
+      "name": "P1-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 462
+    },
+    {
+      "id": "岡崎直観B3-3",
+      "name": "岡崎直観B3-3",
+      "papers": 1,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.003545623726834421,
+      "community": 377
+    },
+    {
+      "id": "村田真樹P9-1",
+      "name": "村田真樹P9-1",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 162
+    },
+    {
+      "id": "P8-16",
+      "name": "P8-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 463
+    },
+    {
+      "id": "平子潤P4-11○",
+      "name": "平子潤P4-11○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 464
+    },
+    {
+      "id": "小川泰弘C4-1",
+      "name": "小川泰弘C4-1",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.00015585117710621086,
+      "pagerank": 0.0016270622766213182,
+      "community": 87
+    },
+    {
+      "id": "川村真也P8-8",
+      "name": "川村真也P8-8",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 465
+    },
+    {
+      "id": "LuP4-8○",
+      "name": "LuP4-8○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 262
+    },
+    {
+      "id": "スミ隅田敦E9-2○",
+      "name": "スミ隅田敦E9-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 466
+    },
+    {
+      "id": "D9-4",
+      "name": "D9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 467
+    },
+    {
+      "id": "A6-2",
+      "name": "A6-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 468
+    },
+    {
+      "id": "P4-1○",
+      "name": "P4-1○",
+      "papers": 1,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.0,
+      "eigenvector": 1.1935618854887326e-09,
+      "pagerank": 0.0037463757531993455,
+      "community": 255
+    },
+    {
+      "id": "A5-1",
+      "name": "A5-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 107
+    },
+    {
+      "id": "栗林樹生C2-3○",
+      "name": "栗林樹生C2-3○",
+      "papers": 1,
+      "degree": 0.008968609865470852,
+      "betweenness": 0.0,
+      "eigenvector": 1.1935618854887326e-09,
+      "pagerank": 0.003746375753199346,
+      "community": 255
+    },
+    {
+      "id": "C2-4",
+      "name": "C2-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 469
+    },
+    {
+      "id": "スケジュール",
+      "name": "スケジュール",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 470
+    },
+    {
+      "id": "【ナ行】",
+      "name": "【ナ行】",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 471
+    },
+    {
+      "id": "DolçaE2-2○",
+      "name": "DolçaE2-2○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 70
+    },
+    {
+      "id": "P6-17",
+      "name": "P6-17",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 64
+    },
+    {
+      "id": "加藤拓真P7-15○",
+      "name": "加藤拓真P7-15○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 472
+    },
+    {
+      "id": "Sakti",
+      "name": "Sakti",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 198
+    },
+    {
+      "id": "P5-9",
+      "name": "P5-9",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 473
+    },
+    {
+      "id": "P6-13",
+      "name": "P6-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 474
+    },
+    {
+      "id": "P9-17",
+      "name": "P9-17",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 475
+    },
+    {
+      "id": "P8-11",
+      "name": "P8-11",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 476
+    },
+    {
+      "id": "C3-1",
+      "name": "C3-1",
+      "papers": 1,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.003545623726834421,
+      "community": 377
+    },
+    {
+      "id": "P6-2",
+      "name": "P6-2",
+      "papers": 4,
+      "degree": 0.016442451420029897,
+      "betweenness": 0.00012978527250431872,
+      "eigenvector": 0.0010082616119287328,
+      "pagerank": 0.006748044023844946,
+      "community": 87
+    },
+    {
+      "id": "イチ一杉裕志C2-1",
+      "name": "イチ一杉裕志C2-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 477
+    },
+    {
+      "id": "阪本浩太郎P2-10",
+      "name": "阪本浩太郎P2-10",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 6.298385993716259e-05,
+      "pagerank": 0.0010329072346641653,
+      "community": 87
+    },
+    {
+      "id": "B6-4",
+      "name": "B6-4",
+      "papers": 2,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.003545623726834421,
+      "community": 377
+    },
+    {
+      "id": "スヤ須鎗弘樹P9-3",
+      "name": "スヤ須鎗弘樹P9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 478
+    },
+    {
+      "id": "P7-6",
+      "name": "P7-6",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 362
+    },
+    {
+      "id": "丸山岳彦E1-1○",
+      "name": "丸山岳彦E1-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 479
+    },
+    {
+      "id": "P4-16",
+      "name": "P4-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 480
+    },
+    {
+      "id": "P5-3",
+      "name": "P5-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 481
+    },
+    {
+      "id": "C8-4",
+      "name": "C8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 482
+    },
+    {
+      "id": "馬雯A6-2○",
+      "name": "馬雯A6-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 483
+    },
+    {
+      "id": "株式会社日本取引所グループ",
+      "name": "株式会社日本取引所グループ",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 484
+    },
+    {
+      "id": "P7-3",
+      "name": "P7-3",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 173
+    },
+    {
+      "id": "B8-2",
+      "name": "B8-2",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 288
+    },
+    {
+      "id": "オト乙武北斗C4-1",
+      "name": "オト乙武北斗C4-1",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 28
+    },
+    {
+      "id": "C4-3",
+      "name": "C4-3",
+      "papers": 2,
+      "degree": 0.01046337817638266,
+      "betweenness": 0.0,
+      "eigenvector": 0.0008612418394201835,
+      "pagerank": 0.0034886204909186963,
+      "community": 87
+    },
+    {
+      "id": "森康久仁P9-3",
+      "name": "森康久仁P9-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 485
+    },
+    {
+      "id": "D1-2",
+      "name": "D1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 486
+    },
+    {
+      "id": "P4-9",
+      "name": "P4-9",
+      "papers": 2,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.003545623726834421,
+      "community": 377
+    },
+    {
+      "id": "山田育矢P8-14",
+      "name": "山田育矢P8-14",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 1.6724968357906227e-39,
+      "pagerank": 0.0018629464991122679,
+      "community": 190
+    },
+    {
+      "id": "P6-9○",
+      "name": "P6-9○",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 2.4774857078314337e-26,
+      "pagerank": 0.0031729967321722265,
+      "community": 74
+    },
+    {
+      "id": "E9-1",
+      "name": "E9-1",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 303
+    },
+    {
+      "id": "A5-4",
+      "name": "A5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 487
+    },
+    {
+      "id": "E4-4",
+      "name": "E4-4",
+      "papers": 3,
+      "degree": 0.008968609865470852,
+      "betweenness": 2.237677112143426e-05,
+      "eigenvector": 5.139551984747417e-16,
+      "pagerank": 0.0044226921338491355,
+      "community": 1
+    },
+    {
+      "id": "E8-4",
+      "name": "E8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 488
+    },
+    {
+      "id": "徳山太顕A4-1○",
+      "name": "徳山太顕A4-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 489
+    },
+    {
+      "id": "P8-7",
+      "name": "P8-7",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 490
+    },
+    {
+      "id": "A8-3",
+      "name": "A8-3",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 491
+    },
+    {
+      "id": "C9-3○",
+      "name": "C9-3○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 275
+    },
+    {
+      "id": "三田村照子C4-1",
+      "name": "三田村照子C4-1",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 492
+    },
+    {
+      "id": "P6-4",
+      "name": "P6-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 493
+    },
+    {
+      "id": "P8-19",
+      "name": "P8-19",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 494
+    },
+    {
+      "id": "HeinzerlingE1-3",
+      "name": "HeinzerlingE1-3",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 125
+    },
+    {
+      "id": "ShuichiroA8-4○",
+      "name": "ShuichiroA8-4○",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 93
+    },
+    {
+      "id": "P1-2",
+      "name": "P1-2",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 495
+    },
+    {
+      "id": "尾崎良太P2-15",
+      "name": "尾崎良太P2-15",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 496
+    },
+    {
+      "id": "招待講演２：知識と言語処理Zoom",
+      "name": "招待講演２：知識と言語処理Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 497
+    },
+    {
+      "id": "オギ小木曽智信P1-1",
+      "name": "オギ小木曽智信P1-1",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.010298378361765783,
+      "pagerank": 0.0019345037110740093,
+      "community": 377
+    },
+    {
+      "id": "P7-13",
+      "name": "P7-13",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 4.4583541243422364e-30,
+      "pagerank": 0.0034332112671381677,
+      "community": 280
+    },
+    {
+      "id": "Yu",
+      "name": "Yu",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 381
+    },
+    {
+      "id": "C1:検索・文書分類(1)Zoom",
+      "name": "C1:検索・文書分類(1)Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 498
+    },
+    {
+      "id": "P8-4",
+      "name": "P8-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 499
+    },
+    {
+      "id": "角田一星P4-14○",
+      "name": "角田一星P4-14○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 500
+    },
+    {
+      "id": "P1-13",
+      "name": "P1-13",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 501
+    },
+    {
+      "id": "E9-4",
+      "name": "E9-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 502
+    },
+    {
+      "id": "西村太一P2-13",
+      "name": "西村太一P2-13",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 163
+    },
+    {
+      "id": "P2-8",
+      "name": "P2-8",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 3.239688153050117e-10,
+      "pagerank": 0.002455883492649302,
+      "community": 255
+    },
+    {
+      "id": "田中涼太A5-1○",
+      "name": "田中涼太A5-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 503
+    },
+    {
+      "id": "P9-14",
+      "name": "P9-14",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 372
+    },
+    {
+      "id": "P5-11",
+      "name": "P5-11",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 504
+    },
+    {
+      "id": "髙﨑環P7-11○",
+      "name": "髙﨑環P7-11○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 505
+    },
+    {
+      "id": "本田涼太P9-1○",
+      "name": "本田涼太P9-1○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 506
+    },
+    {
+      "id": "P7-17",
+      "name": "P7-17",
+      "papers": 2,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 178
+    },
+    {
+      "id": "荒木健治A1-1",
+      "name": "荒木健治A1-1",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.00015585117710621084,
+      "pagerank": 0.0016270622766213182,
+      "community": 87
+    },
+    {
+      "id": "ShanshanP8-15",
+      "name": "ShanshanP8-15",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 448
+    },
+    {
+      "id": "コヒ小比田涼介A1-4",
+      "name": "コヒ小比田涼介A1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 508
+    },
+    {
+      "id": "田村拓也A2-4",
+      "name": "田村拓也A2-4",
+      "papers": 1,
+      "degree": 0.0014947683109118087,
+      "betweenness": 0.0,
+      "eigenvector": 7.627519190236449e-56,
+      "pagerank": 0.0032928807271251893,
+      "community": 124
+    },
+    {
+      "id": "P8-13",
+      "name": "P8-13",
+      "papers": 2,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 0.00015585117710621084,
+      "pagerank": 0.0016270622766213182,
+      "community": 87
+    },
+    {
+      "id": "P2-12",
+      "name": "P2-12",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 342
+    },
+    {
+      "id": "Ana",
+      "name": "Ana",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.1474425418529606e-41,
+      "pagerank": 0.0032928807271251893,
+      "community": 288
+    },
+    {
+      "id": "B5-4",
+      "name": "B5-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 121
+    },
+    {
+      "id": "A1-4",
+      "name": "A1-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 507
+    },
+    {
+      "id": "P4-18",
+      "name": "P4-18",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 433
+    },
+    {
+      "id": "C7-3",
+      "name": "C7-3",
+      "papers": 2,
+      "degree": 0.01195814648729447,
+      "betweenness": 0.0,
+      "eigenvector": 0.32619617826975844,
+      "pagerank": 0.003545623726834421,
+      "community": 377
+    },
+    {
+      "id": "A8-1",
+      "name": "A8-1",
+      "papers": 1,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 1.4672401726167368e-28,
+      "pagerank": 0.0032115138094976647,
+      "community": 37
+    },
+    {
+      "id": "佐々木裕P2-16",
+      "name": "佐々木裕P2-16",
+      "papers": 1,
+      "degree": 0.0029895366218236174,
+      "betweenness": 0.0,
+      "eigenvector": 3.101875650867189e-39,
+      "pagerank": 0.0032393506591417063,
+      "community": 186
+    },
+    {
+      "id": "C1-4",
+      "name": "C1-4",
+      "papers": 2,
+      "degree": 0.004484304932735426,
+      "betweenness": 0.0,
+      "eigenvector": 7.376883910946329e-31,
+      "pagerank": 0.003292880727125189,
+      "community": 107
+    },
+    {
+      "id": "P7-4",
+      "name": "P7-4",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 18
+    },
+    {
+      "id": "P2-16",
+      "name": "P2-16",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 211
+    },
+    {
+      "id": "平野颯C5-2○",
+      "name": "平野颯C5-2○",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 52
+    },
+    {
+      "id": "【マ行】",
+      "name": "【マ行】",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 85
+    },
+    {
+      "id": "C9:意味解析Zoom",
+      "name": "C9:意味解析Zoom",
+      "papers": 1,
+      "degree": 0.0,
+      "betweenness": 0.0,
+      "eigenvector": 7.886669995049699e-81,
+      "pagerank": 0.0004942030306660729,
+      "community": 149
+    }
+  ],
+  "links": [
+    {
+      "source": "P2-20",
+      "target": "松崎拓也P1-2",
+      "weight": 1
+    },
+    {
+      "source": "P2-20",
+      "target": "B2-4",
+      "weight": 1
+    },
+    {
+      "source": "P2-20",
+      "target": "C2-2",
+      "weight": 1
+    },
+    {
+      "source": "P2-20",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "P2-20",
+      "target": "A5-2",
+      "weight": 1
+    },
+    {
+      "source": "Song",
+      "target": "HaiyueA4-3",
+      "weight": 1
+    },
+    {
+      "source": "Song",
+      "target": "A4-4○",
+      "weight": 1
+    },
+    {
+      "source": "Zhao",
+      "target": "YutingA8-1○",
+      "weight": 1
+    },
+    {
+      "source": "シイ椎名広光P8-6",
+      "target": "P9-19",
+      "weight": 1
+    },
+    {
+      "source": "西口純代P1-14○",
+      "target": "P4-8",
+      "weight": 1
+    },
+    {
+      "source": "P3-17○",
+      "target": "松本忠博P1-11",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "P4-1○",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "A7-2",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "E7-1",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "E7-4",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "P9-15",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "吉川将司B1-3○",
+      "weight": 1
+    },
+    {
+      "source": "D3-4",
+      "target": "P2-19",
+      "weight": 1
+    },
+    {
+      "source": "Prakhar",
+      "target": "GuptaA6-4",
+      "weight": 1
+    },
+    {
+      "source": "Ma",
+      "target": "YoumiC7-3○",
+      "weight": 1
+    },
+    {
+      "source": "YvesB8-4",
+      "target": "LEPAGE",
+      "weight": 1
+    },
+    {
+      "source": "P6-12",
+      "target": "オト乙武北斗C4-1",
+      "weight": 1
+    },
+    {
+      "source": "村脇有吾C3-3",
+      "target": "E8-3",
+      "weight": 1
+    },
+    {
+      "source": "ウシ牛久祥孝P5-13",
+      "target": "D8-1",
+      "weight": 1
+    },
+    {
+      "source": "Martin",
+      "target": "JaggiA6-4",
+      "weight": 1
+    },
+    {
+      "source": "荒瀬由紀C1-2",
+      "target": "A3-2",
+      "weight": 1
+    },
+    {
+      "source": "荒瀬由紀C1-2",
+      "target": "D9-2",
+      "weight": 1
+    },
+    {
+      "source": "E7-1",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "E7-1",
+      "target": "P4-1○",
+      "weight": 1
+    },
+    {
+      "source": "E7-1",
+      "target": "A7-2",
+      "weight": 1
+    },
+    {
+      "source": "E7-1",
+      "target": "E7-4",
+      "weight": 1
+    },
+    {
+      "source": "E7-1",
+      "target": "P9-15",
+      "weight": 1
+    },
+    {
+      "source": "Qiao",
+      "target": "GangD8-3",
+      "weight": 1
+    },
+    {
+      "source": "Wu",
+      "target": "JianminD8-3",
+      "weight": 1
+    },
+    {
+      "source": "Goh",
+      "target": "Chooi-LingP4-10○",
+      "weight": 1
+    },
+    {
+      "source": "C9-1○",
+      "target": "ニワ丹羽彩奈B3-3",
+      "weight": 1
+    },
+    {
+      "source": "P7-2",
+      "target": "ツル鶴岡慶雅B2-1",
+      "weight": 1
+    },
+    {
+      "source": "P7-2",
+      "target": "P7-11",
+      "weight": 1
+    },
+    {
+      "source": "P7-2",
+      "target": "P8-14",
+      "weight": 1
+    },
+    {
+      "source": "岩本蘭A1-4○",
+      "target": "D3-3",
+      "weight": 1
+    },
+    {
+      "source": "岩本蘭A1-4○",
+      "target": "E4-2○",
+      "weight": 1
+    },
+    {
+      "source": "A5-2",
+      "target": "松崎拓也P1-2",
+      "weight": 1
+    },
+    {
+      "source": "A5-2",
+      "target": "B2-4",
+      "weight": 1
+    },
+    {
+      "source": "A5-2",
+      "target": "C2-2",
+      "weight": 1
+    },
+    {
+      "source": "A5-2",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "D9-2",
+      "target": "A3-2",
+      "weight": 1
+    },
+    {
+      "source": "D9-2",
+      "target": "カジ梶原智之C1-2",
+      "weight": 1
+    },
+    {
+      "source": "D9-2",
+      "target": "P3-3○",
+      "weight": 1
+    },
+    {
+      "source": "D9-2",
+      "target": "A8-1",
+      "weight": 1
+    },
+    {
+      "source": "笹野遼平P3-9",
+      "target": "C4-2",
+      "weight": 1
+    },
+    {
+      "source": "笹野遼平P3-9",
+      "target": "P4-11",
+      "weight": 1
+    },
+    {
+      "source": "笹野遼平P3-9",
+      "target": "C9-3",
+      "weight": 1
+    },
+    {
+      "source": "P8-18",
+      "target": "コバ小林一郎P6-16",
+      "weight": 1
+    },
+    {
+      "source": "P8-18",
+      "target": "P6-17",
+      "weight": 1
+    },
+    {
+      "source": "P8-18",
+      "target": "P9-4",
+      "weight": 1
+    },
+    {
+      "source": "Tellols",
+      "target": "DolçaE2-2○",
+      "weight": 1
+    },
+    {
+      "source": "浅原正幸C2-3",
+      "target": "P4-1",
+      "weight": 1
+    },
+    {
+      "source": "浅原正幸C2-3",
+      "target": "P6-1",
+      "weight": 1
+    },
+    {
+      "source": "浅原正幸C2-3",
+      "target": "P6-9○",
+      "weight": 1
+    },
+    {
+      "source": "MatissP7-10",
+      "target": "Rikters",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "岡崎直観B3-3",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "C3-1",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "D3-2",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "A7-4",
+      "weight": 1
+    },
+    {
+      "source": "C9-1",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "アキ秋葉友良P1-21",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "A3-1",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "B6-2",
+      "weight": 2
+    },
+    {
+      "source": "C4-1",
+      "target": "P6-2",
+      "weight": 2
+    },
+    {
+      "source": "C4-1",
+      "target": "C8-2",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "A9-3",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "荒木健治A1-1",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "P8-13",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "シブ渋木英潔P2-10",
+      "weight": 1
+    },
+    {
+      "source": "C4-1",
+      "target": "B4-4",
+      "weight": 1
+    },
+    {
+      "source": "Shimizu",
+      "target": "ShuichiroA8-4○",
+      "weight": 1
+    },
+    {
+      "source": "D4-3",
+      "target": "舟山弘晃D4-2",
+      "weight": 1
+    },
+    {
+      "source": "高橋諒A7-3",
+      "target": "E7-4",
+      "weight": 1
+    },
+    {
+      "source": "Wang",
+      "target": "YingxuanP4-8",
+      "weight": 1
+    },
+    {
+      "source": "P2-1",
+      "target": "安藤涼太P1-13",
+      "weight": 1
+    },
+    {
+      "source": "P2-1",
+      "target": "P5-8",
+      "weight": 1
+    },
+    {
+      "source": "P2-1",
+      "target": "本田裕P1-13",
+      "weight": 1
+    },
+    {
+      "source": "P7-15",
+      "target": "西田京介B1-1",
+      "weight": 1
+    },
+    {
+      "source": "P7-15",
+      "target": "C1-4",
+      "weight": 1
+    },
+    {
+      "source": "P7-15",
+      "target": "A5-1",
+      "weight": 1
+    },
+    {
+      "source": "カノ狩野芳伸P4-14",
+      "target": "P8-12",
+      "weight": 1
+    },
+    {
+      "source": "中川慧P3-20",
+      "target": "C7-4",
+      "weight": 1
+    },
+    {
+      "source": "JUNFU",
+      "target": "DENGP4-20○",
+      "weight": 1
+    },
+    {
+      "source": "小川哲司A1-3",
+      "target": "P3-6",
+      "weight": 1
+    },
+    {
+      "source": "トリ鳥澤健太郎P7-19",
+      "target": "P7-20",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "オギ小木曽智信P1-1",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "P6-11",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "高村大也P1-15",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "B5-1",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "E4-3",
+      "target": "P9-18",
+      "weight": 1
+    },
+    {
+      "source": "C2-2",
+      "target": "松崎拓也P1-2",
+      "weight": 1
+    },
+    {
+      "source": "C2-2",
+      "target": "B2-4",
+      "weight": 1
+    },
+    {
+      "source": "C2-2",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "A3-3",
+      "target": "田村拓也A2-4",
+      "weight": 1
+    },
+    {
+      "source": "Benjamin",
+      "target": "HeinzerlingE1-3",
+      "weight": 1
+    },
+    {
+      "source": "IkukoP2-12",
+      "target": "Hardaway",
+      "weight": 1
+    },
+    {
+      "source": "Li",
+      "target": "ShengA8-4",
+      "weight": 1
+    },
+    {
+      "source": "Li",
+      "target": "YunmengA3-4○",
+      "weight": 1
+    },
+    {
+      "source": "P5-8",
+      "target": "安藤涼太P1-13",
+      "weight": 1
+    },
+    {
+      "source": "B9-2",
+      "target": "佐藤志貴B9-1○",
+      "weight": 1
+    },
+    {
+      "source": "吉川将司B1-3○",
+      "target": "P2-19",
+      "weight": 1
+    },
+    {
+      "source": "P4-6○",
+      "target": "田中弥生P3-12○",
+      "weight": 1
+    },
+    {
+      "source": "WeiP1-20○",
+      "target": "Yang",
+      "weight": 1
+    },
+    {
+      "source": "横野光E2-2",
+      "target": "P4-4",
+      "weight": 1
+    },
+    {
+      "source": "横野光E2-2",
+      "target": "P8-3",
+      "weight": 1
+    },
+    {
+      "source": "P9-2",
+      "target": "村田真樹P9-1",
+      "weight": 1
+    },
+    {
+      "source": "P5-14",
+      "target": "西村太一P2-13",
+      "weight": 1
+    },
+    {
+      "source": "P5-14",
+      "target": "P5-13○",
+      "weight": 1
+    },
+    {
+      "source": "TengyangA5-3",
+      "target": "Chen",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "井之上直也E1-3",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "P2-8",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "P2-11",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "P4-1○",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "A7-2",
+      "weight": 1
+    },
+    {
+      "source": "E7-4",
+      "target": "P9-15",
+      "weight": 1
+    },
+    {
+      "source": "C5-2",
+      "target": "進藤裕之P2-17",
+      "weight": 1
+    },
+    {
+      "source": "P7-1",
+      "target": "村上仁一P3-7",
+      "weight": 1
+    },
+    {
+      "source": "P7-1",
+      "target": "E5-3○",
+      "weight": 1
+    },
+    {
+      "source": "P7-1",
+      "target": "P7-3",
+      "weight": 1
+    },
+    {
+      "source": "カジ梶原智之C1-2",
+      "target": "P3-3○",
+      "weight": 1
+    },
+    {
+      "source": "カジ梶原智之C1-2",
+      "target": "A8-1",
+      "weight": 1
+    },
+    {
+      "source": "P7-20",
+      "target": "Jong-Hoon OhP7-19",
+      "weight": 1
+    },
+    {
+      "source": "YongminD8-2○",
+      "target": "Kim",
+      "weight": 1
+    },
+    {
+      "source": "吉野幸一郎P2-9",
+      "target": "P7-17",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "アキ秋葉友良P1-21",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "A3-1",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "B6-2",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "C8-2",
+      "target": "A9-3",
+      "weight": 1
+    },
+    {
+      "source": "P3-3○",
+      "target": "A8-1",
+      "weight": 1
+    },
+    {
+      "source": "P5-13○",
+      "target": "西村太一P2-13",
+      "weight": 1
+    },
+    {
+      "source": "B4-4",
+      "target": "阪本浩太郎P2-10",
+      "weight": 1
+    },
+    {
+      "source": "B4-4",
+      "target": "シブ渋木英潔P2-10",
+      "weight": 1
+    },
+    {
+      "source": "B4-4",
+      "target": "B6-2",
+      "weight": 1
+    },
+    {
+      "source": "B4-4",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "ミワ三輪誠P2-16",
+      "target": "C8-3",
+      "weight": 1
+    },
+    {
+      "source": "P9-5",
+      "target": "河野誠也P7-17",
+      "weight": 1
+    },
+    {
+      "source": "P8-15",
+      "target": "西田典起E7-3○",
+      "weight": 1
+    },
+    {
+      "source": "P8-15",
+      "target": "P8-21",
+      "weight": 1
+    },
+    {
+      "source": "P8-15",
+      "target": "山田育矢P8-14",
+      "weight": 1
+    },
+    {
+      "source": "B5-1",
+      "target": "高村大也P1-15",
+      "weight": 1
+    },
+    {
+      "source": "B5-1",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "B5-1",
+      "target": "P9-18",
+      "weight": 1
+    },
+    {
+      "source": "キヤ木山幸子P4-2",
+      "target": "P4-3",
+      "weight": 1
+    },
+    {
+      "source": "SakrianiA4-1",
+      "target": "Sakti",
+      "weight": 1
+    },
+    {
+      "source": "SakrianiA4-1",
+      "target": "A4-2",
+      "weight": 1
+    },
+    {
+      "source": "A9-3",
+      "target": "アキ秋葉友良P1-21",
+      "weight": 1
+    },
+    {
+      "source": "A9-3",
+      "target": "A3-1",
+      "weight": 1
+    },
+    {
+      "source": "A9-3",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "A9-3",
+      "target": "B6-2",
+      "weight": 1
+    },
+    {
+      "source": "A9-3",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "P7-11",
+      "target": "ツル鶴岡慶雅B2-1",
+      "weight": 1
+    },
+    {
+      "source": "P7-11",
+      "target": "P8-14",
+      "weight": 1
+    },
+    {
+      "source": "コバ小林一郎P6-16",
+      "target": "P6-17",
+      "weight": 1
+    },
+    {
+      "source": "コバ小林一郎P6-16",
+      "target": "P9-4",
+      "weight": 1
+    },
+    {
+      "source": "シモ下平英寿A6-3",
+      "target": "A7-1",
+      "weight": 1
+    },
+    {
+      "source": "吉田遼C2-3",
+      "target": "C2-4○",
+      "weight": 1
+    },
+    {
+      "source": "吉田遼C2-3",
+      "target": "P4-1",
+      "weight": 1
+    },
+    {
+      "source": "P9-15",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "P9-15",
+      "target": "P4-1○",
+      "weight": 1
+    },
+    {
+      "source": "P9-15",
+      "target": "A7-2",
+      "weight": 1
+    },
+    {
+      "source": "B9-4",
+      "target": "ヒガ東中竜一郎C6-2",
+      "weight": 1
+    },
+    {
+      "source": "B9-4",
+      "target": "C6-4",
+      "weight": 1
+    },
+    {
+      "source": "永田亮D4-1○",
+      "target": "D7-3",
+      "weight": 1
+    },
+    {
+      "source": "ツル鶴岡慶雅B2-1",
+      "target": "P8-14",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "岡崎直観B3-3",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "C3-1",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "D3-2",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "A7-4",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "P4-4",
+      "target": "P8-3",
+      "weight": 1
+    },
+    {
+      "source": "村上仁一P3-7",
+      "target": "E5-3○",
+      "weight": 1
+    },
+    {
+      "source": "村上仁一P3-7",
+      "target": "P7-3",
+      "weight": 1
+    },
+    {
+      "source": "P4-1",
+      "target": "P6-1",
+      "weight": 1
+    },
+    {
+      "source": "P4-1",
+      "target": "P6-9○",
+      "weight": 1
+    },
+    {
+      "source": "P4-1",
+      "target": "伊藤拓海C2-3",
+      "weight": 1
+    },
+    {
+      "source": "P4-1",
+      "target": "P9-15○",
+      "weight": 1
+    },
+    {
+      "source": "P4-1",
+      "target": "C2-4○",
+      "weight": 1
+    },
+    {
+      "source": "P8-2",
+      "target": "ケヤ欅惇志D3-2",
+      "weight": 1
+    },
+    {
+      "source": "C6-4",
+      "target": "ヒガ東中竜一郎C6-2",
+      "weight": 1
+    },
+    {
+      "source": "C4-2",
+      "target": "P4-11",
+      "weight": 1
+    },
+    {
+      "source": "C4-2",
+      "target": "C9-3",
+      "weight": 1
+    },
+    {
+      "source": "P9-18",
+      "target": "高村大也P1-15",
+      "weight": 1
+    },
+    {
+      "source": "P9-18",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "P9-18",
+      "target": "中山英樹P8-21",
+      "weight": 1
+    },
+    {
+      "source": "井之上直也E1-3",
+      "target": "P2-8",
+      "weight": 1
+    },
+    {
+      "source": "井之上直也E1-3",
+      "target": "P2-11",
+      "weight": 1
+    },
+    {
+      "source": "LiyanB8-4",
+      "target": "WANG",
+      "weight": 1
+    },
+    {
+      "source": "Guo",
+      "target": "LuP4-8○",
+      "weight": 1
+    },
+    {
+      "source": "山田康輔B6-4○",
+      "target": "C9-3○",
+      "weight": 1
+    },
+    {
+      "source": "B8-3",
+      "target": "キヨ清野舜B1-4○",
+      "weight": 1
+    },
+    {
+      "source": "B8-3",
+      "target": "P7-13",
+      "weight": 1
+    },
+    {
+      "source": "B8-3",
+      "target": "C9-4",
+      "weight": 1
+    },
+    {
+      "source": "E5-3○",
+      "target": "P7-3",
+      "weight": 1
+    },
+    {
+      "source": "HaiyueA4-3",
+      "target": "A4-4○",
+      "weight": 1
+    },
+    {
+      "source": "BrassardE1-3",
+      "target": "Ana",
+      "weight": 1
+    },
+    {
+      "source": "BrassardE1-3",
+      "target": "B8-2",
+      "weight": 1
+    },
+    {
+      "source": "P2-11",
+      "target": "P2-8",
+      "weight": 1
+    },
+    {
+      "source": "P8-21",
+      "target": "西田典起E7-3○",
+      "weight": 1
+    },
+    {
+      "source": "P9-10",
+      "target": "佐々木裕P2-16",
+      "weight": 1
+    },
+    {
+      "source": "P9-10",
+      "target": "C8-3",
+      "weight": 1
+    },
+    {
+      "source": "P5-10",
+      "target": "ヒラ平尾努P5-9",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "岡崎直観B3-3",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "C3-1",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "D3-2",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "吉本啓E3-2○",
+      "target": "E9-1",
+      "weight": 1
+    },
+    {
+      "source": "B6-2",
+      "target": "アキ秋葉友良P1-21",
+      "weight": 1
+    },
+    {
+      "source": "B6-2",
+      "target": "A3-1",
+      "weight": 1
+    },
+    {
+      "source": "B6-2",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "B6-2",
+      "target": "P6-2",
+      "weight": 2
+    },
+    {
+      "source": "B6-2",
+      "target": "シブ渋木英潔P2-10",
+      "weight": 1
+    },
+    {
+      "source": "B2-4",
+      "target": "松崎拓也P1-2",
+      "weight": 1
+    },
+    {
+      "source": "B2-4",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "シブ渋木英潔P2-10",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "Zhan",
+      "target": "HaosenA6-1○",
+      "weight": 1
+    },
+    {
+      "source": "C9-4",
+      "target": "キヨ清野舜B1-4○",
+      "weight": 1
+    },
+    {
+      "source": "C9-4",
+      "target": "P7-13",
+      "weight": 1
+    },
+    {
+      "source": "C9-4",
+      "target": "松林優一郎D4-3",
+      "weight": 1
+    },
+    {
+      "source": "アラ新井紀子C2-2",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "P9-7",
+      "target": "谷本恒野P1-17",
+      "weight": 1
+    },
+    {
+      "source": "アキ秋葉友良P1-21",
+      "target": "A3-1",
+      "weight": 1
+    },
+    {
+      "source": "アキ秋葉友良P1-21",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "アキ秋葉友良P1-21",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "P6-1",
+      "target": "P6-9○",
+      "weight": 1
+    },
+    {
+      "source": "P9-15○",
+      "target": "伊藤拓海C2-3",
+      "weight": 1
+    },
+    {
+      "source": "A3-1",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "A3-1",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "TerumasaP3-14○",
+      "target": "Ehara",
+      "weight": 1
+    },
+    {
+      "source": "関洋平C3-4",
+      "target": "P6-10",
+      "weight": 1
+    },
+    {
+      "source": "ミノ美野秀弥P1-3○",
+      "target": "A2-3",
+      "weight": 1
+    },
+    {
+      "source": "ミノ美野秀弥P1-3○",
+      "target": "P7-6",
+      "weight": 1
+    },
+    {
+      "source": "A2-3",
+      "target": "P7-6",
+      "weight": 1
+    },
+    {
+      "source": "キタ北田俊輔P6-14○",
+      "target": "P9-14",
+      "weight": 1
+    },
+    {
+      "source": "Sumita",
+      "target": "EiichiroA4-4",
+      "weight": 1
+    },
+    {
+      "source": "P6-11",
+      "target": "オギ小木曽智信P1-1",
+      "weight": 1
+    },
+    {
+      "source": "HaihanB2-1○",
+      "target": "Yu",
+      "weight": 1
+    },
+    {
+      "source": "C9-3",
+      "target": "P4-11",
+      "weight": 2
+    },
+    {
+      "source": "C9-3",
+      "target": "武田浩一C4-2",
+      "weight": 1
+    },
+    {
+      "source": "高村大也P1-15",
+      "target": "P5-18",
+      "weight": 1
+    },
+    {
+      "source": "武田浩一C4-2",
+      "target": "P4-11",
+      "weight": 1
+    },
+    {
+      "source": "松崎拓也P1-2",
+      "target": "E4-4",
+      "weight": 1
+    },
+    {
+      "source": "E4-2○",
+      "target": "D3-3",
+      "weight": 1
+    },
+    {
+      "source": "C8-3",
+      "target": "佐々木裕P2-16",
+      "weight": 1
+    },
+    {
+      "source": "西田京介B1-1",
+      "target": "C1-4",
+      "weight": 1
+    },
+    {
+      "source": "西田京介B1-1",
+      "target": "A5-1",
+      "weight": 1
+    },
+    {
+      "source": "キヨ清野舜B1-4○",
+      "target": "P7-13",
+      "weight": 1
+    },
+    {
+      "source": "B6-2○",
+      "target": "小川泰弘C4-1",
+      "weight": 1
+    },
+    {
+      "source": "B6-2○",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "A7-2",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "A7-2",
+      "target": "P4-1○",
+      "weight": 1
+    },
+    {
+      "source": "Liu",
+      "target": "ShanshanP8-15",
+      "weight": 1
+    },
+    {
+      "source": "P5-18",
+      "target": "岡崎直観B3-3",
+      "weight": 1
+    },
+    {
+      "source": "P5-18",
+      "target": "C3-1",
+      "weight": 1
+    },
+    {
+      "source": "P5-18",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "P5-18",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "P5-18",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "P9-4",
+      "target": "P6-17",
+      "weight": 1
+    },
+    {
+      "source": "A4-2",
+      "target": "Sakti",
+      "weight": 1
+    },
+    {
+      "source": "岡崎直観B3-3",
+      "target": "C3-1",
+      "weight": 1
+    },
+    {
+      "source": "岡崎直観B3-3",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "岡崎直観B3-3",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "岡崎直観B3-3",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "小川泰弘C4-1",
+      "target": "P6-2",
+      "weight": 1
+    },
+    {
+      "source": "P4-1○",
+      "target": "栗林樹生C2-3○",
+      "weight": 1
+    },
+    {
+      "source": "A5-1",
+      "target": "C1-4",
+      "weight": 1
+    },
+    {
+      "source": "C3-1",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "C3-1",
+      "target": "B6-4",
+      "weight": 1
+    },
+    {
+      "source": "C3-1",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "P6-2",
+      "target": "C4-3",
+      "weight": 1
+    },
+    {
+      "source": "B6-4",
+      "target": "P4-9",
+      "weight": 1
+    },
+    {
+      "source": "B6-4",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "B8-2",
+      "target": "Ana",
+      "weight": 1
+    },
+    {
+      "source": "P4-9",
+      "target": "C7-3",
+      "weight": 1
+    },
+    {
+      "source": "荒木健治A1-1",
+      "target": "P8-13",
+      "weight": 1
+    }
+  ]
+}
