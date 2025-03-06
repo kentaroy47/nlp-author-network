@@ -3,1049 +3,798 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>論文著者ネットワーク分析 (2021-2025)</title>
+    <title>ANLP著者ネットワーク可視化</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <style>
         body {
-            font-family: 'Meiryo', 'メイリオ', sans-serif;
+            font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
             margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        #container {
-            display: flex;
-            height: 100vh;
-        }
-        
-        #graph {
-            flex: 1;
-            background-color: #f9f9f9;
-        }
-        
-        #sidebar {
-            width: 320px;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-            overflow-y: auto;
+            background-color: #f7f7f7;
         }
-        
-        h1 {
-            font-size: 18px;
-            margin-top: 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
         }
-        
-        h2 {
-            font-size: 16px;
-            margin-top: 20px;
+        h1, h2 {
+            color: #333;
         }
-        
         .controls {
             margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 15px;
         }
-        
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
         label {
-            display: block;
-            margin-top: 10px;
+            font-weight: bold;
+            color: #555;
         }
-        
-        select, input {
-            width: 100%;
-            padding: 5px;
-            margin-top: 5px;
-        }
-        
-        button {
-            background-color: #4285f4;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-        
-        button:hover {
-            background-color: #3367d6;
-        }
-        
-        .node {
-            stroke: #fff;
-            stroke-width: 1.5px;
-        }
-        
-        .link {
-            stroke: #999;
-            stroke-opacity: 0.6;
-        }
-        
-        .tooltip {
-            position: absolute;
-            padding: 10px;
-            background-color: white;
+        select, input, button {
+            padding: 8px 12px;
             border: 1px solid #ddd;
-            border-radius: 4px;
-            pointer-events: none;
-            font-size: 12px;
-            box-shadow: 0 0 5px rgba(0,0,0,0.1);
-            z-index: 1000;
-            max-width: 300px;
-        }
-        
-        #author-info {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #f5f5f5;
             border-radius: 4px;
             font-size: 14px;
         }
-        
-        .metric {
-            display: inline-block;
-            background-color: #e0e0e0;
-            padding: 3px 6px;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            border-radius: 3px;
-            font-size: 12px;
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
         }
-        
-        #loading {
+        button:hover {
+            background-color: #45a049;
+        }
+        .file-input {
+            margin-bottom: 20px;
+        }
+        .visualization {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            overflow: hidden;
+            background-color: #fafafa;
+            position: relative;
+        }
+        #network {
+            width: 100%;
+            height: 100%;
+        }
+        .tooltip {
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            pointer-events: none;
+            max-width: 300px;
+            z-index: 1000;
+        }
+        .legend {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: white;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 12px;
+            max-width: 200px;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            border-radius: 3px;
+        }
+        .stats {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+        }
+        .table-container {
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+            position: sticky;
+            top: 0;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .primary-author {
+            font-weight: bold;
+            color: #2c7fb8;
+        }
+        .node-selected {
+            stroke: #ff0000;
+            stroke-width: 2px;
+        }
+        .loading {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            text-align: center;
-            z-index: 2000;
-        }
-        
-        #search-box {
-            margin-top: 10px;
-        }
-        
-        #search-results {
-            margin-top: 10px;
-            max-height: 200px;
-            overflow-y: auto;
-        }
-        
-        .search-item {
-            padding: 5px;
-            cursor: pointer;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .search-item:hover {
-            background-color: #f0f0f0;
-        }
-        
-        .color-legend {
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 10px;
-        }
-        
-        .legend-item {
-            display: flex;
-            align-items: center;
-            margin-right: 8px;
-            margin-bottom: 5px;
-            font-size: 12px;
-        }
-        
-        .color-box {
-            width: 12px;
-            height: 12px;
-            margin-right: 4px;
-            border-radius: 2px;
-        }
-
-        .stats-box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin-top: 10px;
-        }
-
-        .stat-item {
-            background-color: #f5f5f5;
-            padding: 8px;
-            border-radius: 4px;
-            margin-bottom: 8px;
-            width: calc(50% - 5px);
-            box-sizing: border-box;
-            text-align: center;
-        }
-
-        .stat-value {
             font-size: 18px;
-            font-weight: bold;
-            color: #4285f4;
-        }
-
-        .stat-label {
-            font-size: 12px;
             color: #666;
-        }
-
-        .top-authors {
-            margin-top: 10px;
-        }
-
-        .author-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 5px 0;
-            border-bottom: 1px solid #eee;
-            cursor: pointer;
-        }
-
-        .author-item:hover {
-            background-color: #f0f0f0;
-        }
-
-        .top-authors-title {
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        .error-message {
-            padding: 15px;
-            background-color: #f8d7da;
-            color: #721c24;
-            border-radius: 4px;
-            margin-top: 20px;
-        }
-        
-        .year-selector {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-        }
-        
-        .year-btn {
-            padding: 8px 12px;
-            border-radius: 4px;
-            background-color: #eee;
-            border: 1px solid #ddd;
-            cursor: pointer;
-            flex: 1;
-            text-align: center;
-            font-weight: normal;
-            font-family: inherit;
-            font-size: inherit;
-        }
-        
-        .year-btn.active {
-            background-color: #4285f4;
-            color: white;
-            border-color: #3367d6;
-            font-weight: bold;
-        }
-        
-        .papers-list {
-            margin-top: 10px;
-            max-height: 300px;
-            overflow-y: auto;
-            font-size: 13px;
-        }
-        
-        .paper-item {
-            padding: 8px;
-            border-bottom: 1px solid #eee;
-            margin-bottom: 8px;
-        }
-        
-        .paper-title {
-            font-weight: bold;
-            margin-bottom: 5px;
-        }
-        
-        .paper-authors {
-            color: #666;
-            font-style: italic;
         }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="graph"></div>
-        <div id="sidebar">
-            <h1>論文著者ネットワーク分析</h1>
-            
-            <div class="controls">
-                <h2>年度選択</h2>
-                <div class="year-selector">
-                    <button class="year-btn active" data-year="2025">2025年</button>
-                    <button class="year-btn" data-year="2024">2024年</button>
-                    <button class="year-btn" data-year="2023">2023年</button>
-                    <button class="year-btn" data-year="2022">2022年</button>
-                    <button class="year-btn" data-year="2021">2021年</button>
-                    <button class="year-btn" data-year="all">全期間</button>
+    <div class="container">
+        <h1>ANLP著者ネットワーク可視化</h1>
+        
+        <div class="file-input">
+            <h2>JSONファイル読み込み</h2>
+            <input type="file" id="json-file" accept=".json">
+            <button id="load-json">読み込む</button>
+            <span id="file-status">ファイルが選択されていません</span>
+        </div>
+        
+        <div class="controls">
+            <div>
+                <div class="filter-group">
+                    <label for="heading-filter">行見出し:</label>
+                    <select id="heading-filter">
+                        <option value="">すべて</option>
+                    </select>
                 </div>
-                
-                <div class="stats-box" id="stats-box">
-                    <!-- 統計情報はJSで動的に生成 -->
+                <div class="filter-group">
+                    <label for="index-filter">50音インデックス:</label>
+                    <select id="index-filter">
+                        <option value="">すべて</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="group-filter">グループ:</label>
+                    <select id="group-filter">
+                        <option value="">すべて</option>
+                    </select>
                 </div>
             </div>
-            
-            <div class="controls">
-                <h2>表示設定</h2>
-                <label for="node-size">ノードサイズ基準:</label>
-                <select id="node-size">
-                    <option value="papers">論文数</option>
-                    <option value="degree">共著者数</option>
-                    <option value="betweenness">媒介中心性</option>
-                    <option value="pagerank" selected>PageRank</option>
-                </select>
-                
-                <label for="link-threshold">最小共著回数:</label>
-                <input type="range" id="link-threshold" min="1" max="5" value="1">
-                <span id="link-value">1</span>
-                
-                <label for="node-threshold">最小論文数:</label>
-                <input type="range" id="node-threshold" min="1" max="5" value="1">
-                <span id="node-value">1</span>
-                
-                <button id="apply-filters">適用</button>
-            </div>
-            
-            <div class="controls">
-                <h2>検索</h2>
-                <div id="search-box">
-                    <input type="text" id="search-input" placeholder="著者名を入力...">
-                    <button id="search-button">検索</button>
+            <div>
+                <div class="filter-group">
+                    <label for="min-papers">最小論文数:</label>
+                    <input type="number" id="min-papers" min="1" value="1" style="width: 60px;">
                 </div>
-                <div id="search-results"></div>
-            </div>
-            
-            <div id="author-info">
-                著者を選択すると、詳細情報が表示されます。
-            </div>
-            
-            <div class="controls">
-                <h2>コミュニティ</h2>
-                <div class="color-legend" id="community-legend"></div>
-            </div>
-            
-            <div class="controls">
-                <h2>影響力の高い著者</h2>
-                <div class="top-authors" id="top-authors"></div>
+                <div class="filter-group">
+                    <label for="min-connections">最小接続数:</label>
+                    <input type="number" id="min-connections" min="1" value="1" style="width: 60px;">
+                </div>
+                <div class="filter-group">
+                    <button id="apply-filters">フィルタ適用</button>
+                    <button id="reset-filters" style="background-color: #f44336;">リセット</button>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div id="loading">データを読み込み中...<br>少々お待ちください</div>
-    <div id="tooltip" class="tooltip" style="display: none;"></div>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
-    <script>
-        // 1. グローバル変数
-        let graph;
-        let simulation;
-        let svg;
-        let width, height;
-        let nodesData, linksData;
-        let filteredNodes, filteredLinks;
-        let nodeElements, linkElements, labelElements;
-        let nodeSizeScale;
-        let colorScale;
-        let communities = {};
-        let currentYear = '2025'; // デフォルトは2025年
-        let papersData = {}; // 著者ごとの論文情報
         
-        // 2. 初期設定とグラフ作成
-        function initGraph() {
-            console.log("グラフ初期化開始");
+        <div class="visualization">
+            <div id="network"></div>
+            <div class="loading" id="loading">JSONファイルを読み込んでください</div>
+            <div class="legend" id="legend"></div>
+        </div>
+        
+        <div class="stats" id="network-stats">
+            <h2>ネットワーク統計</h2>
+            <div id="stats-content">データを読み込むと統計情報が表示されます</div>
+        </div>
+        
+        <div class="table-container">
+            <h2>著者リスト</h2>
+            <div class="filter-group">
+                <input type="text" id="author-search" placeholder="著者名で検索..." style="width: 200px;">
+                <button id="search-author">検索</button>
+            </div>
+            <table id="authors-table">
+                <thead>
+                    <tr>
+                        <th>著者名</th>
+                        <th>グループ</th>
+                        <th>論文数</th>
+                        <th>主著者数</th>
+                        <th>共著者数</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- テーブルの内容は動的に生成されます -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        // グローバル変数
+        let originalData = null;  // 元のJSONデータ
+        let filteredData = null;  // フィルタリングされたデータ
+        let simulation = null;   // D3シミュレーション
+        let svg = null;          // SVG要素
+        let link = null;         // リンク要素
+        let node = null;         // ノード要素
+        let tooltip = null;      // ツールチップ
+        let selectedNode = null; // 選択されたノード
+        
+        // 色の設定
+        const colorScheme = d3.schemeCategory10;
+        const groupColors = {};
+        
+        // 初期化
+        document.addEventListener('DOMContentLoaded', initialize);
+        
+        function initialize() {
+            // イベントリスナーの設定
+            document.getElementById('load-json').addEventListener('click', loadJSONFile);
+            document.getElementById('apply-filters').addEventListener('click', applyFilters);
+            document.getElementById('reset-filters').addEventListener('click', resetFilters);
+            document.getElementById('search-author').addEventListener('click', searchAuthor);
             
-            const graphDiv = document.getElementById('graph');
-            width = graphDiv.clientWidth;
-            height = graphDiv.clientHeight;
+            // ファイル選択時の表示更新
+            document.getElementById('json-file').addEventListener('change', function(event) {
+                const fileName = event.target.files[0]?.name || 'ファイルが選択されていません';
+                document.getElementById('file-status').textContent = fileName;
+            });
             
-            d3.select('#graph svg').remove();
+            // ツールチップの初期化
+            tooltip = d3.select('body')
+                .append('div')
+                .attr('class', 'tooltip')
+                .style('opacity', 0);
+        }
+        
+        // JSONファイルを読み込む
+        function loadJSONFile() {
+            const fileInput = document.getElementById('json-file');
+            const file = fileInput.files[0];
             
-            svg = d3.select('#graph')
+            if (!file) {
+                alert('ファイルを選択してください');
+                return;
+            }
+            
+            document.getElementById('loading').textContent = 'JSONファイルを読み込んでいます...';
+            document.getElementById('loading').style.display = 'block';
+            
+            const reader = new FileReader();
+            
+            reader.onload = function(event) {
+                try {
+                    originalData = JSON.parse(event.target.result);
+                    
+                    // データの検証
+                    if (!originalData.nodes || !originalData.links) {
+                        throw new Error('JSONデータの形式が正しくありません。"nodes"と"links"プロパティが必要です。');
+                    }
+                    
+                    // フィルタオプションの初期化
+                    initializeFilterOptions(originalData);
+                    
+                    // データを可視化
+                    filteredData = JSON.parse(JSON.stringify(originalData)); // ディープコピー
+                    visualizeNetwork(filteredData);
+                    
+                    // 著者テーブルの更新
+                    updateAuthorsTable(filteredData.nodes);
+                    
+                    // 統計情報の更新
+                    updateStatistics(filteredData);
+                    
+                } catch (error) {
+                    console.error('JSONの解析エラー:', error);
+                    document.getElementById('loading').textContent = 'JSONファイルの解析に失敗しました: ' + error.message;
+                }
+            };
+            
+            reader.onerror = function() {
+                document.getElementById('loading').textContent = 'ファイルの読み込みに失敗しました';
+            };
+            
+            reader.readAsText(file);
+        }
+        
+        // フィルタオプションの初期化
+        function initializeFilterOptions(data) {
+            // グループの抽出
+            const groups = new Set();
+            const headings = new Set();
+            const indices = new Set();
+            
+            data.nodes.forEach(node => {
+                if (node.group) groups.add(node.group);
+                if (node.heading) headings.add(node.heading);
+                if (node.index) indices.add(node.index);
+            });
+            
+            // グループカラーの設定
+            Array.from(groups).forEach((group, i) => {
+                groupColors[group] = colorScheme[i % colorScheme.length];
+            });
+            
+            // セレクトボックスの更新
+            updateSelectOptions('group-filter', groups);
+            updateSelectOptions('heading-filter', headings);
+            updateSelectOptions('index-filter', indices);
+        }
+        
+        // セレクトボックスのオプション更新
+        function updateSelectOptions(selectId, optionsSet) {
+            const select = document.getElementById(selectId);
+            select.innerHTML = '<option value="">すべて</option>';
+            
+            Array.from(optionsSet).sort().forEach(option => {
+                const optionElement = document.createElement('option');
+                optionElement.value = option;
+                optionElement.textContent = option;
+                select.appendChild(optionElement);
+            });
+        }
+        
+        // フィルタを適用
+        function applyFilters() {
+            if (!originalData) {
+                alert('先にJSONファイルを読み込んでください');
+                return;
+            }
+            
+            const group = document.getElementById('group-filter').value;
+            const heading = document.getElementById('heading-filter').value;
+            const index = document.getElementById('index-filter').value;
+            const minPapers = parseInt(document.getElementById('min-papers').value) || 1;
+            const minConnections = parseInt(document.getElementById('min-connections').value) || 1;
+            
+            // ノードのフィルタリング
+            let filteredNodes = originalData.nodes.filter(node => {
+                // グループフィルタ
+                if (group && node.group !== group) return false;
+                
+                // 見出しフィルタ
+                if (heading && node.heading !== heading) return false;
+                
+                // インデックスフィルタ
+                if (index && node.index !== index) return false;
+                
+                // 論文数フィルタ
+                if (minPapers > 1 && node.papers_count < minPapers) return false;
+                
+                return true;
+            });
+            
+            // ノードIDのセット
+            const nodeIds = new Set(filteredNodes.map(node => node.id));
+            
+            // リンクのフィルタリング
+            let filteredLinks = originalData.links.filter(link => {
+                // ノードが存在するかチェック
+                return nodeIds.has(link.source) && nodeIds.has(link.target);
+            });
+            
+            // 接続数によるフィルタリング
+            if (minConnections > 1) {
+                // ノードごとの接続数
+                const nodeLinkCounts = {};
+                
+                filteredLinks.forEach(link => {
+                    nodeLinkCounts[link.source] = (nodeLinkCounts[link.source] || 0) + 1;
+                    nodeLinkCounts[link.target] = (nodeLinkCounts[link.target] || 0) + 1;
+                });
+                
+                // 最小接続数を満たすノード
+                const validNodeIds = new Set(
+                    Object.entries(nodeLinkCounts)
+                        .filter(([_, count]) => count >= minConnections)
+                        .map(([id, _]) => id)
+                );
+                
+                // ノードとリンクを再フィルタリング
+                filteredNodes = filteredNodes.filter(node => validNodeIds.has(node.id));
+                filteredLinks = filteredLinks.filter(link => 
+                    validNodeIds.has(link.source) && validNodeIds.has(link.target)
+                );
+            }
+            
+            // フィルタリングされたデータを設定
+            filteredData = {
+                nodes: filteredNodes,
+                links: filteredLinks
+            };
+            
+            // データを可視化
+            visualizeNetwork(filteredData);
+            
+            // 著者テーブルの更新
+            updateAuthorsTable(filteredData.nodes);
+            
+            // 統計情報の更新
+            updateStatistics(filteredData);
+        }
+        
+        // フィルタをリセット
+        function resetFilters() {
+            if (!originalData) return;
+            
+            // フィルタフォームをリセット
+            document.getElementById('group-filter').value = '';
+            document.getElementById('heading-filter').value = '';
+            document.getElementById('index-filter').value = '';
+            document.getElementById('min-papers').value = '1';
+            document.getElementById('min-connections').value = '1';
+            document.getElementById('author-search').value = '';
+            
+            // 元のデータで可視化
+            filteredData = JSON.parse(JSON.stringify(originalData));
+            visualizeNetwork(filteredData);
+            
+            // 著者テーブルの更新
+            updateAuthorsTable(filteredData.nodes);
+            
+            // 統計情報の更新
+            updateStatistics(filteredData);
+        }
+        
+        // 著者名で検索
+        function searchAuthor() {
+            if (!originalData) {
+                alert('先にJSONファイルを読み込んでください');
+                return;
+            }
+            
+            const searchTerm = document.getElementById('author-search').value.toLowerCase();
+            
+            if (!searchTerm) {
+                alert('検索語を入力してください');
+                return;
+            }
+            
+            // 検索条件に一致する著者を探す
+            const matchingNodes = originalData.nodes.filter(node => 
+                node.name.toLowerCase().includes(searchTerm)
+            );
+            
+            if (matchingNodes.length === 0) {
+                alert('該当する著者が見つかりませんでした');
+                return;
+            }
+            
+            // 一致した著者のIDセット
+            const matchingNodeIds = new Set(matchingNodes.map(node => node.id));
+            
+            // 関連するリンクをフィルタリング
+            const relatedLinks = originalData.links.filter(link => 
+                matchingNodeIds.has(link.source) || matchingNodeIds.has(link.target)
+            );
+            
+            // 関連するノードを追加
+            const relatedNodeIds = new Set(matchingNodes.map(node => node.id));
+            
+            relatedLinks.forEach(link => {
+                relatedNodeIds.add(link.source);
+                relatedNodeIds.add(link.target);
+            });
+            
+            // 関連するノードをフィルタリング
+            const relatedNodes = originalData.nodes.filter(node => 
+                relatedNodeIds.has(node.id)
+            );
+            
+            // フィルタリングされたデータを設定
+            filteredData = {
+                nodes: relatedNodes,
+                links: relatedLinks
+            };
+            
+            // データを可視化
+            visualizeNetwork(filteredData);
+            
+            // 著者テーブルの更新
+            updateAuthorsTable(filteredData.nodes);
+            
+            // 統計情報の更新
+            updateStatistics(filteredData);
+        }
+        
+        // ネットワーク可視化
+        function visualizeNetwork(data) {
+            // 既存のネットワークをクリア
+            d3.select('#network svg').remove();
+            
+            const container = document.getElementById('network');
+            const width = container.clientWidth;
+            const height = container.clientHeight;
+            
+            // SVG要素の作成
+            svg = d3.select('#network')
                 .append('svg')
-                .attr('width', width)
-                .attr('height', height);
+                .attr('width', '100%')
+                .attr('height', '100%')
+                .attr('viewBox', [0, 0, width, height]);
             
+            // ズーム機能
             const zoom = d3.zoom()
                 .scaleExtent([0.1, 8])
                 .on('zoom', (event) => {
-                    container.attr('transform', event.transform);
+                    g.attr('transform', event.transform);
                 });
             
             svg.call(zoom);
             
-            const container = svg.append('g');
+            // メイングループ
+            const g = svg.append('g');
             
-            // 色スケールの設定
-            colorScale = d3.scaleOrdinal(d3.schemeCategory10);
+            // リンクとノードのためのデータ準備
+            // ソースとターゲットが文字列の場合、オブジェクトに変換
+            const links = data.links.map(d => ({
+                source: typeof d.source === 'string' ? d.source : d.source.id || d.source,
+                target: typeof d.target === 'string' ? d.target : d.target.id || d.target,
+                value: d.value || 1,
+                papers: d.papers || []
+            }));
             
             // シミュレーション設定
-            simulation = d3.forceSimulation()
-                .force('link', d3.forceLink().id(d => d.id).distance(80))
-                .force('charge', d3.forceManyBody().strength(-250))
+            simulation = d3.forceSimulation(data.nodes)
+                .force('link', d3.forceLink(links).id(d => d.id).distance(100))
+                .force('charge', d3.forceManyBody().strength(-300))
                 .force('center', d3.forceCenter(width / 2, height / 2))
-                .force('collision', d3.forceCollide().radius(d => getNodeRadius(d) + 2));
+                .force('collision', d3.forceCollide().radius(d => getNodeRadius(d) + 5));
             
-            // リンク要素の作成
-            linkElements = container.append('g')
+            // リンク描画
+            link = g.append('g')
                 .attr('class', 'links')
-                .selectAll('line');
-            
-            // ノード要素の作成
-            nodeElements = container.append('g')
-                .attr('class', 'nodes')
-                .selectAll('circle');
-            
-            // ラベル要素の作成
-            labelElements = container.append('g')
-                .attr('class', 'labels')
-                .selectAll('text');
-                
-            // シミュレーションのtickイベント設定
-            simulation.on('tick', ticked);
-            
-            console.log("グラフ初期化完了");
-        }
-        
-        // 3. 年度選択と初期化
-        function init() {
-            console.log("アプリケーション初期化開始");
-            
-            // 年度ボタンのイベントリスナー設定
-            document.querySelectorAll('.year-btn').forEach(btn => {
-                btn.addEventListener('click', function() {
-                    const year = this.getAttribute('data-year');
-                    loadYearData(year);
-                    
-                    // アクティブクラスの更新
-                    document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-            
-            // デフォルトで2025年のデータを読み込む
-            loadYearData('2025');
-            
-            // イベントリスナーの設定
-            setupEventListeners();
-            console.log("アプリケーション初期化完了");
-        }
-        
-        // 4. 年度別データの読み込み
-        function loadYearData(year) {
-            console.log(`${year}年のデータを読み込み開始`);
-            document.getElementById('loading').style.display = 'block';
-            
-            currentYear = year;
-            
-            // 年度に対応するデータファイルを読み込む
-            const dataFile = `data/author_network_${year}_d3.json`;
-            console.log(`データファイル読み込み: ${dataFile}`);
-            
-            // 論文データも読み込む（存在する場合）
-            const papersFile = `data/papers_${year}.json`;
-            
-            // 両方のファイルを読み込む（論文データはオプション）
-            Promise.all([
-                d3.json(dataFile),
-                d3.json(papersFile).catch(() => null) // 論文データがなければnullを返す
-            ])
-            .then(([networkData, papers]) => {
-                console.log(`${year}年のネットワークデータ読み込み成功:`, networkData);
-                
-                if (papers) {
-                    console.log(`${year}年の論文データ読み込み成功:`, papers);
-                    papersData = papers;
-                } else {
-                    console.log(`${year}年の論文データは利用できません`);
-                    papersData = {};
-                }
-                
-                graph = networkData;
-                processData(networkData);
-                updateStats(year);
-                document.getElementById('loading').style.display = 'none';
-            })
-            .catch(error => {
-                console.error(`${year}年度のデータ読み込みエラー:`, error);
-                document.getElementById('loading').style.display = 'none';
-                showError(`データファイル (${dataFile}) の読み込みに失敗しました。`);
-                
-                // サンプルデータを使用
-                console.log("サンプルデータを使用します");
-                const sampleData = {
-                    "nodes": [
-                        {"id": "山田太郎", "name": "山田太郎", "papers": 5, "degree": 0.2, "betweenness": 0.15, "eigenvector": 0.3, "pagerank": 0.05, "community": 0},
-                        {"id": "鈴木一郎", "name": "鈴木一郎", "papers": 4, "degree": 0.15, "betweenness": 0.1, "eigenvector": 0.25, "pagerank": 0.04, "community": 0},
-                        {"id": "佐藤次郎", "name": "佐藤次郎", "papers": 3, "degree": 0.1, "betweenness": 0.05, "eigenvector": 0.2, "pagerank": 0.03, "community": 1}
-                    ],
-                    "links": [
-                        {"source": "山田太郎", "target": "鈴木一郎", "weight": 2},
-                        {"source": "山田太郎", "target": "佐藤次郎", "weight": 1},
-                        {"source": "鈴木一郎", "target": "佐藤次郎", "weight": 3}
-                    ]
-                };
-                
-                papersData = {
-                    "山田太郎": [
-                        { "title": "サンプル論文1", "authors": ["山田太郎", "鈴木一郎"] },
-                        { "title": "サンプル論文2", "authors": ["山田太郎", "佐藤次郎"] }
-                    ],
-                    "鈴木一郎": [
-                        { "title": "サンプル論文1", "authors": ["山田太郎", "鈴木一郎"] },
-                        { "title": "サンプル論文3", "authors": ["鈴木一郎", "佐藤次郎"] }
-                    ],
-                    "佐藤次郎": [
-                        { "title": "サンプル論文2", "authors": ["山田太郎", "佐藤次郎"] },
-                        { "title": "サンプル論文3", "authors": ["鈴木一郎", "佐藤次郎"] }
-                    ]
-                };
-                
-                graph = sampleData;
-                processData(sampleData);
-                updateStats(year);
-            });
-        }
-        
-        // 5. 統計情報の更新
-        function updateStats(year) {
-            console.log("統計情報更新");
-            
-            if (!nodesData || !linksData) {
-                console.error("統計情報更新: データがありません");
-                return;
-            }
-            
-            const statsBox = document.getElementById('stats-box');
-            statsBox.innerHTML = '';
-            
-            // コミュニティ数の計算
-            const communities = new Set(nodesData.map(d => d.community)).size;
-            
-            // 統計情報
-            const statItems = [
-                { label: '著者数', value: nodesData.length },
-                { label: '共著関係', value: linksData.length },
-                { label: 'コミュニティ', value: communities },
-                { label: '年度', value: year === 'all' ? '全期間' : `${year}年` }
-            ];
-            
-            statItems.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'stat-item';
-                div.innerHTML = `
-                    <div class="stat-value">${item.value}</div>
-                    <div class="stat-label">${item.label}</div>
-                `;
-                statsBox.appendChild(div);
-            });
-        }
-        
-        // 6. データ処理
-        function processData(data) {
-            console.log("データ処理開始:", data);
-            
-            if (!data || !data.nodes || !data.links) {
-                console.error("無効なデータ形式:", data);
-                return;
-            }
-            
-            nodesData = data.nodes;
-            linksData = data.links;
-            
-            // 初期フィルタリングとグラフ描画
-            applyFilters();
-            
-            // コミュニティ凡例の作成
-            createCommunityLegend();
-            
-            // トップ著者リストの更新
-            updateTopAuthors();
-            
-            console.log("データ処理完了");
-        }
-        
-        // 7. トップ著者リストの更新
-        function updateTopAuthors() {
-            console.log("トップ著者リスト更新");
-            
-            if (!nodesData) {
-                console.error("トップ著者リスト更新: データがありません");
-                return;
-            }
-            
-            // PageRankでソート
-            const topAuthors = [...nodesData].sort((a, b) => b.pagerank - a.pagerank).slice(0, 10);
-            
-            const topAuthorsDiv = document.getElementById('top-authors');
-            topAuthorsDiv.innerHTML = `<div class="top-authors-title">PageRank上位10人</div>`;
-            
-            topAuthors.forEach((author, index) => {
-                const item = document.createElement('div');
-                item.className = 'author-item';
-                item.innerHTML = `
-                    <span>${index + 1}. ${author.name}</span>
-                    <span>${author.pagerank.toFixed(4)}</span>
-                `;
-                
-                // クリックで該当著者を探す
-                item.addEventListener('click', () => {
-                    const node = filteredNodes.find(n => n.id === author.id);
-                    if (node) {
-                        showAuthorInfo(null, node);
-                    }
-                });
-                
-                topAuthorsDiv.appendChild(item);
-            });
-        }
-        
-        // 8. フィルタリングと更新
-        function applyFilters() {
-            console.log("フィルタリング適用開始");
-            
-            const nodeSizeAttr = document.getElementById('node-size').value;
-            const linkThreshold = parseInt(document.getElementById('link-threshold').value);
-            const nodeThreshold = parseInt(document.getElementById('node-threshold').value);
-            
-            console.log(`フィルター設定: 最小共著回数=${linkThreshold}, 最小論文数=${nodeThreshold}, サイズ基準=${nodeSizeAttr}`);
-            
-            if (!nodesData || !linksData) {
-                console.error("フィルタリング対象データがありません");
-                return;
-            }
-            
-            // リンクのフィルタリング
-            filteredLinks = linksData.filter(link => link.weight >= linkThreshold);
-            
-            // フィルタリングされたリンクに基づいて、接続されたノードのIDを収集
-            const connectedNodeIds = new Set();
-            filteredLinks.forEach(link => {
-                connectedNodeIds.add(typeof link.source === 'object' ? link.source.id : link.source);
-                connectedNodeIds.add(typeof link.target === 'object' ? link.target.id : link.target);
-            });
-            
-            // ノードのフィルタリング（論文数とリンク接続の両方を考慮）
-            filteredNodes = nodesData.filter(node => 
-                node.papers >= nodeThreshold && connectedNodeIds.has(node.id)
-            );
-            
-            console.log(`フィルタリング結果: ノード数=${filteredNodes.length}, リンク数=${filteredLinks.length}`);
-            
-            // ノードサイズのスケール設定
-            const maxValue = d3.max(filteredNodes, d => d[nodeSizeAttr]) || 1;
-            nodeSizeScale = d3.scaleSqrt()
-                .domain([0, maxValue])
-                .range([4, 25]);
-            
-            updateGraph();
-        }
-        
-        // 9. グラフ更新
-        function updateGraph() {
-            console.log("グラフ更新開始");
-            
-            if (!filteredNodes || !filteredLinks) {
-                console.error("更新するデータがありません");
-                return;
-            }
-            
-            // リンク要素の更新
-            linkElements = d3.select('.links')
                 .selectAll('line')
-                .data(filteredLinks, d => `${typeof d.source === 'object' ? d.source.id : d.source}-${typeof d.target === 'object' ? d.target.id : d.target}`)
-                .join(
-                    enter => enter.append('line')
-                        .attr('class', 'link')
-                        .attr('stroke-width', d => Math.sqrt(d.weight)),
-                    update => update,
-                    exit => exit.remove()
-                );
+                .data(links)
+                .enter().append('line')
+                .attr('stroke', '#999')
+                .attr('stroke-opacity', 0.6)
+                .attr('stroke-width', d => Math.sqrt(d.value) * 1.5)
+                .on('mouseover', showLinkTooltip)
+                .on('mouseout', hideTooltip);
             
-            // ノード要素の更新
-            nodeElements = d3.select('.nodes')
-                .selectAll('circle')
-                .data(filteredNodes, d => d.id)
-                .join(
-                    enter => enter.append('circle')
-                        .attr('class', 'node')
-                        .attr('r', getNodeRadius)
-                        .attr('fill', d => colorScale(d.community))
-                        .call(drag)
-                        .on('mouseover', showTooltip)
-                        .on('mouseout', hideTooltip)
-                        .on('click', showAuthorInfo),
-                    update => update
-                        .attr('r', getNodeRadius)
-                        .attr('fill', d => colorScale(d.community)),
-                    exit => exit.remove()
-                );
+            // ノード描画
+            const nodeGroup = g.append('g')
+                .attr('class', 'nodes')
+                .selectAll('g')
+                .data(data.nodes)
+                .enter().append('g')
+                .call(d3.drag()
+                    .on('start', dragstarted)
+                    .on('drag', dragged)
+                    .on('end', dragended))
+                .on('click', highlightNode);
             
-            // 重要なノードのラベル表示
-            const nodeSizeAttr = document.getElementById('node-size').value;
-            const topNodes = [...filteredNodes]
-                .sort((a, b) => b[nodeSizeAttr] - a[nodeSizeAttr])
-                .slice(0, 20);
+            // ノードの円
+            nodeGroup.append('circle')
+                .attr('r', getNodeRadius)
+                .attr('fill', getNodeColor)
+                .attr('stroke', '#fff')
+                .attr('stroke-width', 1.5)
+                .on('mouseover', showNodeTooltip)
+                .on('mouseout', hideTooltip);
             
-            labelElements = d3.select('.labels')
-                .selectAll('text')
-                .data(topNodes, d => d.id)
-                .join(
-                    enter => enter.append('text')
-                        .attr('class', 'label')
-                        .attr('text-anchor', 'middle')
-                        .attr('dy', d => -getNodeRadius(d) - 5)
-                        .text(d => d.name)
-                        .style('font-size', '10px')
-                        .style('pointer-events', 'none'),
-                    update => update,
-                    exit => exit.remove()
-                );
+            // ノードのラベル
+            nodeGroup.append('text')
+                .attr('dy', 4)
+                .attr('text-anchor', 'middle')
+                .attr('font-size', '10px')
+                .attr('pointer-events', 'none')
+                .text(d => getNodeRadius(d) > 8 ? getShortName(d.name) : '');
             
-            // シミュレーションの再開
-            simulation.nodes(filteredNodes);
-            simulation.force('link').links(filteredLinks);
-            simulation.alpha(1).restart();
+            node = nodeGroup;
             
-            console.log("グラフ更新完了");
-        }
-        
-        // 10. イベントハンドラ
-        function showTooltip(event, d) {
-            const tooltip = d3.select('#tooltip');
-            tooltip.style('display', 'block')
-                .style('left', (event.pageX + 10) + 'px')
-                .style('top', (event.pageY + 10) + 'px')
-                .html(`
-                    <strong>${d.name}</strong><br>
-                    論文数: ${d.papers}<br>
-                    PageRank: ${d.pagerank.toFixed(4)}<br>
-                    コミュニティ: ${d.community}
-                `);
-        }
-        
-        function hideTooltip() {
-            d3.select('#tooltip').style('display', 'none');
-        }
-        
-        function showAuthorInfo(event, d) {
-            console.log("著者情報表示:", d.name);
-            
-            // ノードをクリックしたときに詳細情報を表示
-            const infoDiv = document.getElementById('author-info');
-            
-            // 論文情報の生成
-            let papersHTML = '';
-            if (papersData && papersData[d.id] && papersData[d.id].length > 0) {
-                papersHTML = `
-                    <h3>論文</h3>
-                    <div class="papers-list">
-                `;
+            // シミュレーション更新
+            simulation.on('tick', () => {
+                link
+                    .attr('x1', d => d.source.x)
+                    .attr('y1', d => d.source.y)
+                    .attr('x2', d => d.target.x)
+                    .attr('y2', d => d.target.y);
                 
-                papersData[d.id].forEach(paper => {
-                    papersHTML += `
-                        <div class="paper-item">
-                            <div class="paper-title">${paper.title}</div>
-                            <div class="paper-authors">${paper.authors.join(', ')}</div>
-                        </div>
-                    `;
-                });
-                
-                papersHTML += '</div>';
-            }
-            
-            infoDiv.innerHTML = `
-                <h3>${d.name}</h3>
-                <div><span class="metric">論文数: ${d.papers}</span></div>
-                <div>
-                    <span class="metric">共著者数: ${(d.degree * (nodesData.length-1)).toFixed(0)}</span>
-                    <span class="metric">PageRank: ${d.pagerank.toFixed(4)}</span>
-                </div>
-                <div>
-                    <span class="metric">媒介中心性: ${d.betweenness.toFixed(4)}</span>
-                    <span class="metric">固有ベクトル: ${d.eigenvector.toFixed(4)}</span>
-                </div>
-                <div><span class="metric">コミュニティ: ${d.community}</span></div>
-                ${papersHTML}
-            `;
-            
-            // クリックしたノードを強調表示
-            nodeElements.attr('opacity', n => n.id === d.id ? 1.0 : 0.3);
-            
-            // 関連するリンクとノードを強調表示
-            linkElements.attr('opacity', l => {
-                const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-                const targetId = typeof l.target === 'object' ? l.target.id : l.target;
-                return sourceId === d.id || targetId === d.id ? 1.0 : 0.1;
+                node
+                    .attr('transform', d => `translate(${d.x},${d.y})`);
             });
             
-            // 関連するノードも強調表示
-            const connectedNodes = new Set();
-            filteredLinks.forEach(link => {
-                const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-                const targetId = typeof link.target === 'object' ? link.target.id : link.target;
-                
-                if (sourceId === d.id) connectedNodes.add(targetId);
-                if (targetId === d.id) connectedNodes.add(sourceId);
-            });
+            // 凡例表示
+            updateLegend(data);
             
-            nodeElements.attr('opacity', n => 
-                n.id === d.id || connectedNodes.has(n.id) ? 1.0 : 0.3
-            );
+            // ローディング非表示
+            document.getElementById('loading').style.display = 'none';
         }
         
-        // 11. ユーティリティ関数
+        // ノード半径の計算
         function getNodeRadius(d) {
-            const nodeSizeAttr = document.getElementById('node-size').value;
-            return nodeSizeScale(d[nodeSizeAttr]);
+            // 論文数と主著者数に基づいて計算（指標が存在する場合）
+            const papersCount = d.papers_count || d.papersCount || 1;
+            const primaryCount = d.primary_count || d.primaryCount || 0;
+            
+            return Math.max(5, Math.min(15, 5 + Math.sqrt(papersCount + primaryCount)));
         }
         
-        function createCommunityLegend() {
-            console.log("コミュニティ凡例作成");
+        // ノードの色を取得
+        function getNodeColor(d) {
+            if (d.group && groupColors[d.group]) {
+                return groupColors[d.group];
+            }
+            return '#1f77b4'; // デフォルト色
+        }
+        
+        // 著者名を短縮
+        function getShortName(name) {
+            const parts = name.split(' ');
+            if (parts.length >= 2) {
+                return parts[parts.length - 1]; // 姓だけを表示
+            }
+            return name;
+        }
+        
+        // 凡例の更新
+        function updateLegend(data) {
+            const legend = document.getElementById('legend');
+            legend.innerHTML = '<div style="font-weight: bold; margin-bottom: 8px;">凡例</div>';
             
-            if (!nodesData) {
-                console.error("コミュニティ凡例作成: データがありません");
+            // 使用されているグループを抽出
+            const usedGroups = new Set();
+            data.nodes.forEach(node => {
+                if (node.group) usedGroups.add(node.group);
+            });
+            
+            // グループが多すぎる場合は表示しない
+            if (usedGroups.size > 10) {
+                legend.innerHTML += '<div>グループが多すぎるため凡例は省略されています</div>';
                 return;
             }
             
-            const uniqueCommunities = [...new Set(nodesData.map(d => d.community))].sort((a, b) => a - b);
-            const legend = document.getElementById('community-legend');
-            legend.innerHTML = '';
-            
-            // 最大10個のコミュニティを表示
-            const displayCommunities = uniqueCommunities.slice(0, 10);
-            
-            displayCommunities.forEach(comm => {
+            // 凡例アイテムを作成
+            Array.from(usedGroups).sort().forEach(group => {
+                const color = groupColors[group] || '#999';
                 const item = document.createElement('div');
                 item.className = 'legend-item';
-                
-                const colorBox = document.createElement('div');
-                colorBox.className = 'color-box';
-                colorBox.style.backgroundColor = colorScale(comm);
-                
-                const label = document.createElement('span');
-                label.textContent = `グループ ${comm}`;
-                
-                item.appendChild(colorBox);
-                item.appendChild(label);
+                item.innerHTML = `
+                    <div class="legend-color" style="background-color: ${color};"></div>
+                    <div>${group}</div>
+                `;
                 legend.appendChild(item);
-                
-                // クリックでそのコミュニティをハイライト
-                item.addEventListener('click', () => highlightCommunity(comm));
-            });
-            
-            if (uniqueCommunities.length > 10) {
-                const moreItem = document.createElement('div');
-                moreItem.className = 'legend-item';
-                moreItem.textContent = `他 ${uniqueCommunities.length - 10} グループ`;
-                legend.appendChild(moreItem);
-            }
-        }
-        
-        function highlightCommunity(communityId) {
-            console.log(`コミュニティ ${communityId} をハイライト`);
-            
-            nodeElements.attr('opacity', n => n.community === communityId ? 1.0 : 0.3);
-            
-            // コミュニティ内のリンクを強調
-            linkElements.attr('opacity', l => {
-                const source = typeof l.source === 'object' ? l.source : nodesData.find(n => n.id === l.source);
-                const target = typeof l.target === 'object' ? l.target : nodesData.find(n => n.id === l.target);
-                
-                if (!source || !target) return 0.1;
-                
-                return source.community === communityId && 
-                       target.community === communityId ? 1.0 : 0.1;
             });
         }
         
-        function resetHighlight() {
-            nodeElements.attr('opacity', 1.0);
-            linkElements.attr('opacity', 1.0);
+        // 著者テーブルの更新
+        function updateAuthorsTable(nodes) {
+            const table = document.getElementById('authors-table').querySelector('tbody');
+            table.innerHTML = '';
+            
+            // ノードを名前でソート
+            const sortedNodes = [...nodes].sort((a, b) => a.name.localeCompare(b.name));
+            
+            sortedNodes.forEach(node => {
+                const row = document.createElement('tr');
+                
+                // 著者名
+                const nameCell = document.createElement('td');
+                nameCell.textContent = node.name;
+                nameCell.style.cursor = 'pointer';
+                nameCell.onclick = () => highlightNodeById(node.id);
+                row.appendChild(nameCell);
+                
+                // グループ
+                const groupCell = document.createElement('td');
+                groupCell.textContent = node.group || '-';
+                row.appendChild(groupCell);
+                
+                // 論文数
+                const papersCell = document.createElement('td');
+                papersCell.textContent = node.papers_count || node.papersCount || 0;
+                row.appendChild(papersCell);
+                
+                // 主著者数
+                const primaryCell = document.createElement('td');
+                primaryCell.textContent = node.primary_count || node.primaryCount || 0;
+                row.appendChild(primaryCell);
+                
+                // 共著者数
+                const coauthorsCell = document.createElement('td');
+                coauthorsCell.textContent = node.coauthors_count || node.coauthorsCount || 0;
+                row.appendChild(coauthorsCell);
+                
+                table.appendChild(row);
+            });
         }
         
-        function setupSearch() {
-            console.log("検索機能セットアップ");
+        // 統計情報の更新
+        function updateStatistics(data) {
+            const statsContent = document.getElementById('stats-content');
             
-            const searchInput = document.getElementById('search-input');
-            const searchButton = document.getElementById('search-button');
-            const resultsDiv = document.getElementById('search-results');
+            // 基本統計
+            const nodeCount = data.nodes.length;
+            const linkCount = data.links.length;
             
-            searchButton.addEventListener('click', () => {
-                const query = searchInput.value.toLowerCase();
-                if (!query) return;
+            // 論文数の合計
+            const totalPapers = data.nodes.reduce((sum, node) => 
+                sum + (node.papers_count || node.papersCount || 0), 0);
+            
+            // 主著者数の合計
+            const totalPrimary = data.nodes.reduce((sum, node) => 
+                sum + (node.primary_count || node.primaryCount || 0), 0);
+            
+            // 最も接続が多い著者
+            let maxConnections = 0;
+            let mostConnectedAuthor = '';
+            
+            data.nodes.forEach(node => {
+                const connections = data.links.filter(link => 
+                    link.source === node.id || link.target === node.id
+                ).length;
                 
-                console.log(`検索クエリ: ${query}`);
-                
-                const results = nodesData.filter(node => 
-                    node.name.toLowerCase().includes(query)
-                );
-                
-                resultsDiv.innerHTML = '';
-                
-                if (results.length === 0) {
-                    resultsDiv.innerHTML = '<div>検索結果がありません</div>';
-                    return;
+                if (connections > maxConnections) {
+                    maxConnections = connections;
+                    mostConnectedAuthor = node.name;
                 }
-                
-                console.log(`検索結果: ${results.length}件`);
-                
-                results.forEach(node => {
-                    const item = document.createElement('div');
-                    item.className = 'search-item';
-                    item.textContent = node.name;
-                    item.addEventListener('click', () => {
-                        // 検索結果クリックで該当ノードにフォーカス
-                        const d = filteredNodes.find(n => n.id === node.id);
-                        if (d) showAuthorInfo(null, d);
+            });
+            
+            // グループの統計
+            const groupStats = {};
+            data.nodes.forEach(node => {
+                const group = node.group || '不明';
+                if (!groupStats[group]) {
+                    groupStats[group] = 1;
+                } else {
+                    groupStats[group]++;
+                }
+            });
+            
+            // 統計情報を表示
+            let statsHtml = `
+                <p><strong>ノード数:</strong> ${nodeCount}名の著者</p>
+                <p><strong>リンク数:</strong> ${linkCount}件の共著関係</p>
+                <p><strong>総論文数:</strong> ${totalPapers}件 (主著者: ${totalPrimary}件)</p>
+                <p><strong>最も共著者が多い著者:</strong> ${mostConnectedAuthor} (${maxConnections}件の接続)</p>
+            `;
+            
+            // グループ別著者数
+            if (Object.keys(groupStats).length > 0) {
+                statsHtml += '<p><strong>グループ別著者数:</strong></p><ul>';
+                Object.entries(groupStats)
+                    .sort((a, b) => b[1] - a[1])
+                    .forEach(([group, count]) => {
+                        statsHtml += `<li>${group}: ${count}名</li>`;
                     });
-                    resultsDiv.appendChild(item);
-                });
-            });
+                statsHtml += '</ul>';
+            }
             
-            // Enterキーでも検索可能に
-            searchInput.addEventListener('keyup', event => {
-                if (event.key === 'Enter') {
-                    searchButton.click();
-                }
-            });
+            statsContent.innerHTML = statsHtml;
         }
         
-        function showError(message) {
-            console.error("エラー表示:", message);
-            
-            // 既存のエラーメッセージを削除
-            document.querySelectorAll('.error-message').forEach(el => el.remove());
-            
-            const errorDiv = document.createElement('div');
-            errorDiv.className = 'error-message';
-            errorDiv.textContent = message;
-            document.getElementById('sidebar').appendChild(errorDiv);
-            
-            // 5秒後にエラーメッセージを消す
-            setTimeout(() => {
-                errorDiv.style.opacity = '0';
-                errorDiv.style.transition = 'opacity 1s';
-                setTimeout(() => errorDiv.remove(), 1000);
-            }, 5000);
-        }
-        
-        // 12. イベントリスナーとドラッグ機能
-        function setupEventListeners() {
-            console.log("イベントリスナー設定");
-            
-            // フィルター適用ボタン
-            document.getElementById('apply-filters').addEventListener('click', applyFilters);
-            
-            // スライダーの値表示更新
-            document.getElementById('link-threshold').addEventListener('input', function() {
-                document.getElementById('link-value').textContent = this.value;
-            });
-            
-            document.getElementById('node-threshold').addEventListener('input', function() {
-                document.getElementById('node-value').textContent = this.value;
-            });
-            
-            // ネットワーク外をクリックしたときにハイライトをリセット
-            svg.on('click', function(event) {
-                if (event.target === this) {
-                    resetHighlight();
-                }
-            });
-            
-            // 検索機能
-            setupSearch();
-            
-            // ウィンドウリサイズ対応
-            window.addEventListener('resize', debounce(function() {
-                width = document.getElementById('graph').clientWidth;
-                height = document.getElementById('graph').clientHeight;
-                
-                svg.attr('width', width).attr('height', height);
-                simulation.force('center', d3.forceCenter(width / 2, height / 2));
-                simulation.alpha(0.3).restart();
-            }, 250));
-        }
-        
-        // 13. ドラッグ機能
-        const drag = d3.drag()
-            .on('start', dragStarted)
-            .on('drag', dragging)
-            .on('end', dragEnded);
-        
-        function dragStarted(event, d) {
-            if (!event.active) simulation.alphaTarget(0.3).restart();
-            d.fx = d.x;
-            d.fy = d.y;
-        }
-        
-        function dragging(event, d) {
-            d.fx = event.x;
-            d.fy = event.y;
-        }
-        
-        function dragEnded(event, d) {
-            if (!event.active) simulation.alphaTarget(0);
-            d.fx = null;
-            d.fy = null;
-        }
-        
-        // 14. シミュレーションのtickedイベント
-        function ticked() {
-            linkElements
-                .attr('x1', d => d.source.x)
-                .attr('y1', d => d.source.y)
-                .attr('x2', d => d.target.x)
-                .attr('y2', d => d.target.y);
-            
-            nodeElements
-                .attr('cx', d => d.x)
-                .attr('cy', d => d.y);
-            
-            labelElements
-                .attr('x', d => d.x)
-                .attr('y', d => d.y);
-        }
-        
-        // ユーティリティ: デバウンス関数
-        function debounce(func, wait) {
-            let timeout;
-            return function() {
-                const context = this, args = arguments;
-                clearTimeout(timeout);
-                timeout = setTimeout(() => func.apply(context, args), wait);
-            };
-        }
-        
-        // 論文データの生成関数
-        function generatePapersData() {
-            // 実際の実装では、サーバーサイドで論文データを生成
-            // ここではシンプルなサンプルを提供
-            return {
-                "実データ": [
-                    { "title": "自然言語処理における深層学習手法の最新動向", "authors": ["田中一郎", "山田太郎", "鈴木花子"] },
-                    { "title": "言語モデルを活用した意味解析の進展", "authors": ["山田太郎", "伊藤次郎", "佐藤三郎"] }
-                ]
-            };
-        }
-        
-        // アプリケーション起動
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log("DOM読み込み完了、アプリケーション起動");
-            initGraph();
-            init();
-        });
-    </script>
-</body>
-</html>
+        // ノードをハイライト
+        function highlightNode(event, d) {
+            if (selectedNode === d.id) {
+                // 同じノードを再クリックすると選択解除
+                selectedNode = null;
+                resetHighlight();
+            } else {
+                selectedNode = d.id;
