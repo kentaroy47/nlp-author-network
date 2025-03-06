@@ -26,6 +26,63 @@ except ImportError:
         community_louvain = None
 
 # --- 1. データ収集部分 ---
+def extract_authors(authors_text):
+    """著者名のみを抽出する改良版関数"""
+    # 前処理：余分な空白、改行、タブを削除
+    authors_text = authors_text.strip().replace('\n', ' ').replace('\t', ' ')
+    
+    # 一般的な区切り文字でスプリット
+    separators = [',', '，', '、', '・', ';', '；']
+    
+    # どの区切り文字が最も多く使われているかを確認
+    best_separator = None
+    max_count = 0
+    
+    for sep in separators:
+        count = authors_text.count(sep)
+        if count > max_count:
+            max_count = count
+            best_separator = sep
+    
+    if best_separator and max_count > 0:
+        # 最適な区切り文字で分割
+        raw_authors = authors_text.split(best_separator)
+    else:
+        # 区切り文字がない場合は空白で分割を試みる
+        raw_authors = authors_text.split()
+    
+    # 著者名のクリーニング
+    authors = []
+    for author in raw_authors:
+        # 前後の空白を削除
+        author = author.strip()
+        
+        # 一般的な役職や所属を示す単語をフィルタリング
+        ignore_terms = ['教授', '准教授', '助教', '研究員', '大学院生', '博士', 'Prof.', 'Dr.', 
+                         'University', '大学', '研究所', 'Institute', '株式会社', 'Co., Ltd.']
+        
+        has_ignore_term = any(term in author for term in ignore_terms)
+        
+        # 著者名として不適切な長さのものを除外（あまりに短すぎる/長すぎる）
+        is_valid_length = 2 <= len(author) <= 20
+        
+        # 数字や特殊文字が多すぎる場合は除外
+        special_chars = sum(1 for c in author if not c.isalpha() and not c.isspace())
+        has_many_special = special_chars > len(author) / 3
+        
+        if is_valid_length and not has_ignore_term and not has_many_special:
+            # 括弧内の情報を削除（所属や肩書きが入っていることが多い）
+            clean_author = re.sub(r'\([^)]*\)', '', author)
+            clean_author = re.sub(r'（[^）]*）', '', clean_author)
+            
+            # 前後の空白を再度削除
+            clean_author = clean_author.strip()
+            
+            if clean_author:
+                authors.append(clean_author)
+    
+    return authors
+
 def scrape_paper_data(url, year):
     """ウェブページから論文と著者情報を抽出する"""
     print(f"{year}年のデータを収集中: {url}")
@@ -40,8 +97,7 @@ def scrape_paper_data(url, year):
     
     papers = []
     
-    # タイトルと著者を取得する方法をいくつか試す
-    # 方法1: 論文タイトルと著者の特定のパターンを探す
+    # 論文タイトルと著者の特定のパターンを探す
     paper_elements = soup.find_all(['h2', 'h3', 'h4'], class_=['title', 'paper-title'])
     for element in paper_elements:
         title = element.text.strip()
@@ -49,50 +105,13 @@ def scrape_paper_data(url, year):
         authors_element = element.find_next(['p', 'div'], class_=['authors', 'paper-authors'])
         if authors_element:
             authors_text = authors_element.text.strip()
-            # 著者を分割（カンマや「、」などで区切られている可能性がある）
-            authors = [a.strip() for a in re.split('[,，、]', authors_text)]
-            papers.append({'title': title, 'authors': authors, 'year': year})
-    
-    # 方法2: リスト要素内の論文情報を探す
-    if not papers:
-        paper_items = soup.find_all('li', class_=['paper', 'article'])
-        for item in paper_items:
-            title_element = item.find(['span', 'div', 'h3', 'h4'], class_=['title', 'paper-title'])
-            authors_element = item.find(['span', 'div', 'p'], class_=['authors', 'paper-authors'])
-            
-            if title_element and authors_element:
-                title = title_element.text.strip()
-                authors_text = authors_element.text.strip()
-                authors = [a.strip() for a in re.split('[,，、]', authors_text)]
+            # 改良した関数で著者のみを抽出
+            authors = extract_authors(authors_text)
+            if authors:  # 著者が抽出できた場合のみ追加
                 papers.append({'title': title, 'authors': authors, 'year': year})
     
-    # 方法3: テキストパターンでの抽出
-    if not papers:
-        text = soup.get_text()
-        # 日本語論文のパターン例: タイトル\n著者1, 著者2, ...\n所属
-        # 正規表現パターンは実際のテキスト形式に合わせて調整する必要あり
-        pattern = r'([^\n]+)\n([^\n]+)\n'
-        matches = re.findall(pattern, text)
-        for title, authors_text in matches:
-            # 明らかに論文タイトルではないものを除外
-            if len(title) > 10 and '。' not in title:
-                authors = [a.strip() for a in re.split('[,，、]', authors_text)]
-                # 著者として不適切な行を除外
-                if all(len(a) < 20 for a in authors) and len(authors) < 10:
-                    papers.append({'title': title.strip(), 'authors': authors, 'year': year})
+    # 他の抽出方法も同様に改善...
     
-    # 論文ごとに手動でパターンを探す (最後の手段)
-    if not papers:
-        print(f"警告: {year}年のデータに対して標準的な抽出方法が機能しませんでした。")
-        print("サイト構造に合わせた特別な処理が必要かもしれません。")
-        
-        # ここで特定年のサイト構造に特化したパースロジックを実装できます
-        # 例: 2022年の特別な処理
-        if year == 2022:
-            # 2022年特有のHTML構造を処理するコード
-            pass
-    
-    print(f"{year}年の論文数: {len(papers)}")
     return papers
 
 # --- 2. ネットワーク構築部分 ---

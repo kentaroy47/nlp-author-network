@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>年度別 論文著者ネットワーク分析</title>
+    <title>論文著者ネットワーク分析 (2021-2025)</title>
     <style>
         body {
             font-family: 'Meiryo', 'メイリオ', sans-serif;
@@ -92,6 +92,7 @@
             font-size: 12px;
             box-shadow: 0 0 5px rgba(0,0,0,0.1);
             z-index: 1000;
+            max-width: 300px;
         }
         
         #author-info {
@@ -166,33 +167,6 @@
             border-radius: 2px;
         }
 
-        .year-selector {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            margin-top: 10px;
-        }
-
-        .year-btn {
-            padding: 6px 12px;
-            border-radius: 4px;
-            background-color: #eee;
-            border: 1px solid #ddd;
-            cursor: pointer;
-            flex: 1;
-            text-align: center;
-            font-weight: normal;
-            font-family: inherit;
-            font-size: inherit;
-        }
-
-        .year-btn.active {
-            background-color: #4285f4;
-            color: white;
-            border-color: #3367d6;
-            font-weight: bold;
-        }
-
         .stats-box {
             display: flex;
             flex-wrap: wrap;
@@ -249,18 +223,73 @@
             border-radius: 4px;
             margin-top: 20px;
         }
+        
+        .year-selector {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 10px;
+        }
+        
+        .year-btn {
+            padding: 8px 12px;
+            border-radius: 4px;
+            background-color: #eee;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            flex: 1;
+            text-align: center;
+            font-weight: normal;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        
+        .year-btn.active {
+            background-color: #4285f4;
+            color: white;
+            border-color: #3367d6;
+            font-weight: bold;
+        }
+        
+        .papers-list {
+            margin-top: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+            font-size: 13px;
+        }
+        
+        .paper-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 8px;
+        }
+        
+        .paper-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .paper-authors {
+            color: #666;
+            font-style: italic;
+        }
     </style>
 </head>
 <body>
     <div id="container">
         <div id="graph"></div>
         <div id="sidebar">
-            <h1>年度別 論文著者ネットワーク分析</h1>
+            <h1>論文著者ネットワーク分析</h1>
             
             <div class="controls">
                 <h2>年度選択</h2>
-                <div class="year-selector" id="year-selector">
-                    <!-- 年度ボタンはJSで動的に生成 -->
+                <div class="year-selector">
+                    <button class="year-btn active" data-year="2025">2025年</button>
+                    <button class="year-btn" data-year="2024">2024年</button>
+                    <button class="year-btn" data-year="2023">2023年</button>
+                    <button class="year-btn" data-year="2022">2022年</button>
+                    <button class="year-btn" data-year="2021">2021年</button>
+                    <button class="year-btn" data-year="all">全期間</button>
                 </div>
                 
                 <div class="stats-box" id="stats-box">
@@ -330,8 +359,8 @@
         let nodeSizeScale;
         let colorScale;
         let communities = {};
-        let yearInfo = [];
-        let currentYear = 'all'; // デフォルトは全期間
+        let currentYear = '2025'; // デフォルトは2025年
+        let papersData = {}; // 著者ごとの論文情報
         
         // 2. 初期設定とグラフ作成
         function initGraph() {
@@ -389,150 +418,141 @@
             console.log("グラフ初期化完了");
         }
         
-        // 3. データ読み込みと初期化
+        // 3. 年度選択と初期化
         function init() {
             console.log("アプリケーション初期化開始");
-            document.getElementById('loading').style.display = 'block';
             
-            // フォールバック用サンプルデータ
-            const sampleYears = [
-                {"year": "all", "nodes": 100, "links": 150, "communities": 5, "top_authors": [
-                    {"name": "サンプル著者1", "pagerank": 0.05}, 
-                    {"name": "サンプル著者2", "pagerank": 0.04}
-                ]},
-                {"year": 2021, "nodes": 50, "links": 70, "communities": 3, "top_authors": [
-                    {"name": "サンプル著者1", "pagerank": 0.06}, 
-                    {"name": "サンプル著者3", "pagerank": 0.03}
-                ]},
-                {"year": 2022, "nodes": 60, "links": 80, "communities": 4, "top_authors": [
-                    {"name": "サンプル著者2", "pagerank": 0.07}, 
-                    {"name": "サンプル著者4", "pagerank": 0.035}
-                ]},
-                {"year": 2023, "nodes": 65, "links": 85, "communities": 4, "top_authors": [
-                    {"name": "サンプル著者5", "pagerank": 0.065}, 
-                    {"name": "サンプル著者6", "pagerank": 0.045}
-                ]},
-                {"year": 2024, "nodes": 70, "links": 90, "communities": 5, "top_authors": [
-                    {"name": "サンプル著者7", "pagerank": 0.055}, 
-                    {"name": "サンプル著者8", "pagerank": 0.05}
-                ]},
-                {"year": 2025, "nodes": 80, "links": 110, "communities": 5, "top_authors": [
-                    {"name": "サンプル著者9", "pagerank": 0.065}, 
-                    {"name": "サンプル著者10", "pagerank": 0.055}
-                ]}
-            ];
-            
-            // 年度インデックスの読み込み
-            console.log("年度インデックスファイル読み込み開始");
-            
-            d3.json("data/years_index.json")
-                .then(yearsData => {
-                    console.log("年度インデックス読み込み成功:", yearsData);
-                    yearInfo = yearsData;
+            // 年度ボタンのイベントリスナー設定
+            document.querySelectorAll('.year-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const year = this.getAttribute('data-year');
+                    loadYearData(year);
                     
-                    // 年度選択ボタンを生成
-                    createYearSelector(yearInfo);
-                    
-                    // デフォルトで全期間のデータを読み込む
-                    loadYearData('all');
-                })
-                .catch(error => {
-                    console.error("年度インデックスの読み込みエラー:", error);
-                    
-                    // サンプルデータを使用
-                    console.log("サンプルデータを使用します");
-                    yearInfo = sampleYears;
-                    createYearSelector(yearInfo);
-                    showError("データファイル (data/years_index.json) の読み込みに失敗しました。サンプルデータを表示します。");
-                    
-                    // サンプルデータで全期間を読み込む
-                    const allYearData = {
-                        "nodes": [
-                            {"id": "サンプル著者1", "name": "サンプル著者1", "papers": 5, "degree": 0.2, "betweenness": 0.15, "eigenvector": 0.3, "pagerank": 0.05, "community": 0},
-                            {"id": "サンプル著者2", "name": "サンプル著者2", "papers": 4, "degree": 0.15, "betweenness": 0.1, "eigenvector": 0.25, "pagerank": 0.04, "community": 0},
-                            {"id": "サンプル著者3", "name": "サンプル著者3", "papers": 3, "degree": 0.1, "betweenness": 0.05, "eigenvector": 0.2, "pagerank": 0.03, "community": 1},
-                            {"id": "サンプル著者4", "name": "サンプル著者4", "papers": 4, "degree": 0.12, "betweenness": 0.08, "eigenvector": 0.22, "pagerank": 0.035, "community": 1},
-                            {"id": "サンプル著者5", "name": "サンプル著者5", "papers": 6, "degree": 0.25, "betweenness": 0.2, "eigenvector": 0.35, "pagerank": 0.065, "community": 2}
-                        ],
-                        "links": [
-                            {"source": "サンプル著者1", "target": "サンプル著者2", "weight": 2},
-                            {"source": "サンプル著者1", "target": "サンプル著者3", "weight": 1},
-                            {"source": "サンプル著者2", "target": "サンプル著者4", "weight": 3},
-                            {"source": "サンプル著者3", "target": "サンプル著者4", "weight": 2},
-                            {"source": "サンプル著者3", "target": "サンプル著者5", "weight": 1},
-                            {"source": "サンプル著者4", "target": "サンプル著者5", "weight": 2}
-                        ]
-                    };
-                    
-                    processData(allYearData);
-                    updateYearStats('all');
-                    document.getElementById('loading').style.display = 'none';
+                    // アクティブクラスの更新
+                    document.querySelectorAll('.year-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
                 });
+            });
+            
+            // デフォルトで2025年のデータを読み込む
+            loadYearData('2025');
             
             // イベントリスナーの設定
             setupEventListeners();
             console.log("アプリケーション初期化完了");
         }
         
-        // 4. 特定年度のデータを読み込む
+        // 4. 年度別データの読み込み
         function loadYearData(year) {
             console.log(`${year}年のデータを読み込み開始`);
             document.getElementById('loading').style.display = 'block';
             
-            // 年度ボタンをアクティブに
-            document.querySelectorAll('.year-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            const btnId = year === 'all' ? 'year-all' : `year-${year}`;
-            const yearBtn = document.getElementById(btnId);
-            if (yearBtn) {
-                yearBtn.classList.add('active');
-            }
-            
             currentYear = year;
             
-            // 年度に対応するD3.jsデータファイルを読み込む
+            // 年度に対応するデータファイルを読み込む
             const dataFile = `data/author_network_${year}_d3.json`;
             console.log(`データファイル読み込み: ${dataFile}`);
             
-            d3.json(dataFile)
-                .then(data => {
-                    console.log(`${year}年のデータ読み込み成功:`, data);
-                    graph = data;
-                    processData(data);
-                    
-                    // 年度の統計情報を更新
-                    updateYearStats(year);
-                    
-                    document.getElementById('loading').style.display = 'none';
-                })
-                .catch(error => {
-                    console.error(`${year}年度のデータ読み込みエラー:`, error);
-                    document.getElementById('loading').style.display = 'none';
-                    showError(`データファイル (${dataFile}) の読み込みに失敗しました。`);
-                    
-                    // サンプルデータで対応（実際のアプリケーションでは必要に応じて）
-                    if (year === 'all') {
-                        const sampleData = {
-                            "nodes": [
-                                {"id": "サンプル著者1", "name": "サンプル著者1", "papers": 5, "degree": 0.2, "betweenness": 0.15, "eigenvector": 0.3, "pagerank": 0.05, "community": 0},
-                                {"id": "サンプル著者2", "name": "サンプル著者2", "papers": 4, "degree": 0.15, "betweenness": 0.1, "eigenvector": 0.25, "pagerank": 0.04, "community": 0},
-                                {"id": "サンプル著者3", "name": "サンプル著者3", "papers": 3, "degree": 0.1, "betweenness": 0.05, "eigenvector": 0.2, "pagerank": 0.03, "community": 1}
-                            ],
-                            "links": [
-                                {"source": "サンプル著者1", "target": "サンプル著者2", "weight": 2},
-                                {"source": "サンプル著者1", "target": "サンプル著者3", "weight": 1},
-                                {"source": "サンプル著者2", "target": "サンプル著者3", "weight": 3}
-                            ]
-                        };
-                        processData(sampleData);
-                        updateYearStats(year);
-                    }
-                });
+            // 論文データも読み込む（存在する場合）
+            const papersFile = `data/papers_${year}.json`;
+            
+            // 両方のファイルを読み込む（論文データはオプション）
+            Promise.all([
+                d3.json(dataFile),
+                d3.json(papersFile).catch(() => null) // 論文データがなければnullを返す
+            ])
+            .then(([networkData, papers]) => {
+                console.log(`${year}年のネットワークデータ読み込み成功:`, networkData);
+                
+                if (papers) {
+                    console.log(`${year}年の論文データ読み込み成功:`, papers);
+                    papersData = papers;
+                } else {
+                    console.log(`${year}年の論文データは利用できません`);
+                    papersData = {};
+                }
+                
+                graph = networkData;
+                processData(networkData);
+                updateStats(year);
+                document.getElementById('loading').style.display = 'none';
+            })
+            .catch(error => {
+                console.error(`${year}年度のデータ読み込みエラー:`, error);
+                document.getElementById('loading').style.display = 'none';
+                showError(`データファイル (${dataFile}) の読み込みに失敗しました。`);
+                
+                // サンプルデータを使用
+                console.log("サンプルデータを使用します");
+                const sampleData = {
+                    "nodes": [
+                        {"id": "山田太郎", "name": "山田太郎", "papers": 5, "degree": 0.2, "betweenness": 0.15, "eigenvector": 0.3, "pagerank": 0.05, "community": 0},
+                        {"id": "鈴木一郎", "name": "鈴木一郎", "papers": 4, "degree": 0.15, "betweenness": 0.1, "eigenvector": 0.25, "pagerank": 0.04, "community": 0},
+                        {"id": "佐藤次郎", "name": "佐藤次郎", "papers": 3, "degree": 0.1, "betweenness": 0.05, "eigenvector": 0.2, "pagerank": 0.03, "community": 1}
+                    ],
+                    "links": [
+                        {"source": "山田太郎", "target": "鈴木一郎", "weight": 2},
+                        {"source": "山田太郎", "target": "佐藤次郎", "weight": 1},
+                        {"source": "鈴木一郎", "target": "佐藤次郎", "weight": 3}
+                    ]
+                };
+                
+                papersData = {
+                    "山田太郎": [
+                        { "title": "サンプル論文1", "authors": ["山田太郎", "鈴木一郎"] },
+                        { "title": "サンプル論文2", "authors": ["山田太郎", "佐藤次郎"] }
+                    ],
+                    "鈴木一郎": [
+                        { "title": "サンプル論文1", "authors": ["山田太郎", "鈴木一郎"] },
+                        { "title": "サンプル論文3", "authors": ["鈴木一郎", "佐藤次郎"] }
+                    ],
+                    "佐藤次郎": [
+                        { "title": "サンプル論文2", "authors": ["山田太郎", "佐藤次郎"] },
+                        { "title": "サンプル論文3", "authors": ["鈴木一郎", "佐藤次郎"] }
+                    ]
+                };
+                
+                graph = sampleData;
+                processData(sampleData);
+                updateStats(year);
+            });
         }
         
-        // 5. データ処理
+        // 5. 統計情報の更新
+        function updateStats(year) {
+            console.log("統計情報更新");
+            
+            if (!nodesData || !linksData) {
+                console.error("統計情報更新: データがありません");
+                return;
+            }
+            
+            const statsBox = document.getElementById('stats-box');
+            statsBox.innerHTML = '';
+            
+            // コミュニティ数の計算
+            const communities = new Set(nodesData.map(d => d.community)).size;
+            
+            // 統計情報
+            const statItems = [
+                { label: '著者数', value: nodesData.length },
+                { label: '共著関係', value: linksData.length },
+                { label: 'コミュニティ', value: communities },
+                { label: '年度', value: year === 'all' ? '全期間' : `${year}年` }
+            ];
+            
+            statItems.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'stat-item';
+                div.innerHTML = `
+                    <div class="stat-value">${item.value}</div>
+                    <div class="stat-label">${item.label}</div>
+                `;
+                statsBox.appendChild(div);
+            });
+        }
+        
+        // 6. データ処理
         function processData(data) {
             console.log("データ処理開始:", data);
             
@@ -550,10 +570,48 @@
             // コミュニティ凡例の作成
             createCommunityLegend();
             
+            // トップ著者リストの更新
+            updateTopAuthors();
+            
             console.log("データ処理完了");
         }
         
-        // 6. フィルタリングと更新
+        // 7. トップ著者リストの更新
+        function updateTopAuthors() {
+            console.log("トップ著者リスト更新");
+            
+            if (!nodesData) {
+                console.error("トップ著者リスト更新: データがありません");
+                return;
+            }
+            
+            // PageRankでソート
+            const topAuthors = [...nodesData].sort((a, b) => b.pagerank - a.pagerank).slice(0, 10);
+            
+            const topAuthorsDiv = document.getElementById('top-authors');
+            topAuthorsDiv.innerHTML = `<div class="top-authors-title">PageRank上位10人</div>`;
+            
+            topAuthors.forEach((author, index) => {
+                const item = document.createElement('div');
+                item.className = 'author-item';
+                item.innerHTML = `
+                    <span>${index + 1}. ${author.name}</span>
+                    <span>${author.pagerank.toFixed(4)}</span>
+                `;
+                
+                // クリックで該当著者を探す
+                item.addEventListener('click', () => {
+                    const node = filteredNodes.find(n => n.id === author.id);
+                    if (node) {
+                        showAuthorInfo(null, node);
+                    }
+                });
+                
+                topAuthorsDiv.appendChild(item);
+            });
+        }
+        
+        // 8. フィルタリングと更新
         function applyFilters() {
             console.log("フィルタリング適用開始");
             
@@ -594,7 +652,7 @@
             updateGraph();
         }
         
-        // 7. グラフ更新
+        // 9. グラフ更新
         function updateGraph() {
             console.log("グラフ更新開始");
             
@@ -663,7 +721,7 @@
             console.log("グラフ更新完了");
         }
         
-        // 8. イベントハンドラ
+        // 10. イベントハンドラ
         function showTooltip(event, d) {
             const tooltip = d3.select('#tooltip');
             tooltip.style('display', 'block')
@@ -683,8 +741,30 @@
         
         function showAuthorInfo(event, d) {
             console.log("著者情報表示:", d.name);
+            
             // ノードをクリックしたときに詳細情報を表示
             const infoDiv = document.getElementById('author-info');
+            
+            // 論文情報の生成
+            let papersHTML = '';
+            if (papersData && papersData[d.id] && papersData[d.id].length > 0) {
+                papersHTML = `
+                    <h3>論文</h3>
+                    <div class="papers-list">
+                `;
+                
+                papersData[d.id].forEach(paper => {
+                    papersHTML += `
+                        <div class="paper-item">
+                            <div class="paper-title">${paper.title}</div>
+                            <div class="paper-authors">${paper.authors.join(', ')}</div>
+                        </div>
+                    `;
+                });
+                
+                papersHTML += '</div>';
+            }
+            
             infoDiv.innerHTML = `
                 <h3>${d.name}</h3>
                 <div><span class="metric">論文数: ${d.papers}</span></div>
@@ -697,6 +777,7 @@
                     <span class="metric">固有ベクトル: ${d.eigenvector.toFixed(4)}</span>
                 </div>
                 <div><span class="metric">コミュニティ: ${d.community}</span></div>
+                ${papersHTML}
             `;
             
             // クリックしたノードを強調表示
@@ -724,7 +805,7 @@
             );
         }
         
-        // 9. ユーティリティ関数
+        // 11. ユーティリティ関数
         function getNodeRadius(d) {
             const nodeSizeAttr = document.getElementById('node-size').value;
             return nodeSizeScale(d[nodeSizeAttr]);
@@ -794,119 +875,6 @@
             linkElements.attr('opacity', 1.0);
         }
         
-        // 10. 年度選択とUI関連
-        function createYearSelector(years) {
-            console.log("年度選択ボタン作成:", years);
-            
-            const selector = document.getElementById('year-selector');
-            if (!selector) {
-                console.error("year-selector要素が見つかりません");
-                return;
-            }
-            
-            selector.innerHTML = '';
-            
-            // 全期間ボタン
-            const allBtn = document.createElement('button');
-            allBtn.id = 'year-all';
-            allBtn.className = 'year-btn active';
-            allBtn.textContent = '全期間';
-            allBtn.addEventListener('click', function() {
-                console.log("全期間ボタンがクリックされました");
-                loadYearData('all');
-            });
-            selector.appendChild(allBtn);
-            
-            // 年度ごとのボタン
-            const yearsList = years.filter(year => year.year !== 'all')
-                .sort((a, b) => {
-                    // 文字列の場合は数値に変換
-                    const yearA = typeof a.year === 'string' ? parseInt(a.year) : a.year;
-                    const yearB = typeof b.year === 'string' ? parseInt(b.year) : b.year;
-                    return yearB - yearA; // 新しい年順
-                });
-            
-            console.log("年度リスト:", yearsList);
-            
-            yearsList.forEach(yearData => {
-                const yearValue = yearData.year.toString();
-                const yearBtn = document.createElement('button');
-                yearBtn.id = `year-${yearValue}`;
-                yearBtn.className = 'year-btn';
-                yearBtn.textContent = `${yearValue}年`;
-                yearBtn.addEventListener('click', function() {
-                    console.log(`${yearValue}年ボタンがクリックされました`);
-                    loadYearData(yearValue);
-                });
-                selector.appendChild(yearBtn);
-            });
-        }
-        
-        function updateYearStats(year) {
-            console.log(`${year}年の統計情報更新`);
-            
-            const yearData = yearInfo.find(y => y.year.toString() === year.toString());
-            if (!yearData) {
-                console.error(`${year}年のデータが見つかりません`);
-                return;
-            }
-            
-            const statsBox = document.getElementById('stats-box');
-            statsBox.innerHTML = '';
-            
-            // 統計情報
-            const statItems = [
-                { label: '著者数', value: yearData.nodes },
-                { label: '共著関係', value: yearData.links },
-                { label: 'コミュニティ', value: yearData.communities },
-                { label: '年度', value: year === 'all' ? '全期間' : `${year}年` }
-            ];
-            
-            statItems.forEach(item => {
-                const div = document.createElement('div');
-                div.className = 'stat-item';
-                div.innerHTML = `
-                    <div class="stat-value">${item.value}</div>
-                    <div class="stat-label">${item.label}</div>
-                `;
-                statsBox.appendChild(div);
-            });
-            
-            // 影響力の高い著者リスト
-            updateTopAuthors(yearData.top_authors);
-        }
-        
-        function updateTopAuthors(authors) {
-            console.log("トップ著者リスト更新");
-            
-            const topAuthorsDiv = document.getElementById('top-authors');
-            topAuthorsDiv.innerHTML = `<div class="top-authors-title">PageRank上位10人</div>`;
-            
-            if (!authors || authors.length === 0) {
-                topAuthorsDiv.innerHTML += '<div>データがありません</div>';
-                return;
-            }
-            
-            authors.slice(0, 10).forEach((author, index) => {
-                const item = document.createElement('div');
-                item.className = 'author-item';
-                item.innerHTML = `
-                    <span>${index + 1}. ${author.name}</span>
-                    <span>${author.pagerank.toFixed(4)}</span>
-                `;
-                
-                // クリックで該当著者を探す
-                item.addEventListener('click', () => {
-                    const node = filteredNodes.find(n => n.id === author.name);
-                    if (node) {
-                        showAuthorInfo(null, node);
-                    }
-                });
-                
-                topAuthorsDiv.appendChild(item);
-            });
-        }
-        
         function setupSearch() {
             console.log("検索機能セットアップ");
             
@@ -973,7 +941,7 @@
             }, 5000);
         }
         
-        // 11. イベントリスナーとドラッグ機能
+        // 12. イベントリスナーとドラッグ機能
         function setupEventListeners() {
             console.log("イベントリスナー設定");
             
@@ -1010,7 +978,7 @@
             }, 250));
         }
         
-        // 12. ドラッグ機能
+        // 13. ドラッグ機能
         const drag = d3.drag()
             .on('start', dragStarted)
             .on('drag', dragging)
@@ -1033,7 +1001,7 @@
             d.fy = null;
         }
         
-        // 13. シミュレーションのtickedイベント
+        // 14. シミュレーションのtickedイベント
         function ticked() {
             linkElements
                 .attr('x1', d => d.source.x)
@@ -1060,10 +1028,24 @@
             };
         }
         
+        // 論文データの生成関数
+        function generatePapersData() {
+            // 実際の実装では、サーバーサイドで論文データを生成
+            // ここではシンプルなサンプルを提供
+            return {
+                "実データ": [
+                    { "title": "自然言語処理における深層学習手法の最新動向", "authors": ["田中一郎", "山田太郎", "鈴木花子"] },
+                    { "title": "言語モデルを活用した意味解析の進展", "authors": ["山田太郎", "伊藤次郎", "佐藤三郎"] }
+                ]
+            };
+        }
+        
         // アプリケーション起動
         document.addEventListener('DOMContentLoaded', function() {
             console.log("DOM読み込み完了、アプリケーション起動");
             initGraph();
             init();
-        }); link.source;
-                const targetId = typeof link.target === 'object' ? link.target.id :
+        });
+    </script>
+</body>
+</html>
